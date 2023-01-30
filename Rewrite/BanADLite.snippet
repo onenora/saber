@@ -1,0 +1,80 @@
+#!name=BanADLite
+#!desc=去除一些常用APP的开屏广告（仅限个人使用）
+#!homepage=https://github.com/onenora/Saber/Rewrite
+#!author=onenora
+# UpdateTime  2022-12-19
+
+### MITM 主机名部分 ###
+hostname = images.client.vip.xunlei.com, xluser-ssl.xunlei.com, business-cdn.shouji.sougou.com, mp.weixin.qq.com, szextshort.weixin.qq.com, magev6.if.qidian.com, qidian.qpic.cn, api-access.pangolin-sdk-toutiao.com, api.coolapk.com, www.xiaohongshu.com, pages.xiaohongshu.com, static.zhihu.com, app.bilibili.com, api.bilibili.com, api.m.jd.com, img*.360buyimg.com, tiebac.baidu.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, new.vip.weibo.cn，-redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, ems.youku.com, optimus-ads.amap.com, api.bspapp.com
+
+# > 迅雷会员 -images.client.vip.xunlei.com,xluser-ssl.xunlei.com
+^https?+:\/\/images\.client\.vip\.xunlei\.com\/.+?\/advert\/ url reject-200
+^https?:\/\/images\.client\.vip\.xunlei\.com\/.+?\/advert\/ url reject
+^https?:\/\/images\.client\.vip\.xunlei\.com\/.+\/advert\/ url reject
+https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo url script-response-body https://raw.githubusercontent.com/onenora/Saber/main/Scripts/xunlei.js
+
+# > 🈲️搜狗输入法搜集信息 -business-cdn.shouji.sogou.com
+^https?+:\/\/business-cdn\.shouji\.sogou\.com\/wapdl\/hole\/.+?\.jpg url reject-200
+
+# >微信公众号文章下方广告 -mp.weixin.qq.com, szextshort.weixin.qq.com
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_complaint url reject
+^https?:\/\/szextshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\/ url reject-img
+^https?:\/\/mp\.weixin\.qq.com\/mp\/ad_video url reject
+^https?:\/\/mp\.weixin\.qq.com\/mp\/advertisement_report url reject
+^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport) url reject-img
+^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement|getappmsgad) url reject
+^https?+:\/\/mp\.weixin\.qq\.com\/mp\/(?>ad_|advertisement|getappmsgad) url reject-200
+^(http|https):\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url response-body "advertisement_num":\d,"advertisement_info":\[.+\], response-body "advertisement_num":0,"advertisement_info":[],
+
+# > 起点读书开屏页广告 -magev6.if.qidian.com, qidian.qpic.cn
+^https?:\/\/qidian\.qpic\.cn\/qidian_common url reject-img
+^https?:\/\/magev6\.if\.qidian\.com\/Atom\.axd\/Api\/Client\/GetConfIOS url reject-img
+^https?:\/\/magev6\.if\.qidian\.com\/argus\/api\/v\d\/client\/getsplashscreen url reject
+^https://magev6.if.qidian.com/argus/api/v1/client/iosad url reject
+^https://magev6.if.qidian.com/argus/api/v1/bookshelf/getad url reject
+^https://magev6.if.qidian.com/argus/api/v4/client/getsplashscreen? url reject
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/deeplink\/geturl|v1\/(client\/getconf|bookshelf\/getHoverAdv|adv\/getadvlistbatch\?positions=iOS_tab|dailyrecommend\/getdailyrecommend)) url script-response-body https://raw.githubusercontent.com/onenora/Saber/main/Scripts/qidian.js
+
+# >  酷安去首页广告、信息流广告、评论广告-api-access.pangolin-sdk-toutiao.com, api.coolapk.com
+^https?://api-access\.pangolin-sdk-toutiao\.com/api/ad/union/sdk url reject
+^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList) url script-response-body https://raw.githubusercontent.com/onenora/Saber/main/Scripts/coolapk.js
+
+# > 小红书开屏广告@chouchoui -www.xiaohongshu.com, pages.xiaohongshu.com
+^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/apple\/record* url reject
+^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/tag\/ads_engage* url reject
+^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/resource* url reject
+^https:\/\/pages\.xiaohongshu\.com\/data\/native\/matrix_switches* url reject
+
+# > 知乎网页版强制登陆弹窗@HotKids -static.zhihu.com
+^https?:\/\/static\.zhihu\.com\/[^\/]+\/(main|column)\.signflow\.[^.]+.js url reject
+
+# > BiliBili_小卡片广告,开屏广告 @ddgksf2013. -api.bilibili.com，app.bilibili.com
+^https://api.bilibili.com/pgc/season/player/cards url reject-dict
+^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? url reject-dict
+^https://app.bilibili.com/x/v2/splash/show url reject-dict
+
+# > JD 京东开屏广告（此条规则会影响京东比价显示，使其失效）- api.m.jd.com,img*.360buyimg.com
+^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start url reject
+^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=queryMaterialAdverts url reject
+^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ url reject
+^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/ url reject
+
+# 贴吧去广告 @app2smile
+^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(tiebaads\/commonbatch|c\/s\/sync) url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js
+^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized) url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js
+
+#  Youtobe  Block AD 仅用于视频广告，去首页瀑布流广告 -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com
+(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) url 302 $1$2$3
+^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad url reject
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break url reject
+^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads url reject
+^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) url reject
+^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext url reject
+^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/browse\? url script-response-body https://raw.githubusercontent.com/onenora/Saber/main/Scripts/youtube.js
+
+#高德地图广告ems.youku.com, optimus-ads.amap.com
+^http:\/\/ems\.youku\.com\/imp\? url reject
+^http:\/\/optimus-ads\.amap\.com\/uploadimg\/.+ url reject
+
+# ～ 趣听音乐☆自动激活APP
+^https?:\/\/api\.bspapp\.com\/client$ url script-response-body https://raw.githubusercontent.com/onenora/Saber/main/Scripts/qtmusic.js

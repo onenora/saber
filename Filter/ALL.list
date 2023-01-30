@@ -1,0 +1,798 @@
+// ==MyAdRule==
+// @ScriptName        QX自用分流(二改)
+// @Author          	 @onenora		(@原Author@ddgksf2013)
+// @UpdateTime         2023-01-30
+// @Function           分流配置（自用，混合REJECT🚫,PROXY,DIRECT，不建議使用）
+// @Suitable            二改后仅适合自己使用==>QuantumultX实用型
+// @ScriptURL         https://github.com/onenora/Saber/Filter/ALL.list
+// ==/UserScript==
+
+# ==========REJECT🚫=======
+# Fan Qie Filter Ban AD
+HOST,p6-ad-sign.byteimg.com,REJECT
+HOST,p9-ad-sign.byteimg.com,REJECT
+HOST-SUFFIX,byteimg.com,DIRECT
+HOST,i.snssdk.com,REJECT
+HOST,i-lq.snssdk.com,REJECT
+HOST,dig.bdurl.net,REJECT
+HOST-KEYWORD,zijieapi,REJECT
+HOST,activity-ag.awemeughun.com,REJECT
+HOST,mcs.snssdk.com,REJECT
+HOST,tnc3-alisc1.snssdk.com,REJECT
+HOST,security-lq.snssdk.com,REJECT
+HOST,tnc3-aliec2.snssdk.com,REJECT
+HOST,is.snssdk.com,REJECT
+HOST,v6-novelapp.ixigua.com,REJECT
+HOST,*default.ixigua.com,REJECT
+HOST,msync-im1-vip6-std.easemob.com,REJECT
+HOST,apd-pcdnwxlogin.teg.tencent-cloud.net,REJECT
+HOST,api.iegadp.qq.com,REJECT
+HOST,sf3-ttcdn-tos.pstatp.com,REJECT
+HOST-SUFFIX,pglstatp-toutiao.com,REJECT
+HOST-SUFFIX,byteorge.com,REJECT
+HOST-SUFFIX,bytegoofy.com,REJECT
+HOST-SUFFIX,bytedance.com,REJECT
+IP-CIDR,49.71.37.101/32,REJECT
+IP-CIDR,117.71.105.23/32,REJECT
+IP-CIDR,218.94.207.205/32,REJECT
+IP-CIDR,117.92.229.188/32,REJECT
+IP-CIDR,101.36.166.16/32,REJECT
+IP-CIDR,180.96.2.114/32,REJECT
+# 贴吧屏蔽域名dns查询
+IP-CIDR,180.76.76.200/32,REJECT
+## Internet Service Providers Hijacking##
+# > ChinaTelecom
+IP-CIDR,61.160.200.223/32,REJECT
+IP-CIDR,61.160.200.242/32,REJECT
+IP-CIDR,61.160.200.252/32,REJECT
+IP-CIDR,61.174.50.214/32,REJECT
+IP-CIDR,111.175.220.163/32,REJECT
+IP-CIDR,111.175.220.164/32,REJECT
+IP-CIDR,122.229.8.47/32,REJECT
+IP-CIDR,122.229.29.89/32,REJECT
+IP-CIDR,124.232.160.178/32,REJECT
+IP-CIDR,175.6.223.15/32,REJECT
+IP-CIDR,183.59.53.237/32,REJECT
+IP-CIDR,218.93.127.37/32,REJECT
+IP-CIDR,221.228.17.152/32,REJECT
+IP-CIDR,221.231.6.79/32,REJECT
+IP-CIDR,222.186.61.91/32,REJECT
+IP-CIDR,222.186.61.95/32,REJECT
+IP-CIDR,222.186.61.96/32,REJECT
+IP-CIDR,222.186.61.97/32,REJECT
+# > ChinaUnicom
+IP-CIDR,106.75.231.48/32,REJECT
+IP-CIDR,119.4.249.166/32,REJECT
+IP-CIDR,220.196.52.141/32,REJECT
+IP-CIDR,221.6.4.148/32,REJECT
+# > ChinaMobile
+IP-CIDR,114.247.28.96/32,REJECT
+IP-CIDR,120.240.95.37/32,REJECT
+IP-CIDR,221.179.131.72/32,REJECT
+IP-CIDR,221.179.140.145/32,REJECT
+# > Tencent Privacy Protect
+HOST,safebrowsing.urlsec.qq.com,REJECT
+HOST,safebrowsing.googleapis.com,REJECT
+# 知乎去广告
+IP-CIDR,118.89.204.198/32,REJECT
+IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT
+HOST,appcloud2.in.zhihu.com,REJECT
+HOST,mqtt.zhihu.com,REJECT
+HOST,sugar.zhihu.com,REJECT
+USER-AGENT,AVOS*,REJECT
+# > 爱奇艺广告屏蔽
+ip-cidr, 203.107.63.154/32, REJECT
+# > 美颜相机去首页和轮播广告
+host, adui.tg.meitu.com, REJECT
+host, aaid.uyunad.com, REJECT
+# > 多多视频去开屏广告
+host-suffix, bayescom.com, REJECT
+# > 车来了（包括小程序）
+host-suffix, atrace.chelaile.net.cn, REJECT
+host, logs.chelaile.net.cn, REJECT
+host, ad.chelaile.net.cn, REJECT
+# > 铁路12306
+HOST, ad.12306.cn, REJECT
+# @ddgksf2013 use(或有误杀)
+HOST-SUFFIX, ywak.com.cn, REJECT
+HOST-SUFFIX, govlaibing.cn, REJECT
+HOST-SUFFIX, log.trackingio.com,REJECT
+HOST-SUFFIX, adtrack.xiaojukeji.com,REJECT
+HOST-SUFFIX, adtrack.unilog.wostore.cn,REJECT
+HOST-SUFFIX, trackingio.com,REJECT
+HOST-SUFFIX, hpplay.cn, REJECT
+HOST-SUFFIX, admobile.top, REJECT
+HOST-SUFFIX, yvfnb.cn, REJECT
+HOST-SUFFIX, netease.im, REJECT
+HOST-SUFFIX, bayescom.cn, REJECT
+HOST-SUFFIX, zqslg.cn, REJECT
+HOST-SUFFIX, govhebie.cn, REJECT
+HOST, ads.95516.com, REJECT
+HOST, token.safebrowsing.apple, REJECT
+HOST, tnc3-aliec2.snssdk.com, REJECT
+HOST, upload-images.jianshu.io, REJECT
+HOST, support.you.163.com, REJECT
+HOST, cm-cn-central-00001.albatross.10086.cn, REJECT
+HOST, cloudmobi-creative-center.s3.ap-southeast-1.amazonaws.com, REJECT
+HOST, s.openmediation.com, REJECT
+HOST, api.applovefrom.com, REJECT
+HOST, api16-access-sg.pangle.io, REJECT
+HOST, a1235.hnhx360.com, REJECT
+HOST, adash-emas.cn-hangzhou.aliyuncs.com, REJECT
+HOST, mediation-tracking.prd.mz.internal.unity3d.com, REJECT
+HOST, down-files.2bulu.com, REJECT
+HOST, httpdns.titannetwork.cn, REJECT
+HOST, mpush-api.aliyun.com, REJECT
+HOST, dark.hyhuo.com, REJECT
+HOST, beacon-api.aliyuncs.com, REJECT
+HOST, ntb.hyhuo.com, REJECT
+HOST, ip-api.com, REJECT
+HOST, 6185059.com, REJECT
+HOST, wanproxy-hz.127.net, REJECT
+HOST, nstool.netease.com, REJECT
+HOST, api-access.pangolin-sdk-toutiao.com, REJECT
+HOST, 91adv.com.cn, REJECT
+HOST, sensorsdata.cmcc-cs.cn, REJECT
+HOST, lupic.cdn.bcebos.com, REJECT
+HOST, moment-app-team.s3.amazonaws.com, REJECT
+HOST, pgapi.ksmobile.com, REJECT
+HOST, pangolin.snssdk.com, REJECT
+HOST, iconfactory.com, REJECT
+HOST, ocsp.apple.com, REJECT
+HOST, img.offeryeah.online, REJECT
+HOST, img.cdn.famobi.com, REJECT
+HOST, static.alookbrowser.com, REJECT
+HOST, app-measurement.com, REJECT
+HOST, log.ihuman.com, REJECT
+HOST, dc.114dev.com, REJECT
+# ======PROXY♻️=======
+# > Telegram
+HOST-SUFFIX,t.me,Telegram
+HOST-SUFFIX,tdesktop.com,Telegram
+HOST-SUFFIX,telegra.ph,Telegram
+HOST-SUFFIX,telegram.me,Telegram
+HOST-SUFFIX,telegram.org,Telegram
+HOST-SUFFIX,telesco.pe,Telegram
+IP-CIDR,91.108.4.0/22,Telegram
+IP-CIDR,91.108.8.0/22,Telegram
+IP-CIDR,91.108.12.0/22,Telegram
+IP-CIDR,91.108.16.0/22,Telegram
+IP-CIDR,91.108.20.0/22,Telegram
+IP-CIDR,91.108.56.0/22,Telegram
+IP-CIDR,91.105.192.0/23,Telegram
+IP-CIDR,149.154.160.0/20,Telegram
+IP-CIDR,185.76.151.0/24,Telegram
+IP6-CIDR,2001:b28:f23d::/48,Telegram
+IP6-CIDR,2001:b28:f23f::/48,Telegram
+IP6-CIDR,2001:67c:4e8::/48,Telegram
+IP6-CIDR,2001:b28:f23c::/48,Telegram
+IP6-CIDR,2a0a:f280::/32,Telegram
+# > Speedtest
+HOST,speed.dler.io,Speedtest
+HOST-SUFFIX,fast.com,Speedtest
+HOST-SUFFIX,ooklaserver.net,Speedtest
+HOST-SUFFIX,speed.cloudflare.com,Speedtest
+HOST-SUFFIX,speed.dler.io,Speedtest
+HOST-KEYWORD,speedtest,Speedtest
+USER-AGENT,SpeedTest*,Speedtest
+# > Twitter
+HOST-SUFFIX,periscope.tv,PROXY
+HOST-SUFFIX,pscp.tv,PROXY
+HOST-SUFFIX,t.co,PROXY
+HOST-SUFFIX,tweetdeck.com,PROXY
+HOST-SUFFIX,twimg.co,PROXY
+HOST-SUFFIX,twimg.com,PROXY
+HOST-SUFFIX,twitpic.com,PROXY
+HOST-SUFFIX,twitter.com,PROXY
+HOST-SUFFIX,twitter.jp,PROXY
+HOST-SUFFIX,vine.co,PROXY
+# > Microsoft
+HOST-SUFFIX,bing.com,PROXY
+HOST-SUFFIX,linkedin.com,PROXY
+HOST-SUFFIX,licdn.com,PROXY
+HOST-SUFFIX,msn.com,PROXY
+HOST-SUFFIX,skype.com,PROXY
+HOST-SUFFIX,aka.ms,PROXY
+HOST-SUFFIX,streaming.mediaservices.windows.net,PROXY
+HOST,assets1.xboxlive.com,PROXY
+HOST,assets2.xboxlive.com,PROXY
+HOST,az416426.vo.msecnd.net,PROXY
+HOST,az668014.vo.msecnd.net,PROXY
+HOST-SUFFIX,onedrive.live.com,PROXY
+HOST-SUFFIX,xboxlive.com,PROXY
+# > GitHub
+HOST-SUFFIX,github.blog,PROXY
+HOST-SUFFIX,github.com,PROXY
+HOST-SUFFIX,github.io,PROXY
+HOST-SUFFIX,githubassets.com,PROXY
+HOST-SUFFIX,githubusercontent.com,PROXY
+# > pixiv
+HOST-SUFFIX,pixiv.net,PROXY
+HOST-SUFFIX,pixiv.org,PROXY
+HOST-SUFFIX,pximg.net,PROXY
+# > Line
+HOST-SUFFIX,line.me,PROXY
+HOST-SUFFIX,line-apps.com,PROXY
+HOST-SUFFIX,line-scdn.net,PROXY
+HOST-SUFFIX,naver.jp,PROXY
+IP-CIDR,103.2.30.0/23,PROXY
+IP-CIDR,125.209.208.0/20,PROXY
+IP-CIDR,147.92.128.0/17,PROXY
+IP-CIDR,203.104.144.0/21,PROXY
+#########################
+# > TIDAL
+USER-AGENT,TIDAL*,PROXY
+HOST-SUFFIX,tidal.com,PROXY
+# > YoutubeMusic
+USER-AGENT,com.google.ios.youtubemusic*,PROXY
+USER-AGENT,YouTubeMusic*,PROXY
+# > Netflix
+USER-AGENT,Argo*,PROXY
+HOST-SUFFIX,netflix.com,PROXY
+HOST-SUFFIX,netflix.net,PROXY
+HOST-SUFFIX,nflxext.com,PROXY
+HOST-SUFFIX,nflximg.com,PROXY
+HOST-SUFFIX,nflximg.net,PROXY
+HOST-SUFFIX,nflxso.net,PROXY
+HOST-SUFFIX,nflxvideo.net,PROXY
+IP-CIDR,23.246.0.0/18,PROXY
+IP-CIDR,37.77.184.0/21,PROXY
+IP-CIDR,45.57.0.0/17,PROXY
+IP-CIDR,64.120.128.0/17,PROXY
+IP-CIDR,66.197.128.0/17,PROXY
+IP-CIDR,108.175.32.0/20,PROXY
+IP-CIDR,192.173.64.0/18,PROXY
+IP-CIDR,198.38.96.0/19,PROXY
+IP-CIDR,198.45.48.0/20,PROXY
+# > Pornhub
+HOST-SUFFIX,phncdn.com,PROXY
+HOST-SUFFIX,pornhub.com,PROXY
+HOST-SUFFIX,pornhubpremium.com,PROXY
+# > 台湾好
+USER-AGENT,TaiwanGood*,PROXY
+HOST-SUFFIX,skyking.com.tw,PROXY
+HOST,hamifans.emome.net,PROXY
+# > Twitch
+HOST-SUFFIX,twitch.tv,PROXY
+HOST-SUFFIX,twitchcdn.net,PROXY
+HOST-SUFFIX,ttvnw.net,PROXY
+# > Facebook
+HOST-SUFFIX,cdninstagram.com,PROXY
+HOST-SUFFIX,fb.com,PROXY
+HOST-SUFFIX,fb.me,PROXY
+HOST-SUFFIX,fbaddins.com,PROXY
+HOST-SUFFIX,fbcdn.net,PROXY
+HOST-SUFFIX,fbsbx.com,PROXY
+HOST-SUFFIX,fbworkmail.com,PROXY
+HOST-SUFFIX,instagram.com,PROXY
+HOST-SUFFIX,m.me,PROXY
+HOST-SUFFIX,messenger.com,PROXY
+HOST-SUFFIX,oculus.com,PROXY
+HOST-SUFFIX,oculuscdn.com,PROXY
+HOST-SUFFIX,rocksdb.org,PROXY
+HOST-SUFFIX,whatsapp.com,PROXY
+HOST-SUFFIX,whatsapp.net,PROXY
+DOMAIN-KEYWORD,facebook,PROXY
+IP-CIDR,3.123.36.126/32,PROXY
+IP-CIDR,35.157.215.84/32,PROXY
+IP-CIDR,35.157.217.255/32,PROXY
+IP-CIDR,52.58.209.134/32,PROXY
+IP-CIDR,54.93.124.31/32,PROXY
+IP-CIDR,54.162.243.80/32,PROXY
+IP-CIDR,54.173.34.141/32,PROXY
+IP-CIDR,54.235.23.242/32,PROXY
+IP-CIDR,169.45.248.118/32,PROXY
+# Google
+DOMAIN-KEYWORD,blogspot,PROXY
+DOMAIN-KEYWORD,google,PROXY
+HOST-SUFFIX,abc.xyz,PROXY
+HOST-SUFFIX,admin.recaptcha.net,PROXY
+HOST-SUFFIX,ampproject.org,PROXY
+HOST-SUFFIX,android.com,PROXY
+HOST-SUFFIX,androidify.com,PROXY
+HOST-SUFFIX,appspot.com,PROXY
+HOST-SUFFIX,autodraw.com,PROXY
+HOST-SUFFIX,blogger.com,PROXY
+HOST-SUFFIX,capitalg.com,PROXY
+HOST-SUFFIX,certificate-transparency.org,PROXY
+HOST-SUFFIX,chrome.com,PROXY
+HOST-SUFFIX,chromeexperiments.com,PROXY
+HOST-SUFFIX,chromestatus.com,PROXY
+HOST-SUFFIX,chromium.org,PROXY
+HOST-SUFFIX,creativelab5.com,PROXY
+HOST-SUFFIX,debug.com,PROXY
+HOST-SUFFIX,deepmind.com,PROXY
+HOST-SUFFIX,dialogflow.com,PROXY
+HOST-SUFFIX,firebaseio.com,PROXY
+HOST-SUFFIX,getmdl.io,PROXY
+HOST-SUFFIX,getoutline.org,PROXY
+HOST-SUFFIX,ggpht.com,PROXY
+HOST-SUFFIX,gmail.com,PROXY
+HOST-SUFFIX,gmodules.com,PROXY
+HOST-SUFFIX,godoc.org,PROXY
+HOST-SUFFIX,golang.org,PROXY
+HOST-SUFFIX,gstatic.com,PROXY
+HOST-SUFFIX,gv.com,PROXY
+HOST-SUFFIX,gvt0.com,PROXY
+HOST-SUFFIX,gvt1.com,PROXY
+HOST-SUFFIX,gvt3.com,PROXY
+HOST-SUFFIX,gwtproject.org,PROXY
+HOST-SUFFIX,itasoftware.com,PROXY
+HOST-SUFFIX,madewithcode.com,PROXY
+HOST-SUFFIX,material.io,PROXY
+HOST-SUFFIX,polymer-project.org,PROXY
+HOST-SUFFIX,recaptcha.net,PROXY
+HOST-SUFFIX,shattered.io,PROXY
+HOST-SUFFIX,synergyse.com,PROXY
+HOST-SUFFIX,telephony.goog,PROXY
+HOST-SUFFIX,tensorflow.org,PROXY
+HOST-SUFFIX,tfhub.dev,PROXY
+HOST-SUFFIX,tiltbrush.com,PROXY
+HOST-SUFFIX,waveprotocol.org,PROXY
+HOST-SUFFIX,waymo.com,PROXY
+HOST-SUFFIX,webmproject.org,PROXY
+HOST-SUFFIX,webrtc.org,PROXY
+HOST-SUFFIX,whatbrowser.org,PROXY
+HOST-SUFFIX,widevine.com,PROXY
+HOST-SUFFIX,x.company,PROXY
+HOST-SUFFIX,xn--ngstr-lra8j.com,PROXY
+HOST-SUFFIX,youtu.be,PROXY
+HOST-SUFFIX,yt.be,PROXY
+HOST-SUFFIX,ytimg.com,PROXY
+# Clubhouse
+HOST-SUFFIX,clubhouseapi.com,PROXY
+HOST-SUFFIX,clubhouse.pubnub.com,PROXY
+HOST-SUFFIX,joinclubhouse.com,PROXY
+HOST-SUFFIX,ap3.agora.io,PROXY
+# Top blocked sites
+DOMAIN-KEYWORD,aka,PROXY
+DOMAIN-KEYWORD,youtube,PROXY
+DOMAIN-KEYWORD,twitter,PROXY
+DOMAIN-KEYWORD,instagram,PROXY
+DOMAIN-KEYWORD,gmail,PROXY
+DOMAIN-KEYWORD,pixiv,PROXY
+HOST-SUFFIX,meta.com,PROXY
+HOST-SUFFIX,kenengba.com,PROXY
+HOST-SUFFIX,akamai.net,PROXY
+HOST-SUFFIX,snapchat.com,PROXY
+HOST-SUFFIX,amazonaws.com,PROXY
+HOST-SUFFIX,angularjs.org,PROXY
+HOST-SUFFIX,akamaihd.net,PROXY
+HOST-SUFFIX,amazon.com,PROXY
+HOST-SUFFIX,bit.ly,PROXY
+HOST-SUFFIX,bitbucket.org,PROXY
+HOST-SUFFIX,blogcdn.com,PROXY
+HOST-SUFFIX,blogsmithmedia.com,PROXY
+HOST-SUFFIX,box.net,PROXY
+HOST-SUFFIX,bloomberg.com,PROXY
+HOST-SUFFIX,cl.ly,PROXY
+HOST-SUFFIX,cloudfront.net,PROXY
+HOST-SUFFIX,cloudflare.com,PROXY
+HOST-SUFFIX,cocoapods.org,PROXY
+HOST-SUFFIX,dribbble.com,PROXY
+HOST-SUFFIX,dropbox.com,PROXY
+HOST-SUFFIX,dropboxstatic.com,PROXY
+HOST-SUFFIX,dropboxusercontent.com,PROXY
+HOST-SUFFIX,docker.com,PROXY
+HOST-SUFFIX,duckduckgo.com,PROXY
+HOST-SUFFIX,digicert.com,PROXY
+HOST-SUFFIX,dnsimple.com,PROXY
+HOST-SUFFIX,edgecastcdn.net,PROXY
+HOST-SUFFIX,engadget.com,PROXY
+HOST-SUFFIX,eurekavpt.com,PROXY
+HOST-SUFFIX,fc2.com,PROXY
+HOST-SUFFIX,feedburner.com,PROXY
+HOST-SUFFIX,fabric.io,PROXY
+HOST-SUFFIX,flickr.com,PROXY
+HOST-SUFFIX,fastly.net,PROXY
+HOST-SUFFIX,goo.gl,PROXY
+HOST-SUFFIX,godaddy.com,PROXY
+HOST-SUFFIX,gravatar.com,PROXY
+HOST-SUFFIX,imageshack.us,PROXY
+HOST-SUFFIX,imgur.com,PROXY
+HOST-SUFFIX,jshint.com,PROXY
+HOST-SUFFIX,ift.tt,PROXY
+HOST-SUFFIX,j.mp,PROXY
+HOST-SUFFIX,kat.cr,PROXY
+HOST-SUFFIX,linode.com,PROXY
+HOST-SUFFIX,lithium.com,PROXY
+HOST-SUFFIX,megaupload.com,PROXY
+HOST-SUFFIX,mobile01.com,PROXY
+HOST-SUFFIX,modmyi.com,PROXY
+HOST-SUFFIX,nytimes.com,PROXY
+HOST-SUFFIX,name.com,PROXY
+HOST-SUFFIX,openvpn.net,PROXY
+HOST-SUFFIX,openwrt.org,PROXY
+HOST-SUFFIX,ow.ly,PROXY
+HOST-SUFFIX,pinboard.in,PROXY
+HOST-SUFFIX,ssl-images-amazon.com,PROXY
+HOST-SUFFIX,sstatic.net,PROXY
+HOST-SUFFIX,stackoverflow.com,PROXY
+HOST-SUFFIX,staticflickr.com,PROXY
+HOST-SUFFIX,squarespace.com,PROXY
+HOST-SUFFIX,symcd.com,PROXY
+HOST-SUFFIX,symcb.com,PROXY
+HOST-SUFFIX,symauth.com,PROXY
+HOST-SUFFIX,ubnt.com,PROXY
+HOST-SUFFIX,thepiratebay.org,PROXY
+HOST-SUFFIX,tumblr.com,PROXY
+HOST-SUFFIX,wikipedia.com,PROXY
+HOST-SUFFIX,wikipedia.org,PROXY
+HOST-SUFFIX,wikimedia.org,PROXY
+HOST-SUFFIX,wordpress.com,PROXY
+HOST-SUFFIX,wsj.com,PROXY
+HOST-SUFFIX,wsj.net,PROXY
+HOST-SUFFIX,wp.com,PROXY
+HOST-SUFFIX,vimeo.com,PROXY
+HOST-SUFFIX,tapbots.com,PROXY
+HOST-SUFFIX,ykimg.com,DIRECT
+HOST-SUFFIX,medium.com,PROXY
+HOST-SUFFIX,fast.com,PROXY
+# SoundCloud
+HOST-SUFFIX,soundcloud.com,PROXY
+HOST-SUFFIX,sndcdn.com,PROXY
+# =====DIRECT✅========
+# Apple Filter
+HOST-SUFFIX,aaplimg.com,DIRECT
+HOST-SUFFIX,apple.co,DIRECT
+HOST-SUFFIX,apple.com,DIRECT
+HOST-SUFFIX,apple-cloudkit.com,DIRECT
+HOST-SUFFIX,apple-livephotoskit.com,DIRECT
+HOST-SUFFIX,apple-mapkit.com,DIRECT
+HOST-SUFFIX,applemusic.com,DIRECT
+HOST-SUFFIX,appstore.com,DIRECT
+HOST-SUFFIX,apzones.com,DIRECT
+HOST-SUFFIX,cdn-apple.com,DIRECT
+HOST-SUFFIX,icloud.com,DIRECT
+HOST-SUFFIX,me.com,DIRECT
+HOST-SUFFIX,mzstatic.com,DIRECT
+DOMAIN-KEYWORD,apple.com.akadns.net,DIRECT
+DOMAIN-KEYWORD,apple.com.edgekey.net,DIRECT
+DOMAIN-KEYWORD,apple-support.akadns.net,DIRECT
+# Baidu/iqiyi
+HOST-SUFFIX,baidu.com,DIRECT
+HOST-SUFFIX,baidubcr.com,DIRECT
+HOST-SUFFIX,bdstatic.com,DIRECT
+HOST-SUFFIX,yunjiasu-cdn.net,DIRECT
+# Alibaba
+HOST-SUFFIX,taobao.com,DIRECT
+HOST-SUFFIX,alicdn.com,DIRECT
+# Accelerate most visited sites CN加速
+HOST,blzddist1-a.akamaihd.net,DIRECT
+HOST,cdn.angruo.com,DIRECT
+HOST,download.jetbrains.com,DIRECT
+HOST,file-igamecj.akamaized.net,DIRECT
+HOST,images-cn.ssl-images-amazon.com,DIRECT
+HOST,officecdn-microsoft-com.akamaized.net,DIRECT
+HOST,speedtest.macpaw.com,DIRECT
+HOST-SUFFIX,126.net,DIRECT
+HOST-SUFFIX,127.net,DIRECT
+HOST-SUFFIX,163.com,DIRECT
+HOST-SUFFIX,163yun.com,DIRECT
+HOST-SUFFIX,21cn.com,DIRECT
+HOST-SUFFIX,343480.com,DIRECT
+HOST-SUFFIX,360buyimg.com,DIRECT
+HOST-SUFFIX,360in.com,DIRECT
+HOST-SUFFIX,51ym.me,DIRECT
+HOST-SUFFIX,71.am.com,DIRECT
+HOST-SUFFIX,8686c.com,DIRECT
+HOST-SUFFIX,abchina.com,DIRECT
+HOST-SUFFIX,accuweather.com,DIRECT
+HOST-SUFFIX,acgvideo.com,DIRECT
+HOST-SUFFIX,acm.org,DIRECT
+HOST-SUFFIX,acs.org,DIRECT
+HOST-SUFFIX,aicoinstorge.com,DIRECT
+HOST-SUFFIX,aip.org,DIRECT
+HOST-SUFFIX,air-matters.com,DIRECT
+HOST-SUFFIX,air-matters.io,DIRECT
+HOST-SUFFIX,aixifan.com,DIRECT
+HOST-SUFFIX,akadns.net,DIRECT
+HOST-SUFFIX,alibaba.com,DIRECT
+HOST-SUFFIX,alikunlun.com,DIRECT
+HOST-SUFFIX,alipay.com,DIRECT
+HOST-SUFFIX,amap.com,DIRECT
+HOST-SUFFIX,amd.com,DIRECT
+HOST-SUFFIX,ams.org,DIRECT
+HOST-SUFFIX,animebytes.tv,DIRECT
+HOST-SUFFIX,annualreviews.org,DIRECT
+HOST-SUFFIX,aps.org,DIRECT
+HOST-SUFFIX,ascelibrary.org,DIRECT
+HOST-SUFFIX,asm.org,DIRECT
+HOST-SUFFIX,asme.org,DIRECT
+HOST-SUFFIX,astm.org,DIRECT
+HOST-SUFFIX,autonavi.com,DIRECT
+HOST-SUFFIX,awesome-hd.me,DIRECT
+HOST-SUFFIX,b612.net,DIRECT
+HOST-SUFFIX,baduziyuan.com,DIRECT
+HOST-SUFFIX,battle.net,DIRECT
+HOST-SUFFIX,bdatu.com,DIRECT
+HOST-SUFFIX,beitaichufang.com,DIRECT
+HOST-SUFFIX,biliapi.com,DIRECT
+HOST-SUFFIX,biliapi.net,DIRECT
+HOST-SUFFIX,bilibili.com,DIRECT
+HOST-SUFFIX,bilibili.tv,DIRECT
+HOST-SUFFIX,bjango.com,DIRECT
+HOST-SUFFIX,blizzard.com,DIRECT
+HOST-SUFFIX,bmj.com,DIRECT
+HOST-SUFFIX,booking.com,DIRECT
+HOST-SUFFIX,broadcasthe.net,DIRECT
+HOST-SUFFIX,bstatic.com,DIRECT
+HOST-SUFFIX,cailianpress.com,DIRECT
+HOST-SUFFIX,cambridge.org,DIRECT
+HOST-SUFFIX,camera360.com,DIRECT
+HOST-SUFFIX,cas.org,DIRECT
+HOST-SUFFIX,ccgslb.com,DIRECT
+HOST-SUFFIX,ccgslb.net,DIRECT
+HOST-SUFFIX,cctv.com,DIRECT
+HOST-SUFFIX,cctvpic.com,DIRECT
+HOST-SUFFIX,chdbits.co,DIRECT
+HOST-SUFFIX,chinanetcenter.com,DIRECT
+HOST-SUFFIX,chinaso.com,DIRECT
+HOST-SUFFIX,chua.pro,DIRECT
+HOST-SUFFIX,chuimg.com,DIRECT
+HOST-SUFFIX,chunyu.mobi,DIRECT
+HOST-SUFFIX,chushou.tv,DIRECT
+HOST-SUFFIX,clarivate.com,DIRECT
+HOST-SUFFIX,classix-unlimited.co.uk,DIRECT
+HOST-SUFFIX,cmbchina.com,DIRECT
+HOST-SUFFIX,cmbimg.com,DIRECT
+HOST-SUFFIX,com-hs-hkdy.com,DIRECT
+HOST-SUFFIX,ctrip.com,DIRECT
+HOST-SUFFIX,czybjz.com,DIRECT
+HOST-SUFFIX,dandanzan.com,DIRECT
+HOST-SUFFIX,dfcfw.com,DIRECT
+HOST-SUFFIX,didialift.com,DIRECT
+HOST-SUFFIX,didiglobal.com,DIRECT
+HOST-SUFFIX,dingtalk.com,DIRECT
+HOST-SUFFIX,docschina.org,DIRECT
+HOST-SUFFIX,douban.com,DIRECT
+HOST-SUFFIX,doubanio.com,DIRECT
+HOST-SUFFIX,douyu.com,DIRECT
+HOST-SUFFIX,duokan.com,DIRECT
+HOST-SUFFIX,dxycdn.com,DIRECT
+HOST-SUFFIX,dytt8.net,DIRECT
+HOST-SUFFIX,eastmoney.com,DIRECT
+HOST-SUFFIX,ebscohost.com,DIRECT
+HOST-SUFFIX,emerald.com,DIRECT
+HOST-SUFFIX,empornium.me,DIRECT
+HOST-SUFFIX,engineeringvillage.com,DIRECT
+HOST-SUFFIX,eudic.net,DIRECT
+HOST-SUFFIX,feiliao.com,DIRECT
+HOST-SUFFIX,feng.com,DIRECT
+HOST-SUFFIX,fengkongcloud.com,DIRECT
+HOST-SUFFIX,fjhps.com,DIRECT
+HOST-SUFFIX,frdic.com,DIRECT
+HOST-SUFFIX,futu5.com,DIRECT
+HOST-SUFFIX,futunn.com,DIRECT
+HOST-SUFFIX,gandi.net,DIRECT
+HOST-SUFFIX,gazellegames.net,DIRECT
+HOST-SUFFIX,geilicdn.com,DIRECT
+HOST-SUFFIX,getpricetag.com,DIRECT
+HOST-SUFFIX,gifshow.com,DIRECT
+HOST-SUFFIX,godic.net,DIRECT
+HOST-SUFFIX,gtimg.com,DIRECT
+HOST-SUFFIX,hdbits.org,DIRECT
+HOST-SUFFIX,hdchina.org,DIRECT
+HOST-SUFFIX,hdhome.org,DIRECT
+HOST-SUFFIX,hdsky.me,DIRECT
+HOST-SUFFIX,hdslb.com,DIRECT
+HOST-SUFFIX,hicloud.com,DIRECT
+HOST-SUFFIX,hitv.com,DIRECT
+HOST-SUFFIX,hongxiu.com,DIRECT
+HOST-SUFFIX,hostbuf.com,DIRECT
+HOST-SUFFIX,huxiucdn.com,DIRECT
+HOST-SUFFIX,huya.com,DIRECT
+HOST-SUFFIX,icetorrent.org,DIRECT
+HOST-SUFFIX,icevirtuallibrary.com,DIRECT
+HOST-SUFFIX,iciba.com,DIRECT
+HOST-SUFFIX,idqqimg.com,DIRECT
+HOST-SUFFIX,ieee.org,DIRECT
+HOST-SUFFIX,iesdouyin.com,DIRECT
+HOST-SUFFIX,igamecj.com,DIRECT
+HOST-SUFFIX,imf.org,DIRECT
+HOST-SUFFIX,infinitynewtab.com,DIRECT
+HOST-SUFFIX,iop.org,DIRECT
+HOST-SUFFIX,ip-cdn.com,DIRECT
+HOST-SUFFIX,ip.la,DIRECT
+HOST-SUFFIX,ipip.net,DIRECT
+HOST-SUFFIX,ipv6-test.com,DIRECT
+HOST-SUFFIX,iqiyi.com,DIRECT
+HOST-SUFFIX,iqiyipic.com,DIRECT
+HOST-SUFFIX,ithome.com,DIRECT
+HOST-SUFFIX,jamanetwork.com,DIRECT
+HOST-SUFFIX,java.com,DIRECT
+HOST-SUFFIX,jd.com,DIRECT
+HOST-SUFFIX,jd.hk,DIRECT
+HOST-SUFFIX,jdpay.com,DIRECT
+HOST-SUFFIX,jhu.edu,DIRECT
+HOST-SUFFIX,jidian.im,DIRECT
+HOST-SUFFIX,jpopsuki.eu,DIRECT
+HOST-SUFFIX,jstor.org,DIRECT
+HOST-SUFFIX,jstucdn.com,DIRECT
+HOST-SUFFIX,kaiyanapp.com,DIRECT
+HOST-SUFFIX,karger.com,DIRECT
+HOST-SUFFIX,kaspersky-labs.com,DIRECT
+HOST-SUFFIX,keepcdn.com,DIRECT
+HOST-SUFFIX,keepfrds.com,DIRECT
+HOST-SUFFIX,kkmh.com,DIRECT
+HOST-SUFFIX,ksosoft.com,DIRECT
+HOST-SUFFIX,kuyunbo.club,DIRECT
+HOST-SUFFIX,libguides.com,DIRECT
+HOST-SUFFIX,livechina.com,DIRECT
+HOST-SUFFIX,lofter.com,DIRECT
+HOST-SUFFIX,loli.net,DIRECT
+HOST-SUFFIX,luojilab.com,DIRECT
+HOST-SUFFIX,m-team.cc,DIRECT
+HOST-SUFFIX,madsrevolution.net,DIRECT
+HOST-SUFFIX,maoyan.com,DIRECT
+HOST-SUFFIX,maoyun.tv,DIRECT
+HOST-SUFFIX,meipai.com,DIRECT
+HOST-SUFFIX,meitu.com,DIRECT
+HOST-SUFFIX,meituan.com,DIRECT
+HOST-SUFFIX,meituan.net,DIRECT
+HOST-SUFFIX,meitudata.com,DIRECT
+HOST-SUFFIX,meitustat.com,DIRECT
+HOST-SUFFIX,meixincdn.com,DIRECT
+HOST-SUFFIX,mgtv.com,DIRECT
+HOST-SUFFIX,mi-img.com,DIRECT
+HOST-SUFFIX,microsoft.com,DIRECT
+HOST-SUFFIX,miui.com,DIRECT
+HOST-SUFFIX,miwifi.com,DIRECT
+HOST-SUFFIX,mobike.com,DIRECT
+HOST-SUFFIX,moke.com,DIRECT
+HOST-SUFFIX,morethan.tv,DIRECT
+HOST-SUFFIX,mpg.de,DIRECT
+HOST-SUFFIX,msecnd.net,DIRECT
+HOST-SUFFIX,mubu.com,DIRECT
+HOST-SUFFIX,mxhichina.com,DIRECT
+HOST-SUFFIX,myanonamouse.net,DIRECT
+HOST-SUFFIX,myapp.com,DIRECT
+HOST-SUFFIX,myilibrary.com,DIRECT
+HOST-SUFFIX,myqcloud.com,DIRECT
+HOST-SUFFIX,myzaker.com,DIRECT
+HOST-SUFFIX,nanyangpt.com,DIRECT
+HOST-SUFFIX,nature.com,DIRECT
+HOST-SUFFIX,ncore.cc,DIRECT
+HOST-SUFFIX,netease.com,DIRECT
+HOST-SUFFIX,netspeedtestmaster.com,DIRECT
+HOST-SUFFIX,nim-lang-cn.org,DIRECT
+HOST-SUFFIX,nvidia.com,DIRECT
+HOST-SUFFIX,oecd-ilibrary.org,DIRECT
+HOST-SUFFIX,office365.com,DIRECT
+HOST-SUFFIX,open.cd,DIRECT
+HOST-SUFFIX,oracle.com,DIRECT
+HOST-SUFFIX,osapublishing.org,DIRECT
+HOST-SUFFIX,oup.com,DIRECT
+HOST-SUFFIX,ourbits.club,DIRECT
+HOST-SUFFIX,ourdvs.com,DIRECT
+HOST-SUFFIX,outlook.com,DIRECT
+HOST-SUFFIX,ovid.com,DIRECT
+HOST-SUFFIX,oxfordartonline.com,DIRECT
+HOST-SUFFIX,oxfordbibliographies.com,DIRECT
+HOST-SUFFIX,oxfordmusiconline.com,DIRECT
+HOST-SUFFIX,passthepopcorn.me,DIRECT
+HOST-SUFFIX,paypal.com,DIRECT
+HOST-SUFFIX,paypalobjects.com,DIRECT
+HOST-SUFFIX,pnas.org,DIRECT
+HOST-SUFFIX,privatehd.to,DIRECT
+HOST-SUFFIX,proquest.com,DIRECT
+HOST-SUFFIX,pstatp.com,DIRECT
+HOST-SUFFIX,pterclub.com,DIRECT
+HOST-SUFFIX,qdaily.com,DIRECT
+HOST-SUFFIX,qhimg.com,DIRECT
+HOST-SUFFIX,qhres.com,DIRECT
+HOST-SUFFIX,qidian.com,DIRECT
+HOST-SUFFIX,qq.com,DIRECT
+HOST-SUFFIX,qyer.com,DIRECT
+HOST-SUFFIX,qyerstatic.com,DIRECT
+HOST-SUFFIX,raychase.net,DIRECT
+HOST-SUFFIX,redacted.ch,DIRECT
+HOST-SUFFIX,ronghub.com,DIRECT
+HOST-SUFFIX,rsc.org,DIRECT
+HOST-SUFFIX,ruguoapp.com,DIRECT
+HOST-SUFFIX,s-microsoft.com,DIRECT
+HOST-SUFFIX,s-reader.com,DIRECT
+HOST-SUFFIX,sagepub.com,DIRECT
+HOST-SUFFIX,sankuai.com,DIRECT
+HOST-SUFFIX,sciencedirect.com,DIRECT
+HOST-SUFFIX,sciencemag.org,DIRECT
+HOST-SUFFIX,scomper.me,DIRECT
+HOST-SUFFIX,scopus.com,DIRECT
+HOST-SUFFIX,seafile.com,DIRECT
+HOST-SUFFIX,servicewechat.com,DIRECT
+HOST-SUFFIX,siam.org,DIRECT
+HOST-SUFFIX,sina.com,DIRECT
+HOST-SUFFIX,sm.ms,DIRECT
+HOST-SUFFIX,smzdm.com,DIRECT
+HOST-SUFFIX,snapdrop.net,DIRECT
+HOST-SUFFIX,snssdk.com,DIRECT
+HOST-SUFFIX,snwx.com,DIRECT
+HOST-SUFFIX,sogo.com,DIRECT
+HOST-SUFFIX,sogou.com,DIRECT
+HOST-SUFFIX,sogoucdn.com,DIRECT
+HOST-SUFFIX,sohu-inc.com,DIRECT
+HOST-SUFFIX,sohu.com,DIRECT
+HOST-SUFFIX,sohucs.com,DIRECT
+HOST-SUFFIX,soku.com,DIRECT
+HOST-SUFFIX,spiedigitallibrary.org,DIRECT
+HOST-SUFFIX,springer.com,DIRECT
+HOST-SUFFIX,springerlink.com,DIRECT
+HOST-SUFFIX,springsunday.net,DIRECT
+HOST-SUFFIX,sspai.com,DIRECT
+HOST-SUFFIX,staticdn.net,DIRECT
+HOST-SUFFIX,steam-chat.com,DIRECT
+HOST-SUFFIX,steamcdn-a.akamaihd.net,DIRECT
+HOST-SUFFIX,steamcontent.com,DIRECT
+HOST-SUFFIX,steamgames.com,DIRECT
+HOST-SUFFIX,steampowered.com,DIRECT
+HOST-SUFFIX,steamstat.us,DIRECT
+HOST-SUFFIX,steamstatic.com,DIRECT
+HOST-SUFFIX,steamusercontent.com,DIRECT
+HOST-SUFFIX,takungpao.com,DIRECT
+HOST-SUFFIX,tandfonline.com,DIRECT
+HOST-SUFFIX,teamviewer.com,DIRECT
+HOST-SUFFIX,tencent-cloud.net,DIRECT
+HOST-SUFFIX,tencent.com,DIRECT
+HOST-SUFFIX,tenpay.com,DIRECT
+HOST-SUFFIX,test-ipv6.com,DIRECT
+HOST-SUFFIX,tianyancha.com,DIRECT
+HOST-SUFFIX,tjupt.org,DIRECT
+HOST-SUFFIX,tmall.com,DIRECT
+HOST-SUFFIX,tmall.hk,DIRECT
+HOST-SUFFIX,totheglory.im,DIRECT
+HOST-SUFFIX,toutiao.com,DIRECT
+HOST-SUFFIX,udache.com,DIRECT
+HOST-SUFFIX,udacity.com,DIRECT
+HOST-SUFFIX,un.org,DIRECT
+HOST-SUFFIX,uni-bielefeld.de,DIRECT
+HOST-SUFFIX,uning.com,DIRECT
+HOST-SUFFIX,v-56.com,DIRECT
+HOST-SUFFIX,visualstudio.com,DIRECT
+HOST-SUFFIX,vmware.com,DIRECT
+HOST-SUFFIX,wangsu.com,DIRECT
+HOST-SUFFIX,weather.com,DIRECT
+HOST-SUFFIX,webofknowledge.com,DIRECT
+HOST-SUFFIX,wechat.com,DIRECT
+HOST-SUFFIX,weibo.com,DIRECT
+HOST-SUFFIX,weibocdn.com,DIRECT
+HOST-SUFFIX,weico.cc,DIRECT
+HOST-SUFFIX,weidian.com,DIRECT
+HOST-SUFFIX,westlaw.com,DIRECT
+HOST-SUFFIX,whatismyip.com,DIRECT
+HOST-SUFFIX,wiley.com,DIRECT
+HOST-SUFFIX,windows.com,DIRECT
+HOST-SUFFIX,windowsupdate.com,DIRECT
+HOST-SUFFIX,worldbank.org,DIRECT
+HOST-SUFFIX,worldscientific.com,DIRECT
+HOST-SUFFIX,xiachufang.com,DIRECT
+HOST-SUFFIX,xiami.com,DIRECT
+HOST-SUFFIX,xiami.net,DIRECT
+HOST-SUFFIX,xiaomi.com,DIRECT
+HOST-SUFFIX,ximalaya.com,DIRECT
+HOST-SUFFIX,xinhuanet.com,DIRECT
+HOST-SUFFIX,xmcdn.com,DIRECT
+HOST-SUFFIX,yangkeduo.com,DIRECT
+HOST-SUFFIX,ydstatic.com,DIRECT
+HOST-SUFFIX,youku.com,DIRECT
+HOST-SUFFIX,zhangzishi.cc,DIRECT
+HOST-SUFFIX,zhihu.com,DIRECT
+HOST-SUFFIX,zhimg.com,DIRECT
+HOST-SUFFIX,zhuihd.com,DIRECT
+HOST-SUFFIX,zimuzu.io,DIRECT
+HOST-SUFFIX,zimuzu.tv,DIRECT
+HOST-SUFFIX,zmz2019.com,DIRECT
+HOST-SUFFIX,zmzapi.com,DIRECT
+HOST-SUFFIX,zmzapi.net,DIRECT
+HOST-SUFFIX,zmzfile.com,DIRECT
+HOST-SUFFIX,manmanbuy.com,DIRECT
+# > Tencent
+IP-CIDR,182.254.116.0/24,DIRECT
+IP-CIDR,203.205.238.0/23,DIRECT
+IP-CIDR,203.205.254.0/23,DIRECT
+# LAN
+IP-CIDR,172.16.0.0/12,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,127.0.0.0/8,DIRECT
+# CN
+GEOIP, CN, DIRECT
