@@ -6,7 +6,7 @@
 
 #主机名部分
 [MITM]
-hostname = images.client.vip.xunlei.com, xluser-ssl.xunlei.com, business-cdn.shouji.sougou.com, mp.weixin.qq.com, szextshort.weixin.qq.com, magev6.if.qidian.com*, qidian.qpic.cn, mage.if.qidian.com, api-access.pangolin-sdk-toutiao.com, api.coolapk.com, www.xiaohongshu.com, pages.xiaohongshu.com, static.zhihu.com, app.bilibili.com, api.bilibili.com, api.m.jd.com, img*.360buyimg.com, redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, *api.weibo*, *uve.weibo.com, new.vip.weibo.cn，ems.youku.com, optimus-ads.amap.com
+hostname = images.client.vip.xunlei.com, xluser-ssl.xunlei.com, business-cdn.shouji.sougou.com, mp.weixin.qq.com, szextshort.weixin.qq.com, magev6.if.qidian.com*, qidian.qpic.cn, mage.if.qidian.com, api-access.pangolin-sdk-toutiao.com, api.coolapk.com, www.xiaohongshu.com, pages.xiaohongshu.com, static.zhihu.com, app.bilibili.com, api.bilibili.com, api.m.jd.com, img*.360buyimg.com, redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, *api.weibo*, *uve.weibo.com, new.vip.weibo.cn, ems.youku.com, optimus-ads.amap.com
 
 [URL Rewrite]
 
