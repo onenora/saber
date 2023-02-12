@@ -54,7 +54,7 @@ hostname =  %APPEND% images.client.vip.xunlei.com, xluser-ssl.xunlei.com, busine
 # ～ BiliBili_哔哩哔哩_应用开屏去广告@bm7 -app.bilibili.com
 ^https://app.bilibili.com/x/v2/splash/show - reject-dict
 
-# > JD 京东开屏广告（此条规则会影响京东比价显示，使其失效）- api.m.jd.com,img*.360buyimg.com
+# > JD 京东开屏广告（此条规则会影响京东比价显示,使其失效）- api.m.jd.com,img*.360buyimg.com
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start - reject
 ^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=queryMaterialAdverts - reject
 ^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
