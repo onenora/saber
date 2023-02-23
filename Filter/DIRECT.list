@@ -13,6 +13,8 @@ DOMAIN, www.imazingchina.com
 DOMAIN-SUFFIX, oracle.com
 DOMAIN-SUFFIX, oraclecloud.com
 DOMAIN, sdkapp.uve.weibo.com
+DOMAIN,i.oneblog.eu.org
+DOMAIN,www.1biqug.com
 # Apple Filter
 DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,apple.com
@@ -370,14 +372,59 @@ DOMAIN-SUFFIX,zmzapi.com
 DOMAIN-SUFFIX,zmzapi.net
 DOMAIN-SUFFIX,zmzfile.com
 DOMAIN-SUFFIX,manmanbuy.com
-# > Tencent
-IP-CIDR,182.254.116.0/24
-IP-CIDR,203.205.238.0/23
-IP-CIDR,203.205.254.0/23
-# LAN
-IP-CIDR,172.16.0.0/12
-IP-CIDR,10.0.0.0/8
-IP-CIDR,192.168.0.0/16
-IP-CIDR,127.0.0.0/8
+#new add ads need direct
+DOMAIN,ad.10010.com
+DOMAIN,alt1-mtalk.google.com
+DOMAIN,alt2-mtalk.google.com
+DOMAIN,alt3-mtalk.google.com
+DOMAIN,alt4-mtalk.google.com
+DOMAIN,alt5-mtalk.google.com
+DOMAIN,alt6-mtalk.google.com
+DOMAIN,alt7-mtalk.google.com
+DOMAIN,alt8-mtalk.google.com
+DOMAIN,analytics.95516.com
+DOMAIN,analytics.strava.com
+DOMAIN,app.adjust.com
+DOMAIN,app.appsflyer.com
+DOMAIN,bdtj.tagtic.cn
+DOMAIN,clientservices.googleapis.com
+DOMAIN,dl.google.com
+DOMAIN,dl.l.google.com
+DOMAIN,errlog.umeng.com
+DOMAIN,fairplay.l.qq.com
+DOMAIN,fonts.googleapis.com
+DOMAIN,fonts.gstatic.com
+DOMAIN,livew.l.qq.com
+DOMAIN,log.mmstat.com
+DOMAIN,msg.umeng.com
+DOMAIN,msg.umengcloud.com
+DOMAIN,mtalk.google.com
+DOMAIN,origin-a.akamaihd.net
+DOMAIN,picanalysis-auth.vivo.com.cn
+DOMAIN,picanalysis.vivo.com.cn
+DOMAIN,rewards.hypixel.net
+DOMAIN,sycm.mmstat.com
+DOMAIN,tracking.miui.com
+DOMAIN,update.googleapis.com
+DOMAIN,vd.l.qq.com
+DOMAIN,vi.l.qq.com
+DOMAIN,xivanalysis.com
+DOMAIN-SUFFIX,baomitu.com
+DOMAIN-SUFFIX,blog.google
+DOMAIN-SUFFIX,bootcss.com
+DOMAIN-SUFFIX,dizhensubao.getui.com
+DOMAIN-SUFFIX,f.video.weibocdn.com
+DOMAIN-SUFFIX,fus.cdn.krcom.cn
+DOMAIN-SUFFIX,googletraveladservices.com
+DOMAIN-SUFFIX,jiasule.com
+DOMAIN-SUFFIX,ol.epicgames.com
+DOMAIN-SUFFIX,staticfile.org
+DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net
+DOMAIN-SUFFIX,upaiyun.com
+DOMAIN-KEYWORD,wb_ad
+USER-AGENT,Coffee%20Corp*
+USER-AGENT,archero*
+USER-AGENT,coffeecorp*
+USER-AGENT,restaurant-mobile*
 # CN
 GEOIP, CN
