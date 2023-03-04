@@ -8,27 +8,41 @@
 
 # ======PROXY♻️=======
 # > Telegram
+DOMAIN-SUFFIX,comments.app
+DOMAIN-SUFFIX,contest.com
+DOMAIN-SUFFIX,graph.org
+DOMAIN-SUFFIX,mbrx.app
+DOMAIN-SUFFIX,quiz.directory
+DOMAIN-SUFFIX,stel.com
 DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,tdesktop.com
+DOMAIN-SUFFIX,telega.one
 DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,telegram-cdn.org
+DOMAIN-SUFFIX,telegram.dog
 DOMAIN-SUFFIX,telegram.me
 DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,telegram.space
+DOMAIN-SUFFIX,telegramdownload.com
 DOMAIN-SUFFIX,telesco.pe
-IP-CIDR,91.108.4.0/22
-IP-CIDR,91.108.8.0/22
-IP-CIDR,91.108.12.0/22
-IP-CIDR,91.108.16.0/22
-IP-CIDR,91.108.20.0/22
-IP-CIDR,91.108.56.0/22
-IP-CIDR,91.105.192.0/23
-IP-CIDR,149.154.160.0/20
-IP-CIDR,185.76.151.0/24
-IP6-CIDR,2001:b28:f23d::/48
-IP6-CIDR,2001:b28:f23f::/48
-IP6-CIDR,2001:67c:4e8::/48
-IP6-CIDR,2001:b28:f23c::/48
-IP6-CIDR,2a0a:f280::/32
-
+DOMAIN-SUFFIX,tg.dev
+DOMAIN-SUFFIX,tx.me
+DOMAIN-SUFFIX,usercontent.dev
+DOMAIN-KEYWORD,nicegram
+IP-ASN,211157,no-resolve
+IP-ASN,44907,no-resolve
+IP-ASN,59930,no-resolve
+IP-ASN,62014,no-resolve
+IP-ASN,62041,no-resolve
+IP-CIDR,109.239.140.0/24,no-resolve
+IP-CIDR,149.154.160.0/20,no-resolve
+IP-CIDR,5.28.195.163/32,no-resolve
+IP-CIDR,5.28.195.205/32,no-resolve
+IP-CIDR,91.108.0.0/16,no-resolve
+IP-CIDR6,2001:67c:4e8::/48,no-resolve
+IP-CIDR6,2001:b28:f23c::/47,no-resolve
+IP-CIDR6,2001:b28:f23f::/48,no-resolve
+IP-CIDR6,2a0a:f280::/32,no-resolve
 # > Twitter
 DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,pscp.tv
@@ -244,7 +258,6 @@ DOMAIN-SUFFIX,imageshack.us
 DOMAIN-SUFFIX,imgur.com
 DOMAIN-SUFFIX,jshint.com
 DOMAIN-SUFFIX,ift.tt
-DOMAIN-SUFFIX,j.mp
 DOMAIN-SUFFIX,kat.cr
 DOMAIN-SUFFIX,linode.com
 DOMAIN-SUFFIX,lithium.com
@@ -282,6 +295,19 @@ DOMAIN-SUFFIX,fast.com
 # SoundCloud
 DOMAIN-SUFFIX,soundcloud.com
 DOMAIN-SUFFIX,sndcdn.com
+# DNS Leak
+DOMAIN-SUFFIX,dnsleaktest.com
+DOMAIN-SUFFIX,dnsleak.com
+DOMAIN-SUFFIX,expressvpn.com
+DOMAIN-SUFFIX,nordvpn.com
+DOMAIN-SUFFIX,surfshark.com
+DOMAIN-SUFFIX,ipleak.net
+DOMAIN-SUFFIX,perfect-privacy.com
+DOMAIN-SUFFIX,browserleaks.com
+DOMAIN-SUFFIX,browserleaks.org
+DOMAIN-SUFFIX,vpnunlimited.com
+DOMAIN-SUFFIX,whoer.net
+DOMAIN-SUFFIX,whrq.net
 # Other new add Rules
 DOMAIN-SUFFIX, v2ex.com
 DOMAIN-SUFFIX, koyeb.com
@@ -296,3 +322,4 @@ DOMAIN-SUFFIX, static.tw93.fun
 DOMAIN-SUFFIX, iweec.com
 DOMAIN,pincong.rocks
 DOMAIN-SUFFIX,bulianglin.com
+DOMAIN-SUFFIX,t66y.com

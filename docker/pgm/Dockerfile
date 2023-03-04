@@ -12,10 +12,9 @@ RUN \
         nano \
         git \
         wget \
+        curl \
         neofetch \
         build-essential \
-    && ls -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
-    && echo "Asia/Shanghai" > /etc/timezone \
     ## 克隆仓库
     && git clone -b master https://github.com/TeamPGM/PagerMaid-Pyro.git /pagermaid_pyro \
     && git config --global pull.ff only \
