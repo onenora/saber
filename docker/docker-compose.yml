@@ -1,24 +1,32 @@
 version: '3'
 services:
   nginx:
-   container_name: nginx
-   image: altriabot/nginx
-   restart: always
-   ports:
-     - 80:80
-     - 433:443
-   volumes:
-     - ./nginx/http.conf.d:/etc/nginx/http.conf.d
-     - ./nginx/stream.conf.d:/etc/nginx/stream.conf.d
-     - ./blog:/etc/nginx/html
-     - ./logs/mginx:/var/log/nginx
-     - ./nginx/ssl:/etc/nginx/ssl
-
-  trojan-go:
+    container_name: nginx
+    image: altriabot/nginx
     restart: always
-    image: teddysun/trojan-go
-    container_name: trojan-go
+    ports:
+      - "80:80"
     volumes:
-    - ./trojan-go:/etc/trojan-go
+      - ./nginx/http.conf.d:/etc/nginx/http.conf.d
+      - ./nginx/stream.conf.d:/etc/nginx/stream.conf.d
+      - ./nginx/web:/etc/nginx/html
+      - ./logs/nginx:/var/log/nginx
+      - ./nginx/cert:/etc/nginx/cert
+    networks:
+      - default
+  xray:
+    restart: always
+    image: teddysun/xray
+    container_name: xray
+    ports:
+      - 433:443
+    volumes:
+      - ./xray:/etc/xray
+      - ./logs/xray:/var/log/xray
     depends_on:
-    - nginx
+      - nginx
+    networks:
+      - default
+networks:
+  default:
+      driver: web
