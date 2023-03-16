@@ -15,7 +15,7 @@ from pagermaid.utils import lang
           description=lang('speedtest_des'),
           parameters="(list/server id)")
 async def handler(client, message):
-"""
+    """
 使用示例:
 1、测速:`speedtest`
 2、获取服务器:`speedtest list`
@@ -86,13 +86,13 @@ async def handler(client, message):
             if is_json(output):
                 await message.delete()
                 data = json.loads(output)
-                content = "**🕸 打咩-Speedtest-测速结果**\n\n"
-                content += f'下载速度:`{convert_size(data["download"]["bandwidth"], suffix="B/s")} ~ {convert_size(data["download"]["bytes"], suffix="B", factor=1000)}`\n'
-                content += f'上传速度:`{convert_size(data["upload"]["bandwidth"], suffix="B/s")} ~ {convert_size(data["upload"]["bytes"], suffix="B", factor=1000)}`\n'
-                content += f'延迟:`{data["ping"]["latency"]}ms`\n'
+                content = "**🕸 打咩-Speedtest-测速结果**\n"
+                content += f'下载速度:`{convert_size(data["download"]["bandwidth"], suffix="B/s")} ~{convert_size(data["download"]["bytes"], suffix="B", factor=1000)}`\n'
+                content += f'上传速度:`{convert_size(data["upload"]["bandwidth"], suffix="B/")} ~{convert_size(data["upload"]["bytes"], suffix="B", factor=1000)}`\n'
+                content += f'延迟:`{data["ping"]["latency"]}ms`'
                 content += f'抖动:`{data["ping"]["jitter"]}`\n'
                 content += f'测速点:`{data["isp"]}`\n'
-                content += f'服务商:`{data["server"]["name"]}🕸{data["server"]["location"]}`\n'
+                content += f'服务商:`{data["server"]["name"]}☞{data["server"]["location"]}`\n'
                 await client.send_photo(chat_id, photo=f'{data["result"]["url"]}.png', caption=content)
             else:
                 await message.edit(f'测速失败...\n{output}')
