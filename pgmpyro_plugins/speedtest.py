@@ -6,7 +6,7 @@ import requests
 import subprocess
 
 from pagermaid.listener import listener
-from pagermaid.enums import Client, Message, AsyncClient
+from pagermaid.enums import Message, AsyncClient
 from pagermaid.utils import lang
 
 plugins_dir = os.path.abspath(os.path.dirname(__file__))
@@ -28,7 +28,7 @@ def is_json(content):
           need_admin=True,
           description=lang('speedtest_des'),
           parameters="(list/server id)")
-async def st(client: Client, message: Message) -> None:
+async def st(client: AsyncClient, message: Message) -> None:
     """
 使用示例:
 1、测速:`st`
