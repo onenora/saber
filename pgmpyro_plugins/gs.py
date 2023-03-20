@@ -2,13 +2,13 @@
 import asyncio
 import urllib.parse
 import random
-from googlesearch import search
 from pagermaid import Config, log
 from pagermaid.listener import listener
 from pagermaid.enums import Message
 from pagermaid.utils import lang, pip_install
 
 pip_install("googlesearch-python")
+from googlesearch import search
 
 @listener(command="gs", description="Search using Google", parameters="[text/reply]")
 async def gs(message: Message):
