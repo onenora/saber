@@ -5,8 +5,8 @@
 // @Function           分流配置（自用REJECT🚫建議使用）
 // @Suitable            二改后仅适合自己使用
 // @ScriptURL         https://github.com/onenora/Saber/Filter/REJECT.list
-# ==========REJECT🚫=======
 
+# ==========REJECT🚫=======
 # > 铁路12306
 DOMAIN,ad.12306.cn
 # > Apple
@@ -40,7 +40,6 @@ DOMAIN,mobads.baidu.com
 DOMAIN,mobads-logs.baidu.com
 DOMAIN,nadvideo2.baidu.com
 DOMAIN,nsclick.baidu.com
-
 # Fan Qie Filter Ban AD
 DOMAIN,p6-ad-sign.byteimg.com
 DOMAIN,p9-ad-sign.byteimg.com

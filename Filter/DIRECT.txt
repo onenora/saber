@@ -4,7 +4,6 @@
 // @UpdateTime        2023-03-15
 // @Function          分流配置（自用DIRECT✅建議使用）
 // @ScriptURL         https://github.com/onenora/Saber/Filter/DIRECT.list
-
 # ===DIRECT✅========
 # New Add Rules
 DOMAIN,api.serhiy.io
@@ -210,7 +209,6 @@ DOMAIN,captive.apple.com
 DOMAIN,configuration.apple.com
 DOMAIN,guzzoni.apple.com
 DOMAIN,smp-device-content.apple.com
-DOMAIN,xp.apple.com
 DOMAIN-SUFFIX,ess.apple.com
 DOMAIN-SUFFIX,push-apple.com.akadns.net
 DOMAIN-SUFFIX,push.apple.com
@@ -448,7 +446,6 @@ DOMAIN-SUFFIX,nvidia.com
 DOMAIN-SUFFIX,oecd-ilibrary.org
 DOMAIN-SUFFIX,office365.com
 DOMAIN-SUFFIX,open.cd
-DOMAIN-SUFFIX,oracle.com
 DOMAIN-SUFFIX,osapublishing.org
 DOMAIN-SUFFIX,oup.com
 DOMAIN-SUFFIX,ourbits.club
