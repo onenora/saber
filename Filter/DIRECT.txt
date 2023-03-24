@@ -1,9 +1,10 @@
 // ==MyAdRule==
-// @ScriptName        LOON,QX自用分流	
-// @Author            @onenora
-// @UpdateTime        2023-03-15
+// @ScriptName       自用分流	
+// @Author              @onenora
+// @UpdateTime        2023-03-24
 // @Function          分流配置（自用DIRECT✅建議使用）
 // @ScriptURL         https://github.com/onenora/Saber/Filter/DIRECT.list
+
 # ===DIRECT✅========
 # New Add Rules
 DOMAIN,api.serhiy.io
@@ -619,10 +620,5 @@ DOMAIN-SUFFIX,ol.epicgames.com
 DOMAIN-SUFFIX,staticfile.org
 DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net
 DOMAIN-SUFFIX,upaiyun.com
-DOMAIN-KEYWORD,wb_ad
-USER-AGENT,Coffee%20Corp*
-USER-AGENT,archero*
-USER-AGENT,coffeecorp*
-USER-AGENT,restaurant-mobile*
 # CN
 GEOIP,CN,no-resolve

@@ -1,7 +1,7 @@
 // ==MyAdRule==
-// @ScriptName        QX自用分流
+// @ScriptName        自用分流
 // @Author          	 @onenora
-// @UpdateTime         2023-01-30
+// @UpdateTime         2023-03-24
 // @Function           分流配置（自用REJECT🚫建議使用）
 // @Suitable            二改后仅适合自己使用
 // @ScriptURL         https://github.com/onenora/Saber/Filter/REJECT.list
@@ -128,8 +128,4 @@ USER-AGENT,AVOS*
 DOMAIN,adui.tg.meitu.com
 DOMAIN,aaid.uyunad.com
 # > 多多视频去开屏广告
-DOMAIN-suffix,bayescom.com
-# > 车来了（包括小程序）
-DOMAIN-suffix,atrace.chelaile.net.cn
-DOMAIN,logs.chelaile.net.cn
-DOMAIN,ad.chelaile.net.cn
+DOMAIN-SUFFIX,bayescom.com

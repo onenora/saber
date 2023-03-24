@@ -1,7 +1,7 @@
 //==MyAdRule==	
-//@ScriptNameLOON,QX自用分流	
+//@ScriptName    自用分流	
 //@Author	       @onenora
-//@UpdateTime    2023-03-15	
+//@UpdateTime    2023-03-24
 //@Function       分流配置（自用PROXY♻️建議使用）	
 //@Suitable        二改后仅适合自己使用	
 //@ScriptURL     https://github.com/onenora/Saber/Filter/PROXY.list	
