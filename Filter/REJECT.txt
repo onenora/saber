@@ -1,7 +1,7 @@
 // ==MyAdRule==
 // @ScriptName        自用分流
 // @Author          	 @onenora
-// @UpdateTime         2023-03-24
+// @UpdateTime         2023-03-25
 // @Function           分流配置（自用REJECT🚫建議使用）
 // @Suitable            二改后仅适合自己使用
 // @ScriptURL         https://github.com/onenora/Saber/Filter/REJECT.list
@@ -68,7 +68,7 @@ IP-CIDR,218.94.207.205/32,no-resolve
 IP-CIDR,117.92.229.188/32,no-resolve
 IP-CIDR,101.36.166.16/32,no-resolve
 IP-CIDR,180.96.2.114/32,no-resolve
-# 贴吧屏蔽域名dns查询
+# > 贴吧屏蔽域名dns查询
 IP-CIDR,180.76.76.200/32,no-resolve
 ## Internet Service Providers Hijacking##
 # > ChinaTelecom
@@ -117,7 +117,7 @@ IP-CIDR,221.179.140.145/32,no-resolve
 # > Tencent Privacy Protect
 DOMAIN,safebrowsing.urlsec.qq.com
 DOMAIN,safebrowsing.googleapis.com
-# 知乎去广告
+# > 知乎去广告
 IP-CIDR,118.89.204.198/32,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 DOMAIN,appcloud2.in.zhihu.com
@@ -129,3 +129,7 @@ DOMAIN,adui.tg.meitu.com
 DOMAIN,aaid.uyunad.com
 # > 多多视频去开屏广告
 DOMAIN-SUFFIX,bayescom.com
+# > 车来了（包括小程序）
+DOMAIN-SUFFIX,atrace.chelaile.net.cn
+DOMAIN,logs.chelaile.net.cn
+DOMAIN,ad.chelaile.net.cn
