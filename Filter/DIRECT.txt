@@ -1,7 +1,7 @@
 // ==MyAdRule==
 // @ScriptName       自用分流	
 // @Author              @onenora
-// @UpdateTime        2023-03-24
+// @UpdateTime       2023-03-24
 // @Function          分流配置（自用DIRECT✅建議使用）
 // @ScriptURL         https://github.com/onenora/Saber/Filter/DIRECT.list
 
@@ -10,10 +10,7 @@
 DOMAIN,api.serhiy.io
 DOMAIN,hub.docker.com
 DOMAIN,www.imazingchina.com
-DOMAIN-SUFFIX,oracle.com
-DOMAIN-SUFFIX,oraclecloud.com
 DOMAIN,sdkapp.uve.weibo.com
-DOMAIN,i.oneblog.eu.org
 DOMAIN,www.1biqug.com
 # Apple Filter
 DOMAIN-SUFFIX,push.apple.com //推送通知
