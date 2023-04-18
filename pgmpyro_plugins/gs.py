@@ -4,14 +4,14 @@ import urllib.parse
 import random
 from pagermaid import Config, log
 from pagermaid.listener import listener
-from pagermaid.enums import Message
+from pagermaid.enums import Client, Message, AsyncClient
 from pagermaid.utils import lang, pip_install
 
 pip_install("googlesearch-python")
 from googlesearch import search
 
 @listener(command="gs", description="Search using Google", parameters="[text/reply]")
-async def gs(message: Message):
+async def gs(client: Client, message: Message, request: AsyncClient):
     try:
         text = message.arguments or message.reply_to_message.text
         if not text:
