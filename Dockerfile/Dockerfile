@@ -1,7 +1,8 @@
-FROM alpine:3.16
+# Copyright (C) 2022-2023  onenora
+FROM alpine:3.17.3
 LABEL maintainer="altriabot@gmail.com"
 
-ARG NGINX_VERSION=1.22.0
+ARG NGINX_VERSION=1.24.0
 
 RUN \
   build_pkgs="build-base linux-headers openssl-dev pcre-dev wget zlib-dev" && \
@@ -43,7 +44,7 @@ RUN \
   mkdir -p /usr/share/nginx/html && \
   mkdir /etc/nginx/stream.conf.d  && \
   mkdir /etc/nginx/http.conf.d && \
-  mkdir /etc/nginx/ssl && \
+  mkdir /etc/nginx/cert && \
   mkdir /var/run/nginx && \
   touch /var/run/nginx/nginx.pid && \
   cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
@@ -55,4 +56,4 @@ VOLUME ["/var/cache/nginx"]
 
 EXPOSE 80 443
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["nginx"]

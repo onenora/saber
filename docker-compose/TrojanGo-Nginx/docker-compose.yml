@@ -9,7 +9,7 @@ services:
     volumes:
       - ./nginx/http.conf.d:/etc/nginx/http.conf.d
       - ./nginx/stream.conf.d:/etc/nginx/stream.conf.d
-      - ./nginx/web:/etc/nginx/html
+      - ./nginx/html:/etc/nginx/html
       - ./logs/nginx:/var/log/nginx
       - ./nginx/cert:/etc/nginx/cert
     networks:

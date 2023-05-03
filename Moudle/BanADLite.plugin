@@ -1,6 +1,6 @@
 #!name=BanADLite
 #!desc=打咩哥自用的广告过滤器(酷安,起点,微博,迅雷,油管)
-#!homepage=https://github.com/onenora/Saber/Moudle/BanADLite.plugin
+#!homepage=https://github.com/onenora/saber/Moudle/BanADLite.plugin
 #!author=onenora
 #!icon=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Dukou.png
 
@@ -8,7 +8,7 @@
 [MITM]
 hostname = images.client.vip.xunlei.com, xluser-ssl.xunlei.com, business-cdn.shouji.sougou.com, mp.weixin.qq.com, szextshort.weixin.qq.com, magev6.if.qidian.com*, qidian.qpic.cn, mage.if.qidian.com, api-access.pangolin-sdk-toutiao.com, api.coolapk.com, www.xiaohongshu.com, pages.xiaohongshu.com, static.zhihu.com, app.bilibili.com, api.bilibili.com, api.m.jd.com, img*.360buyimg.com, redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, *api.weibo*, *uve.weibo.com, new.vip.weibo.cn, ems.youku.com, optimus-ads.amap.com
 
-[URL Rewrite]
+[Rewrite]
 
 # > 迅雷会员 -images.client.vip.xunlei.com,xluser-ssl.xunlei.com
 ^https?+:\/\/images\.client\.vip\.xunlei\.com\/.+?\/advert\/ - reject-200
@@ -81,28 +81,28 @@ hostname = images.client.vip.xunlei.com, xluser-ssl.xunlei.com, business-cdn.sho
 
 [Script]
 # > 酷安完美去首页广告、信息流广告、评论广告 -api.coolapk.com
-http-response ^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList) script-path=https://raw.githubusercontent.com/onenora/Saber/main/Scripts/coolapk.js, requires-body=true, timeout=10, tag=酷安完美去广告
+http-response ^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList) script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/coolapk.js, requires-body=true, timeout=10, tag=酷安完美去广告
 
 # > 起点开屏页广告,每日导读去除,冷启动强制跳转精选页去除,去除发现页弹出的活动弹窗,去除下方(精选 发现 中间的)活动时的tab,去除书架右下角的活动/广告的悬浮icon
-http-response ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/deeplink\/geturl|v1\/(client\/getconf|bookshelf\/getHoverAdv|adv\/getadvlistbatch\?positions=iOS_tab|dailyrecommend\/getdailyrecommend)) script-path=https://raw.githubusercontent.com/onenora/Saber/main/Scripts/qidian.js, requires-body=true, timeout=10, tag=起点
+http-response ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/deeplink\/geturl|v1\/(client\/getconf|bookshelf\/getHoverAdv|adv\/getadvlistbatch\?positions=iOS_tab|dailyrecommend\/getdailyrecommend)) script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/qidian.js, requires-body=true, timeout=10, tag=起点
 
 # > 迅雷会员
 http-response https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/xunlei.js, requires-body=true, timeout=10, tag=迅雷会员
 
 # youtobe去首页瀑布流广告
-http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting) script-path=https://raw.githubusercontent.com/onenora/Saber/main/Scripts/youtube.js, requires-body=true, binary-body-mode=true, timeout=10, tag=YouTuBe
+http-response ^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting) script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/youtube.js, requires-body=true, binary-body-mode=true, timeout=10, tag=YouTuBe
 
 # > 微博国际版_屏蔽hotsearch
 ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php\?a=hot_search_users - reject-dict
 # > 微博国际版_屏蔽热推荐
 ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/ad\/weibointl\? - reject-dict
 # > 微博国际版_屏蔽开屏广告@ddgksf2013 
-http-response ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*get_coopen_ads script-path=https://raw.githubusercontent.com/onenora/Saber/main/Scripts/weibo_json.js, requires-body=true,  timeout=10, tag=微博国际版_屏蔽开屏广告
+http-response ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*get_coopen_ads script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/weibo_json.js, requires-body=true,  timeout=10, tag=微博国际版_屏蔽开屏广告
 # > 微博国际版_屏蔽sdkad@ddgksf2013
-http-response ^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) script-path=https://raw.githubusercontent.com/onenora/Saber/main/Scripts/weibo_json.js, requires-body=true,  timeout=10, tag=微博国际版_sdkad
+http-response ^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/weibo_json.js, requires-body=true,  timeout=10, tag=微博国际版_sdkad
 # > 微博国际版_趋势顶部Card去广告@ddgksf2013
-http-response ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=trends script-path=https://raw.githubusercontent.com/onenora/Saber/main/Scripts/weibo_json.js, requires-body=true,  timeout=10, tag=微博国际版_趋势顶部Card去广告
+http-response ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=trends script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/weibo_json.js, requires-body=true,  timeout=10, tag=微博国际版_趋势顶部Card去广告
 # > 微博国际版_屏蔽用户VIP栏@ddgksf2013
-http-response ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=user_center script-path=https://raw.githubusercontent.com/onenora/Saber/main/Scripts/weibo_json.js, requires-body=true, timeout=10, tag=微博国际版_用户中心
+http-response ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=user_center script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/weibo_json.js, requires-body=true, timeout=10, tag=微博国际版_用户中心
 # > 微博国际版_热搜处理@ddgksf2013
-http-response ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=search_topic script-path=https://raw.githubusercontent.com/onenora/Saber/main/Scripts/weibo_json.js, requires-body=true, timeout=10, tag=微博国际版_热搜处理
+http-response ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=search_topic script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/weibo_json.js, requires-body=true, timeout=10, tag=微博国际版_热搜处理
