@@ -3,7 +3,7 @@
 // @Author              @onenora
 // @UpdateTime       2023-03-24
 // @Function          分流配置（自用DIRECT✅建議使用）
-// @ScriptURL         https://github.com/onenora/Saber/Filter/DIRECT.list
+// @ScriptURL         https://github.com/onenora/saber/Filter/DIRECT.list
 
 # ===DIRECT✅========
 # New Add Rules
@@ -12,6 +12,8 @@ DOMAIN,hub.docker.com
 DOMAIN,www.imazingchina.com
 DOMAIN,sdkapp.uve.weibo.com
 DOMAIN,www.1biqug.com
+DOMAIN,www.69shu.com
+DOMAIN,seto.teracloud.jp
 # Apple Filter
 DOMAIN-SUFFIX,push.apple.com //推送通知
 DOMAIN,deviceenrollment.apple.com //DEP 暂时注册
@@ -618,4 +620,4 @@ DOMAIN-SUFFIX,staticfile.org
 DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net
 DOMAIN-SUFFIX,upaiyun.com
 # CN
-GEOIP,CN,no-resolve
+# GEOIP,CN,no-resolve

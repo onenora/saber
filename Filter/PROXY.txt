@@ -4,7 +4,7 @@
 //@UpdateTime    2023-03-24
 //@Function       分流配置（自用PROXY♻️建議使用）	
 //@Suitable        二改后仅适合自己使用	
-//@ScriptURL     https://github.com/onenora/Saber/Filter/PROXY.list	
+//@ScriptURL     https://github.com/onenora/saber/Filter/PROXY.list	
 
 #======PROXY♻️=======
 #>Telegram

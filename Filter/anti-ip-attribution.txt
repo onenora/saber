@@ -2,7 +2,7 @@
 # 针对部分网站显示IP归属地的QuantumultX分流规则
 # 原项目地址：https://github.com/lwd-temp/anti-ip-attribution  https://t.me/ddgksf2021
 # 欢迎去原作者提issues或私信bot,贡献应用新的api地址。 
-# https://github.com/onenora/Saber/Filter/anti-ip-attribution.list   二改自用
+# https://github.com/onenora/saber/Filter/anti-ip-attribution.list   二改自用
 # 更新时间： 2023-01-30
 ###############################################################
 
