@@ -3,7 +3,7 @@
 // @Author              @onenora
 //@UpdateTime    2023-05-22
 // @Function          分流配置（自用DIRECT✅建議使用）
-// @ScriptURL         https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/direct.txt
+// @ScriptURL         https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/DIRECT.txt
 
 # ===DIRECT✅========
 # New Add Rules
