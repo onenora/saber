@@ -1,10 +1,10 @@
 // ==MyAdRule==
 // @ScriptName        自用分流
 // @Author          	 @onenora
-// @UpdateTime         2023-03-25
+// @UpdateTime         2023-05-22
 // @Function           分流配置（自用REJECT🚫建議使用）
 // @Suitable            二改后仅适合自己使用
-// @ScriptURL         https://github.com/onenora/saber/Filter/REJECT.list
+// @ScriptURL          https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt
 
 # ==========REJECT🚫=======
 # > 铁路12306

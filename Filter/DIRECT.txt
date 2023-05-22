@@ -1,9 +1,9 @@
 // ==MyAdRule==
 // @ScriptName       自用分流	
 // @Author              @onenora
-// @UpdateTime       2023-03-24
+//@UpdateTime    2023-05-22
 // @Function          分流配置（自用DIRECT✅建議使用）
-// @ScriptURL         https://github.com/onenora/saber/Filter/DIRECT.list
+// @ScriptURL         https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/direct.txt
 
 # ===DIRECT✅========
 # New Add Rules
@@ -15,226 +15,60 @@ DOMAIN,www.1biqug.com
 DOMAIN,www.69shu.com
 DOMAIN,seto.teracloud.jp
 # Apple Filter
-DOMAIN-SUFFIX,push.apple.com //推送通知
-DOMAIN,deviceenrollment.apple.com //DEP 暂时注册
+DOMAIN-SUFFIX,push.apple.com 
+DOMAIN,deviceenrollment.apple.com 
 DOMAIN,deviceservices-external.apple.com
-DOMAIN,gdmf.apple.com //供 MDM 服务器用来识别使用“被管理的软件更新”的设备有哪些可用的软件更新
-DOMAIN,identity.apple.com //APNs 证书请求门户
-DOMAIN,iprofiles.apple.com //托管当设备通过设备注册过程在 Apple 校园教务管理或 Apple 商务管理中注册时使用的注册描述文件
-DOMAIN,mdmenrollment.apple.com //当客户端通过设备注册过程在 Apple 校园教务管理或 Apple 商务管理中注册时，供 MDM 服务器用来上传客户端使用的注册描述文件，还可用来查找设备和帐户
-DOMAIN,setup.icloud.com //需要在共享 iPad 上使用管理式 Apple ID 登录
-DOMAIN,vpp.itunes.apple.com //供 MDM 服务器用来执行与“App 和图书”有关的操作，例如在设备上分配或撤销许可证
-DOMAIN,albert.apple.com //设备激活
-DOMAIN,captive.apple.com //针对使用强制门户的网络进行互联网连接验证
+DOMAIN,gdmf.apple.com 
+DOMAIN,identity.apple.com 
+DOMAIN,iprofiles.apple.com 
+DOMAIN,mdmenrollment.apple.com 
+DOMAIN,setup.icloud.com 
+DOMAIN,vpp.itunes.apple.com 
+DOMAIN,albert.apple.com 
+DOMAIN,captive.apple.com 
 DOMAIN,gs.apple.com
 DOMAIN,humb.apple.com
 DOMAIN,static.ips.apple.com
-DOMAIN,sq-device.apple.com //eSIM 激活
+DOMAIN,sq-device.apple.com 
 DOMAIN,tbsc.apple.com
-DOMAIN,time-ios.apple.com //供设备用来设置日期和时间
-DOMAIN,time.apple.com //供设备用来设置日期和时间
-DOMAIN,time-macos.apple.com //供设备用来设置日期和时间
-DOMAIN,appleid.apple.com //“设置”和“系统偏好设置”中的 Apple ID 认证
-DOMAIN,appleid.cdn-apple.com //“设置”和“系统偏好设置”中的 Apple ID 认证
-DOMAIN,idmsa.apple.com //Apple ID 认证
-DOMAIN,gsa.apple.com //Apple ID 认证
-DOMAIN,appldnld.apple.com //iOS、iPadOS 和 watchOS 更新
-DOMAIN,configuration.apple.com //Rosetta 2 更新
-DOMAIN,gdmf.apple.com //软件更新目录
-DOMAIN,gg.apple.com //iOS、iPadOS、Apple tvOS、watchOS 和 macOS 更新
-DOMAIN,gs.apple.com //iOS、iPadOS、Apple tvOS、watchOS 和 macOS 更新
-DOMAIN,ig.apple.com //macOS 更新
-DOMAIN,mesu.apple.com //托管软件更新目录
+DOMAIN,time-ios.apple.com 
+DOMAIN,time.apple.com 
+DOMAIN,time-macos.apple.com 
+DOMAIN,appleid.apple.com 
+DOMAIN,appleid.cdn-apple.com 
+DOMAIN,idmsa.apple.com 
+DOMAIN,gsa.apple.com 
+DOMAIN,appldnld.apple.com 
+DOMAIN,configuration.apple.com 
+DOMAIN,gdmf.apple.com 
+DOMAIN,gg.apple.com 
+DOMAIN,gs.apple.com 
+DOMAIN,ig.apple.com 
+DOMAIN,mesu.apple.com 
 DOMAIN,ns.itunes.apple.com
-DOMAIN,oscdn.apple.com //macOS 恢复
-DOMAIN,osrecovery.apple.com //macOS 恢复
-DOMAIN,skl.apple.com //macOS 更新
-DOMAIN,swcdn.apple.com //macOS 更新
-DOMAIN,swdist.apple.com //macOS 更新
-DOMAIN,swdownload.apple.com //macOS 更新
-DOMAIN,swscan.apple.com //macOS 更新
-DOMAIN,updates-http.cdn-apple.com //软件更新下载
-DOMAIN,updates.cdn-apple.com //软件更新下载
+DOMAIN,oscdn.apple.com 
+DOMAIN,osrecovery.apple.com 
+DOMAIN,skl.apple.com 
+DOMAIN,swcdn.apple.com 
+DOMAIN,swdist.apple.com 
+DOMAIN,swdownload.apple.com 
+DOMAIN,swscan.apple.com 
+DOMAIN,updates-http.cdn-apple.com 
+DOMAIN,updates.cdn-apple.com 
 DOMAIN,xp.apple.com
-DOMAIN-SUFFIX,apple-cloudkit.com //iCloud 服务
-DOMAIN-SUFFIX,apple-livephotoskit.com //iCloud 服务
-DOMAIN-SUFFIX,apzones.com //中国大陆的 iCloud 服务
-DOMAIN-SUFFIX,cdn-apple.com //iCloud 服务
-DOMAIN-SUFFIX,gc.apple.com //iCloud 服务
-DOMAIN-SUFFIX,icloud.com //iCloud 服务
-DOMAIN-SUFFIX,icloud.com.cn //中国大陆的 iCloud 服务
-DOMAIN-SUFFIX,icloud.apple.com //iCloud 服务
-DOMAIN-SUFFIX,icloud-content.com //iCloud 服务
-DOMAIN-SUFFIX,iwork.apple.com //iWork 文稿
-DOMAIN,mask.icloud.com //iCloud 专用代理
-DOMAIN,mask-h2.icloud.com //iCloud 专用代理
-DOMAIN,mask-api.icloud.com //iCloud 专用代理
-IP-CIDR,17.249.0.0/16,no-resolve
-IP-CIDR,17.252.0.0/16,no-resolve
-IP-CIDR,17.57.144.0/22,no-resolve
-IP-CIDR,17.188.128.0/18,no-resolve
-IP-CIDR,17.188.20.0/23,no-resolve
-IP-CIDR6, 2620:149:a44::/48,no-resolve
-IP-CIDR6, 2403:300:a42::/48,no-resolve
-IP-CIDR6, 2403:300:a51::/48,no-resolve
-IP-CIDR6, 2a01:b740:a42::/48,no-resolve
-# 私有网络专用域名列表 private
-DOMAIN,instant.arubanetworks.com
-DOMAIN,setmeup.arubanetworks.com
-DOMAIN,router.asus.com
-DOMAIN-SUFFIX,lan
-DOMAIN-SUFFIX,localdomain
-DOMAIN-SUFFIX,example
-DOMAIN-SUFFIX,invalid
-DOMAIN-SUFFIX,localhost
-DOMAIN-SUFFIX,test
-DOMAIN-SUFFIX,local
-DOMAIN-SUFFIX,tplinkwifi.net
-DOMAIN-SUFFIX,leike.cc
-DOMAIN-SUFFIX,zte.home
-DOMAIN-SUFFIX,msftncsi.com
-DOMAIN-SUFFIX,msftconnecttest.com
-DOMAIN-SUFFIX,home.arpa
-DOMAIN-SUFFIX,tendawifi.com
-DOMAIN-SUFFIX,routerlogin.com
-DOMAIN-SUFFIX,router.ctc
-DOMAIN-SUFFIX,phicomm.me
-DOMAIN-SUFFIX,peiluyou.com
-DOMAIN-SUFFIX,my.router
-DOMAIN-SUFFIX,miwifi.com
-DOMAIN-SUFFIX,hiwifi.com
-DOMAIN-SUFFIX,10.in-addr.arpa
-DOMAIN-SUFFIX,networkcheck.kde.org
-DOMAIN-SUFFIX,0.in-addr.arpa
-DOMAIN-SUFFIX,127.in-addr.arpa
-DOMAIN-SUFFIX,113.100.in-addr.arpa
-DOMAIN-SUFFIX,95.100.in-addr.arpa
-DOMAIN-SUFFIX,31.172.in-addr.arpa
-DOMAIN-SUFFIX,254.169.in-addr.arpa
-DOMAIN-SUFFIX,16.172.in-addr.arpa
-DOMAIN-SUFFIX,17.172.in-addr.arpa
-DOMAIN-SUFFIX,18.172.in-addr.arpa
-DOMAIN-SUFFIX,19.172.in-addr.arpa
-DOMAIN-SUFFIX,20.172.in-addr.arpa
-DOMAIN-SUFFIX,localhost.ptlogin2.qq.com
-DOMAIN-SUFFIX,d.f.ip6.arpa
-DOMAIN-SUFFIX,localhost.sec.qq.com
-DOMAIN-SUFFIX,21.172.in-addr.arpa
-DOMAIN-SUFFIX,22.172.in-addr.arpa
-DOMAIN-SUFFIX,23.172.in-addr.arpa
-DOMAIN-SUFFIX,24.172.in-addr.arpa
-DOMAIN-SUFFIX,64.100.in-addr.arpa
-DOMAIN-SUFFIX,65.100.in-addr.arpa
-DOMAIN-SUFFIX,66.100.in-addr.arpa
-DOMAIN-SUFFIX,67.100.in-addr.arpa
-DOMAIN-SUFFIX,68.100.in-addr.arpa
-DOMAIN-SUFFIX,69.100.in-addr.arpa
-DOMAIN-SUFFIX,70.100.in-addr.arpa
-DOMAIN-SUFFIX,71.100.in-addr.arpa
-DOMAIN-SUFFIX,72.100.in-addr.arpa
-DOMAIN-SUFFIX,73.100.in-addr.arpa
-DOMAIN-SUFFIX,74.100.in-addr.arpa
-DOMAIN-SUFFIX,75.100.in-addr.arpa
-DOMAIN-SUFFIX,76.100.in-addr.arpa
-DOMAIN-SUFFIX,77.100.in-addr.arpa
-DOMAIN-SUFFIX,78.100.in-addr.arpa
-DOMAIN-SUFFIX,79.100.in-addr.arpa
-DOMAIN-SUFFIX,80.100.in-addr.arpa
-DOMAIN-SUFFIX,81.100.in-addr.arpa
-DOMAIN-SUFFIX,82.100.in-addr.arpa
-DOMAIN-SUFFIX,83.100.in-addr.arpa
-DOMAIN-SUFFIX,84.100.in-addr.arpa
-DOMAIN-SUFFIX,85.100.in-addr.arpa
-DOMAIN-SUFFIX,86.100.in-addr.arpa
-DOMAIN-SUFFIX,87.100.in-addr.arpa
-DOMAIN-SUFFIX,88.100.in-addr.arpa
-DOMAIN-SUFFIX,89.100.in-addr.arpa
-DOMAIN-SUFFIX,90.100.in-addr.arpa
-DOMAIN-SUFFIX,91.100.in-addr.arpa
-DOMAIN-SUFFIX,92.100.in-addr.arpa
-DOMAIN-SUFFIX,93.100.in-addr.arpa
-DOMAIN-SUFFIX,94.100.in-addr.arpa
-DOMAIN-SUFFIX,168.192.in-addr.arpa
-DOMAIN-SUFFIX,96.100.in-addr.arpa
-DOMAIN-SUFFIX,97.100.in-addr.arpa
-DOMAIN-SUFFIX,98.100.in-addr.arpa
-DOMAIN-SUFFIX,99.100.in-addr.arpa
-DOMAIN-SUFFIX,100.100.in-addr.arpa
-DOMAIN-SUFFIX,101.100.in-addr.arpa
-DOMAIN-SUFFIX,102.100.in-addr.arpa
-DOMAIN-SUFFIX,103.100.in-addr.arpa
-DOMAIN-SUFFIX,104.100.in-addr.arpa
-DOMAIN-SUFFIX,105.100.in-addr.arpa
-DOMAIN-SUFFIX,106.100.in-addr.arpa
-DOMAIN-SUFFIX,107.100.in-addr.arpa
-DOMAIN-SUFFIX,108.100.in-addr.arpa
-DOMAIN-SUFFIX,109.100.in-addr.arpa
-DOMAIN-SUFFIX,110.100.in-addr.arpa
-DOMAIN-SUFFIX,111.100.in-addr.arpa
-DOMAIN-SUFFIX,112.100.in-addr.arpa
-DOMAIN-SUFFIX,30.172.in-addr.arpa
-DOMAIN-SUFFIX,114.100.in-addr.arpa
-DOMAIN-SUFFIX,115.100.in-addr.arpa
-DOMAIN-SUFFIX,116.100.in-addr.arpa
-DOMAIN-SUFFIX,117.100.in-addr.arpa
-DOMAIN-SUFFIX,118.100.in-addr.arpa
-DOMAIN-SUFFIX,119.100.in-addr.arpa
-DOMAIN-SUFFIX,120.100.in-addr.arpa
-DOMAIN-SUFFIX,121.100.in-addr.arpa
-DOMAIN-SUFFIX,122.100.in-addr.arpa
-DOMAIN-SUFFIX,123.100.in-addr.arpa
-DOMAIN-SUFFIX,124.100.in-addr.arpa
-DOMAIN-SUFFIX,125.100.in-addr.arpa
-DOMAIN-SUFFIX,126.100.in-addr.arpa
-DOMAIN-SUFFIX,127.100.in-addr.arpa
-DOMAIN-SUFFIX,29.172.in-addr.arpa
-DOMAIN-SUFFIX,28.172.in-addr.arpa
-DOMAIN-SUFFIX,27.172.in-addr.arpa
-DOMAIN-SUFFIX,26.172.in-addr.arpa
-DOMAIN-SUFFIX,25.172.in-addr.arpa
-DOMAIN-SUFFIX,b.e.f.ip6.arpa
-DOMAIN-SUFFIX,a.e.f.ip6.arpa
-DOMAIN-SUFFIX,9.e.f.ip6.arpa
-DOMAIN-SUFFIX,8.e.f.ip6.arpa
-DOMAIN-SUFFIX,113.0.203.in-addr.arpa
-DOMAIN-SUFFIX,100.51.198.in-addr.arpa
-DOMAIN-SUFFIX,2.0.192.in-addr.arpa
-DOMAIN-SUFFIX,255.255.255.255.in-addr.arpa
-DOMAIN-SUFFIX,8.b.d.0.1.0.0.2.ip6.arpa
-DOMAIN-SUFFIX,1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
-DOMAIN-SUFFIX,0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
-# Macos 和 iOS 系统本身所发送的请求
-DOMAIN,api.smoot.apple.com
-DOMAIN,captive.apple.com
-DOMAIN,configuration.apple.com
-DOMAIN,guzzoni.apple.com
-DOMAIN,smp-device-content.apple.com
-DOMAIN-SUFFIX,ess.apple.com
-DOMAIN-SUFFIX,push-apple.com.akadns.net
-DOMAIN-SUFFIX,push.apple.com
-DOMAIN,aod.itunes.apple.com
-DOMAIN,mesu.apple.com
-DOMAIN,api.smoot.apple.cn
-DOMAIN,gs-loc.apple.com
-DOMAIN,mvod.itunes.apple.com
-DOMAIN,streamingaudio.itunes.apple.com
-DOMAIN-SUFFIX,lcdn-locator.apple.com
-DOMAIN-SUFFIX,lcdn-registration.apple.com
-DOMAIN-SUFFIX,ls.apple.com
-USER-AGENT,*com.apple.mobileme.fmip1
-USER-AGENT,*WeatherFoundation*
-USER-AGENT,%E5%9C%B0%E5%9B%BE*
-USER-AGENT,%E8%AE%BE%E7%BD%AE*
-USER-AGENT,com.apple.geod*
-USER-AGENT,com.apple.Maps
-USER-AGENT,FindMyFriends*
-USER-AGENT,FindMyiPhone*
-USER-AGENT,FMDClient*
-USER-AGENT,FMFD*
-USER-AGENT,fmflocatord*
-USER-AGENT,geod*
-USER-AGENT,locationd*
-USER-AGENT,Maps*
+DOMAIN-SUFFIX,apple-cloudkit.com 
+DOMAIN-SUFFIX,apple-livephotoskit.com 
+DOMAIN-SUFFIX,apzones.com 
+DOMAIN-SUFFIX,cdn-apple.com 
+DOMAIN-SUFFIX,gc.apple.com 
+DOMAIN-SUFFIX,icloud.com 
+DOMAIN-SUFFIX,icloud.com.cn 
+DOMAIN-SUFFIX,icloud.apple.com 
+DOMAIN-SUFFIX,icloud-content.com 
+DOMAIN-SUFFIX,iwork.apple.com 
+DOMAIN,mask.icloud.com 
+DOMAIN,mask-h2.icloud.com 
+DOMAIN,mask-api.icloud.com 
 # Baidu/iqiyi
 DOMAIN-SUFFIX,baidu.com
 DOMAIN-SUFFIX,baidubcr.com
