@@ -1,5 +1,5 @@
 shell:
-  program: /usr/local/bin/fish
+  program: /opt/homebrew/bin/fish
   args:
     - --login
     - --command
@@ -52,20 +52,20 @@ colors:
 # 设置字体
 font:
   normal:
-    family: 'JetBrains Mono'
+    family: 'Hack Nerd Font Mono'
     style: Regular
   bold:
-    family: 'JetBrains Mono'
+    family: 'Hack Nerd Font Mono'
     style: Regular
   italic:
-    family: 'JetBrains Mono'
+    family: 'Hack Nerd Font Mono'
     style: Italic
   bold_italic:
-    family: 'JetBrains Mono'
+    family: 'Hack Nerd Font Mono'
     style: Italic
 
   # 字大小
-  size: 17.0
+  size: 18.0
 
   offset:
     x: 0
@@ -75,12 +75,18 @@ font:
     y: 3
 
 window:
+# 窗口填充
   padding:
     x: 20
     y: 22
+# 窗口位置
+  position:
+    x: 80
+    y: 100
   decorations: transparent
+# 窗口尺寸
   dimensions:
-    columns: 106
+    columns: 100
     lines: 25
 
 scrolling:
@@ -100,11 +106,10 @@ selection:
   semantic_escape_chars: ',│`|:"'' ()[]{}<>'
   save_to_clipboard: true
 
+# 实时重载配置文件，不用重启测试配置选项
 live_config_reload: true
 
 key_bindings:
-  - { key: R, mods: Command, mode: ~Vi|~Search, chars: "\x0c" }
-  - { key: R, mods: Command, mode: ~Vi|~Search, action: ClearHistory }
   # - { key: W, mods: Command, action: Hide }
   - { key: W, mods: Command|Shift, action: Quit }
   - { key: N, mods: Command, action: SpawnNewInstance }
