@@ -86,7 +86,7 @@ async def st(client: AsyncClient, message: Message) -> None:
             data = json.loads(output)
             await message.delete()
             content = (
-                f"**🎸Speedtest测速结果**\n"
+                f"**🕸 Speedtest测速结果**\n"
                 f"下载速度:{convert_size(data['download']['bandwidth'], suffix='B/s')} ~ {convert_size(data['download']['bytes'], suffix='B', factor=1000)}\n"
                 f"上传速度:{convert_size(data['upload']['bandwidth'], suffix='B/s')} ~ {convert_size(data['upload']['bytes'], suffix='B', factor=1000)}\n"
                 f"延迟:{data['ping']['latency']}ms  抖动:{data['ping']['jitter']}\n"
