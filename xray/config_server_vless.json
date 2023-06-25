@@ -1,0 +1,89 @@
+{
+  "log": {
+    "loglevel": "warning",
+    "error": "/var/log/xray/error.log",
+    "access": "/var/log/xray/access.log"
+  },
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "domain": ["geosite:cn", "geosite:private"],
+        "outboundTag": "block"
+      },
+      {
+        "type": "field",
+        "ip": ["geoip:cn", "geoip:private"],
+        "outboundTag": "block"
+      },
+      {
+        "type": "field",
+        "protocol": ["bittorrent"],
+        "outboundTag": "block"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "listen": "0.0.0.0",
+      "port": 443,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "6d3e137284d24876a3948b045a8e48b7",
+            "email": "443@gmail.com",
+            "flow": "xtls-rprx-vision"
+          }
+        ],
+        "decryption": "none",
+        "fallbacks": [
+          {
+            "dest": "8008",
+            "xver": 2
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "rejectUnknownSni": true,
+          "minVersion": "1.2",
+          "certificates": [
+            {
+              "ocspStapling": 3600,
+              "certificateFile": "/etc/xray/cert/fullchain.crt",
+              "keyFile": "/etc/xray/cert/private.key"
+            }
+          ]
+        }
+      },
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls", "quic"]
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "direct",
+      "protocol": "freedom",
+      "settings": {}
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole",
+      "settings": {}
+    }
+  ],
+  "policy": {
+    "levels": {
+      "0": {
+        "handshake": 5,
+        "connIdle": 120
+      }
+    }
+  }
+}
