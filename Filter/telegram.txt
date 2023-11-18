@@ -1,7 +1,7 @@
 //==MyAdRule==	
 //@ScriptName    自用分流	
 //@Author	       @onenora
-//@UpdateTime    2023-05-22
+//@UpdateTime    2023-11-18
 //@Function       分流配置（自用PROXY♻️建議使用）	
 //@Suitable        二改后仅适合自己使用	
 //@ScriptURL     https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/telegram.txt

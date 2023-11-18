@@ -132,3 +132,10 @@ DOMAIN-SUFFIX,bayescom.com
 DOMAIN-SUFFIX,atrace.chelaile.net.cn
 DOMAIN,logs.chelaile.net.cn
 DOMAIN,ad.chelaile.net.cn
+# 微信小程序去广告通用规则
+DOMAIN,wxsnsdy.wxs.qq.com,REJECT
+DOMAIN,wxsmsdy.video.qq.com,REJECT
+DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT
+# 收钱吧 - 买单小程序去广告
+DOMAIN,ads-shopping.shouqianba.com,REJECT
+DOMAIN-SUFFIX,doubleclick.net,REJECT
