@@ -3,6 +3,7 @@
 #!homepage=https://github.com/onenora/saber/Moudle/BanADLite.sgmodule
 #!author=onenora
 #!icon=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Dukou.png
+#!category=Saber
 
 #主机名部分
 [MITM]
