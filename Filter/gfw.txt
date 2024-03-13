@@ -1,10 +1,10 @@
-//==MyAdRule==	
-//@ScriptName    自用分流	
-//@Author	       @onenora
-//@UpdateTime    2023-05-22
+#!name=GFWList
+#!desc=GFW分流	
+#!author=onenora
+//@UpdateTime        2024-03-13
 //@Function       分流配置（自用PROXY♻️建議使用）	
 //@Suitable        二改后仅适合自己使用	
-//@ScriptURL     https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/gfw.txt
+//@ScriptURL     https://fastly.jsdelivr.net/gh//onenora/saber@main/Filter/gfw.txt
 
 # GFWList 域名列表 gfw.txt
 

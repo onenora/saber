@@ -1,6 +1,7 @@
 #!name=番茄小说
 #!desc=番茄小说去广告
 #!icon=https://raw.githubusercontent.com/deezertidal/private/main/icons/fanqie.png
+#!category=Saber
 
 [Rule]
 # 番茄小说

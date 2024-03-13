@@ -1,40 +1,20 @@
 
 #### DOMAIN-SET:
 
-- **直连域名列表 direct.txt**：
-  - [hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtdirect.txt](hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtdirect.txt)
-  - [https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/direct.txt](https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/direct.txt)
+- **直连域名列表 DIRECTtxt**：
+  - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/DIRECTtxt](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/DIRECTtxt)
 - **代理域名列表 proxy.txt**：
-  - [hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtproxy.txt](hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtproxy.txt)
-  - [https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/proxy.txt](https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/proxy.txt)
+  - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/proxy.txt](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/proxy.txt)
 - **广告域名列表 reject.txt**：
-  - [hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtreject.txt](hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtreject.txt)
-  - [https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt](https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt)
+  - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt)
 - **私有网络专用域名列表 private.txt**：
-  - [hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtprivate.txt](hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtprivate.txt)
-  - [https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/private.txt](https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/private.txt)
+  - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/private.txt](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/private.txt)
 - **Apple 在中国大陆可直连的域名列表 apple.txt**：
-  - [hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtapple.txt](hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtapple.txt)
-  - [https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/apple.txt](https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/apple.txt)
-- **iCloud 域名列表 icloud.txt**：
-  - [hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txticloud.txt](hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txticloud.txt)
-  - [https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/icloud.txt](https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/icloud.txt)
-- **[慎用]Google 在中国大陆可直连的域名列表 google.txt**：
-  - [hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtgoogle.txt](hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtgoogle.txt)
-  - [https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/google.txt](https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/google.txt)
+  - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/apple.txt](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/apple.txt)
 - **GFWList 域名列表 gfw.txt**：
-  - [hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtgfw.txt](hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtgfw.txt)
-  - [https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/gfw.txt](https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/gfw.txt)
-- **非中国大陆使用的顶级域名列表 tld-not-cn.txt**：
-  - [hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txttld-not-cn.txt](hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txttld-not-cn.txt)
-  - [https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/tld-not-cn.txt](https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/tld-not-cn.txt)
-- **Telegram 使用的 IP 地址列表 telegramcidr.txt**：
-  - [hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txttelegramcidr.txt](hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txttelegramcidr.txt)
-  - [https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/telegramcidr.txt](https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/telegramcidr.txt)
-- **中国大陆 IP 地址列表 cncidr.txt**：
-  - [hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtcncidr.txt](hhttps://raw.githubusercontent.com/onenora/saber/Filter/myrule.txtcncidr.txt)
-  - [https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/cncidr.txt](https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/cncidr.txt)
-
+  - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gfw.txt](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gfw.txt)
+- **Telegram 使用的 IP 地址列表 telegramcidr.list**：
+  - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/telegram.list](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/telegram.list)
 
 #### 白名单模式（推荐）
 
@@ -67,16 +47,14 @@ PROCESS-NAME,Folx,DIRECT
 PROCESS-NAME,NetTransport,DIRECT
 PROCESS-NAME,uTorrent,DIRECT
 PROCESS-NAME,WebTorrent,DIRECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/private.txt,DIRECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt,REJECT
+DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/Private.txt,DIRECT
+DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/REJECT.txt,REJECT
 RULE-SET,SYSTEM,DIRECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/icloud.txt,DIRECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/apple.txt,DIRECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/google.txt,DIRECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/proxy.txt,PROXY,force-remote-dns
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/direct.txt,DIRECT
-RULE-SET,https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/telegramcidr.txt,PROXY
-RULE-SET,https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/cncidr.txt,DIRECT
+DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/Apple.txt,DIRECT
+DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/PROXY.txt,PROXY
+DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/DIRECTtxt,DIRECT
+RULE-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/telegram.list,PROXY
+RULE-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gpt.list,PROXY
 RULE-SET,LAN,DIRECT
 FINAL,PROXY,dns-failed
 ```
@@ -108,13 +86,14 @@ PROCESS-NAME,Folx,DIRECT
 PROCESS-NAME,NetTransport,DIRECT
 PROCESS-NAME,uTorrent,DIRECT
 PROCESS-NAME,WebTorrent,DIRECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/myrule.txt,DIRECT
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/private.txt,DIRECT
-RULE-SET,https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt,REJECT
+DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/DIRECT.txt,DIRECT
+DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/Private.txt,DIRECT
+DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/Apple.txt,DIRECT
+RULE-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/REJECT.txt,REJECT
 RULE-SET,SYSTEM,DIRECT
-RULE-SET,https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/telegramcidr.txt,PROXY
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/nonecn.txt,PROXY,force-remote-dns
-DOMAIN-SET,https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/gfw.txt,PROXY,force-remote-dns
+RULE-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/telegram.list,PROXY
+RULE-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gpt.list,PROXY
+DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gfw.txt,PROXY
 FINAL,DIRECT,dns-failed
 ```
 ## 致谢

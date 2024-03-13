@@ -1,18 +1,20 @@
-//==MyAdRule==	
+#!name=PROXY♻️
+#!desc=常用域名PROXY
+#!author=onenora
 //@ScriptName    自用分流	
 //@Author	       @onenora
-//@UpdateTime    2023-11-18
+//@UpdateTime        2024-03-13
 //@Function       分流配置（自用PROXY♻️建議使用）	
 //@Suitable        二改后仅适合自己使用	
-//@ScriptURL    https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/PROXY.txt
+//@ScriptURL    https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/PROXY.txt
 
 #>Twitter
 DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,t.co
-DOMAIN-SUFFIX,tweetdeck.com
 DOMAIN-SUFFIX,twimg.co
 DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,twimg.org
 DOMAIN-SUFFIX,twitpic.com
 DOMAIN-SUFFIX,twitter.com
 DOMAIN-SUFFIX,twitter.jp
@@ -41,39 +43,6 @@ DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,pixiv.net
 DOMAIN-SUFFIX,pixiv.org
 DOMAIN-SUFFIX,pximg.net
-#>Line
-DOMAIN-SUFFIX,line.me
-DOMAIN-SUFFIX,line-apps.com
-DOMAIN-SUFFIX,line-scdn.net
-DOMAIN-SUFFIX,naver.jp
-IP-CIDR,103.2.30.0/23,no-resolve
-IP-CIDR,125.209.208.0/20,no-resolve
-IP-CIDR,147.92.128.0/17,no-resolve
-IP-CIDR,203.104.144.0/21,no-resolve
-#########################
-#>TIDAL
-USER-AGENT,TIDAL*
-DOMAIN-SUFFIX,tidal.com
-#>YoutubeMusic
-USER-AGENT,com.google.ios.youtubemusic*
-USER-AGENT,YouTubeMusic*
-#>Netflix
-DOMAIN-SUFFIX,netflix.com
-DOMAIN-SUFFIX,netflix.net
-DOMAIN-SUFFIX,nflxext.com
-DOMAIN-SUFFIX,nflximg.com
-DOMAIN-SUFFIX,nflximg.net
-DOMAIN-SUFFIX,nflxso.net
-DOMAIN-SUFFIX,nflxvideo.net
-IP-CIDR,23.246.0.0/18,no-resolve
-IP-CIDR,37.77.184.0/21,no-resolve
-IP-CIDR,45.57.0.0/17,no-resolve
-IP-CIDR,64.120.128.0/17,no-resolve
-IP-CIDR,66.197.128.0/17,no-resolve
-IP-CIDR,108.175.32.0/20,no-resolve
-IP-CIDR,192.173.64.0/18,no-resolve
-IP-CIDR,198.38.96.0/19,no-resolve
-IP-CIDR,198.45.48.0/20,no-resolve
 #>Pornhub
 DOMAIN-SUFFIX,phncdn.com
 DOMAIN-SUFFIX,pornhub.com

@@ -1,3 +1,10 @@
+#!name=private
+#!desc=private分流	
+#!author=onenora
+//@UpdateTime        2024-03-13
+// @Function          分流配置（自用DIRECT✅建議使用）
+// @ScriptURL         https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/Private.txt
+
 instant.arubanetworks.com
 setmeup.arubanetworks.com
 asusrouter.com

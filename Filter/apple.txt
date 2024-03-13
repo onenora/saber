@@ -1,10 +1,9 @@
-//==MyAdRule==	
 //@ScriptName    自用分流	
 //@Author	       @onenora
-//@UpdateTime    2023-05-22
+//@UpdateTime        2024-03-13
 //@Function       分流配置（自用PROXY♻️建議使用）	
 //@Suitable        二改后仅适合自己使用	
-//@ScriptURL     https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/apple.txt
+//@ScriptURL     https://fastly.jsdelivr.net/gh//onenora/saber@main/Filter/Apple.txt
 
 #Apple
 .a1.mzstatic.com
@@ -182,6 +181,54 @@
 .icloud.apple.com
 .icloud-content.com
 .iwork.apple.com
+# icloud
 .mask.icloud.com
 .mask-h2.icloud.com
 .mask-api.icloud.com
+www-cdn.icloud.com.akadns.net
+.applemx-icloud.com
+.icloud-isupport.com
+.icloud.ch
+.icloud.de
+.icloud.ee
+.icloud.fi
+.icloud.fr
+.icloud.hu
+.icloud.ie
+.icloud.is
+.icloud.jp
+.icloud.lv
+.icloud.om
+.icloud.org
+.icloud.pt
+.icloud.ro
+.icloud.se
+.icloud.si
+.icloud.sk
+.icloud.vn
+.icloudads.net
+.icloudbox.net
+.icloudbrowser.net
+.icloude.com
+.icloudhome.com
+.icloudmail.net
+.icloudmusic.net
+.icloudnet.net
+.icloudpay.net
+.icloudo.com
+.icloudo.de
+.icloudo.net
+.icloudos.de
+.icloudos.net
+.icloudsecure.net
+.icloudsetup.com
+.ios-icloud.com
+.me.com
+.myicloud.net
+.mylcloud.net
+.wwwicloud.com
+.apple-icloud.cn
+.appleicloud.cn
+.icloud-apple.cn
+.icloud.net.cn
+.icloudapple.cn

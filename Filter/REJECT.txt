@@ -1,10 +1,8 @@
-// ==MyAdRule==
-// @ScriptName        自用分流
-// @Author          	 @onenora
-// @UpdateTime         2023-05-22
-// @Function           分流配置（自用REJECT🚫建議使用）
-// @Suitable            二改后仅适合自己使用
-// @ScriptURL          https://cdn.jsdelivr.net/gh/onenora/saber@main/Filter/REJECT.txt
+#!name=REJECT🚫
+#!desc=REJECT AD
+#!author=onenora
+//@Update        2024-03-13
+//@ScriptURL     https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/REJECT.txt
 
 # ==========REJECT🚫=======
 # > 铁路12306
@@ -40,89 +38,12 @@ DOMAIN,mobads.baidu.com
 DOMAIN,mobads-logs.baidu.com
 DOMAIN,nadvideo2.baidu.com
 DOMAIN,nsclick.baidu.com
-# Fan Qie Filter Ban AD
-DOMAIN,p6-ad-sign.byteimg.com
-DOMAIN,p9-ad-sign.byteimg.com
-DOMAIN,i.snssdk.com
-DOMAIN,i-lq.snssdk.com
-DOMAIN,dig.bdurl.net
-DOMAIN,activity-ag.awemeughun.com
-DOMAIN,mcs.snssdk.com
-DOMAIN,tnc3-alisc1.snssdk.com
-DOMAIN,security-lq.snssdk.com
-DOMAIN,tnc3-aliec2.snssdk.com
-DOMAIN,is.snssdk.com
-DOMAIN,v6-novelapp.ixigua.com
-DOMAIN,msync-im1-vip6-std.easemob.com
-DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
-DOMAIN,api.iegadp.qq.com
-DOMAIN,sf3-ttcdn-tos.pstatp.com
-DOMAIN-SUFFIX,default.ixigua.com
-DOMAIN-SUFFIX,pglstatp-toutiao.com
-DOMAIN-SUFFIX,byteorge.com
-DOMAIN-SUFFIX,bytedance.com
-IP-CIDR,49.71.37.101/32,no-resolve
-IP-CIDR,117.71.105.23/32,no-resolve
-IP-CIDR,218.94.207.205/32,no-resolve
-IP-CIDR,117.92.229.188/32,no-resolve
-IP-CIDR,101.36.166.16/32,no-resolve
-IP-CIDR,180.96.2.114/32,no-resolve
-# > 贴吧屏蔽域名dns查询
-IP-CIDR,180.76.76.200/32,no-resolve
-## Internet Service Providers Hijacking##
-# > ChinaTelecom
-IP-CIDR,61.160.200.223/32,no-resolve
-IP-CIDR,61.160.200.242/32,no-resolve
-IP-CIDR,61.160.200.252/32,no-resolve
-IP-CIDR,61.174.50.214/32,no-resolve
-IP-CIDR,111.175.220.163/32,no-resolve
-IP-CIDR,111.175.220.164/32,no-resolve
-IP-CIDR,122.229.8.47/32,no-resolve
-IP-CIDR,122.229.29.89/32,no-resolve
-IP-CIDR,124.232.160.178/32,no-resolve
-IP-CIDR,175.6.223.15/32,no-resolve
-IP-CIDR,183.59.53.237/32,no-resolve
-IP-CIDR,218.93.127.37/32,no-resolve
-IP-CIDR,221.228.17.152/32,no-resolve
-IP-CIDR,221.231.6.79/32,no-resolve
-IP-CIDR,222.186.61.91/32,no-resolve
-IP-CIDR,222.186.61.95/32,no-resolve
-IP-CIDR,222.186.61.96/32,no-resolve
-IP-CIDR,222.186.61.97/32,no-resolve
-# --- (Tencent) ---
-DOMAIN-SUFFIX,e.qq.com
-DOMAIN-SUFFIX,gdt.qq.com
-DOMAIN-SUFFIX,l.qq.com
-DOMAIN,adsmind.apdcdn.tc.qq.com
-DOMAIN,adsmind.gdtimg.com
-DOMAIN,adsmind.tc.qq.com
-DOMAIN,adsmind.ugdtimg.com
-DOMAIN,livep.l.t002.ottcn.com
-DOMAIN,pgdt.gtimg.cn
-DOMAIN,pgdt.gtimg.com
-DOMAIN,pgdt.ugdtimg.com
-DOMAIN,splashqqlive.gtimg.com
-DOMAIN,wa.gtimg.com
-# > ChinaUnicom
-IP-CIDR,106.75.231.48/32,no-resolve
-IP-CIDR,119.4.249.166/32,no-resolve
-IP-CIDR,220.196.52.141/32,no-resolve
-IP-CIDR,221.6.4.148/32,no-resolve
-# > ChinaMobile
-IP-CIDR,114.247.28.96/32,no-resolve
-IP-CIDR,120.240.95.37/32,no-resolve
-IP-CIDR,221.179.131.72/32,no-resolve
-IP-CIDR,221.179.140.145/32,no-resolve
-# > Tencent Privacy Protect
-DOMAIN,safebrowsing.urlsec.qq.com
-DOMAIN,safebrowsing.googleapis.com
 # > 知乎去广告
 IP-CIDR,118.89.204.198/32,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve
 DOMAIN,appcloud2.in.zhihu.com
 DOMAIN,mqtt.zhihu.com
 DOMAIN,sugar.zhihu.com
-USER-AGENT,AVOS*
 # > 美颜相机去首页和轮播广告
 DOMAIN,adui.tg.meitu.com
 DOMAIN,aaid.uyunad.com
@@ -133,9 +54,9 @@ DOMAIN-SUFFIX,atrace.chelaile.net.cn
 DOMAIN,logs.chelaile.net.cn
 DOMAIN,ad.chelaile.net.cn
 # 微信小程序去广告通用规则
-DOMAIN,wxsnsdy.wxs.qq.com,REJECT
-DOMAIN,wxsmsdy.video.qq.com,REJECT
-DOMAIN,wxsnsdythumb.wxs.qq.com,REJECT
+DOMAIN,wxsnsdy.wxs.qq.com
+DOMAIN,wxsmsdy.video.qq.com
+DOMAIN,wxsnsdythumb.wxs.qq.com
 # 收钱吧 - 买单小程序去广告
-DOMAIN,ads-shopping.shouqianba.com,REJECT
-DOMAIN-SUFFIX,doubleclick.net,REJECT
+DOMAIN,ads-shopping.shouqianba.com
+DOMAIN-SUFFIX,doubleclick.net
