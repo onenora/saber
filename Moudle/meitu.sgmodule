@@ -1,0 +1,15 @@
+#!name=美图
+#!desc=美图系列VIP
+#!icon=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Dukou.png
+#!category=Saber
+
+[Script]
+# >  Wink，蛋啵，潮自拍，海报工厂，Chic  api-*.meitu.com
+美图系列 = type=http-response, pattern=^https?:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show),requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/mtxl.js
+# >  美颜相机 *.meiyan.com
+美颜相机 = type=http-response, pattern=^https?:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)),requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/myxj.js
+# >  美图秀秀 *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
+美图秀秀 = type=http-response, pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home),requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/mtxx.js
+
+[MITM]
+hostname = %APPEND% *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, api-*.meitu.com, *.meiyan.com

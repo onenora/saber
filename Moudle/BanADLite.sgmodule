@@ -7,14 +7,10 @@
 
 #主机名部分
 [MITM]
-hostname =  %APPEND% images.client.vip.xunlei.com, xluser-ssl.xunlei.com, business-cdn.shouji.sougou.com, mp.weixin.qq.com, szextshort.weixin.qq.com, magev6.if.qidian.com, api-access.pangolin-sdk-toutiao.com, api.coolapk.com, www.xiaohongshu.com, pages.xiaohongshu.com, static.zhihu.com, app.bilibili.com, api.bilibili.com, api.m.jd.com, img*.360buyimg.com, redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com, *api.weibo*, *uve.weibo.com, new.vip.weibo.cn, ems.youku.com, optimus-ads.amap.com, api-*.meitu.com, *.meiyan.com, *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
-
+hostname = %APPEND% images.client.vip.xunlei.com, xluser-ssl.xunlei.com, business-cdn.shouji.sogou.com, mp.weixin.qq.com, szextshort.weixin.qq.com, magev6.if.qidian.com, www.xiaohongshu.com, pages.xiaohongshu.com, referee.xiaohongshu.com, static.zhihu.com, api.bilibili.com, weibointl.api.weibo*,sdkapp.uve.weibo.com
 [URL Rewrite]
-
-# > 迅雷会员 -images.client.vip.xunlei.com,xluser-ssl.xunlei.com
-^https?+:\/\/images\.client\.vip\.xunlei\.com\/.+?\/advert\/ - reject-200
-^https?:\/\/images\.client\.vip\.xunlei\.com\/.+?\/advert\/ - reject
-^https?:\/\/images\.client\.vip\.xunlei\.com\/.+\/advert\/ - reject
+# > 迅雷会员 -images.client.vip.xunlei.com
+^https?+:\/\/images\.client\.vip\.xunlei\.com\/.+/advert\/ - reject-200
 
 # > 🈲️搜狗输入法搜集信息 -business-cdn.shouji.sogou.com
 ^https?+:\/\/business-cdn\.shouji\.sogou\.com\/wapdl\/hole\/.+?\.jpg - reject-200
@@ -36,22 +32,11 @@ hostname =  %APPEND% images.client.vip.xunlei.com, xluser-ssl.xunlei.com, busine
 #^https://magev6.if.qidian.com/argus/api/v1/bookshelf/getad - reject
 #^https://magev6.if.qidian.com/argus/api/v4/client/getsplashscreen? - reject
 
-# >  酷安去首页广告、信息流广告、评论广告-api-access.pangolin-sdk-toutiao.com
-^https?://api-access\.pangolin-sdk-toutiao\.com/api/ad/union/sdk - reject
 
-# > 小红书开屏广告@chouchoui -www.xiaohongshu.com, pages.xiaohongshu.com
-^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/apple\/record* - reject
-^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/tag\/ads_engage* - reject
-^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/resource* - reject
-^https:\/\/pages\.xiaohongshu\.com\/data\/native\/matrix_switches* - reject-dict
-^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/surprisebox\/(get_style|open|submit_action) - reject-dict
-^https:\/\/www\.xiaohongshu\.com\/api\/marketing\/box\/trigger\? - reject-dict
-^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v3\/note\/guide\? - reject-dict
-^https:\/\/www\.xiaohongshu\.com\/api\/sns\/v1\/ads\/resource\? - reject-dict
-^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/v\d\/(tag\/)?ads - reject-dict
-^https?:\/\/referee\.xiaohongshu\.com\/v\d\/stateReport - reject-dict
-^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/user\/teenager\/status - reject-dict
-^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/guide\/home_guide - reject-dict
+# > 小红书开屏广告@chouchoui -www.xiaohongshu.com, pages.xiaohongshu.com, referee.xiaohongshu.com
+^https?:\/\/(?:www\.xiaohongshu\.com|edith\.xiaohongshu\.com)\/api\/sns\/v\d\/(tag\/)?ads.* - reject-dict
+^https?:\/\/(?:www\.xiaohongshu\.com|edith\.xiaohongshu\.com)\/api\/sns\/v\d\/(?:surprisebox\/(?:get_style|open|submit_action)|guide\/(?:home_guide)?|user\/teenager\/status).* - reject-dict
+^https?:\/\/(?:www\.xiaohongshu\.com|referee\.xiaohongshu\.com)\/(?:api\/marketing\/box\/trigger\?|v\d\/stateReport).* - reject-dict
 
 # > 知乎网页版强制登陆弹窗@HotKids -static.zhihu.com
 ^https?:\/\/static\.zhihu\.com\/[^\/]+\/(main|column)\.signflow\.[^.]+.js - reject
@@ -59,54 +44,12 @@ hostname =  %APPEND% images.client.vip.xunlei.com, xluser-ssl.xunlei.com, busine
 # ～ BiliBili_哔哩哔哩_小卡片广告@ddgksf2013. -api.bilibili.com
 ^https://api.bilibili.com/pgc/season/player/cards - reject-dict
 ^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? - reject-dict
-
 # ～ BiliBili_哔哩哔哩_应用开屏去广告@bm7 -app.bilibili.com
 ^https://app.bilibili.com/x/v2/splash/show - reject-dict
 
-# > JD 京东开屏广告（此条规则会影响京东比价显示,使其失效）- api.m.jd.com,img*.360buyimg.com
-^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=start - reject
-^https?:\/\/api\.m\.jd.com\/client\.action\?functionId=queryMaterialAdverts - reject
-^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ - reject
-^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/ - reject
-
 #微博轻享版去广告@ddgksf2013  -weibointl.api.weibo*,sdkapp.uve.weibo.com
-^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php  - reject
-^ttps?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*user&a=get_searching_info - reject
-^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=search_topic - reject
-^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*ads - reject
-
-#  Youtobe  Block AD 仅用于视频广告 -redirector*.googlevideo.com, *.googlevideo.com, www.youtube.com, s.youtube.com, youtubei.googleapis.com
-(^https?:\/\/[\w-]+\.googlevideo\.com\/(?!dclk_video_ads).+?)&ctier=L(&.+?),ctier,(.+) - 302 $1$2$3
-^https?:\/\/[\w-]+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+&oad - reject
-^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v\d\/player\/ad_break - reject
-^https?:\/\/(www|s)\.youtube\.com\/api\/stats\/ads - reject
-^https?:\/\/(www|s)\.youtube\.com\/(pagead|ptracking) - reject
-^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adcontext - reject
-
-#高德地图广告ems.youku.com, optimus-ads.amap.com
-^http:\/\/ems\.youku\.com\/imp\? - reject
-^http:\/\/optimus-ads\.amap\.com\/uploadimg\/.+ - reject
-
+^https?:\/\/(?:sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php|weibointl\.api\.weibo\.c(?:n|om)\/portal\.php.*(?:user&a=get_searching_info|feed&a=search_topic|ads)).* - reject
 
 [Script]
-
-# >  Wink，蛋啵，潮自拍，海报工厂，Chic  api-*.meitu.com
-美图系列 = type=http-response,pattern=^https?:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/mtxl.js
-
-# >  美颜相机 *.meiyan.com
-美颜相机 = type=http-response,pattern=^https?:\/\/(api|community)\.meiyan\.com\/(vip|v\d)\/(user_center|user_info|user\/(.*?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/myxj.js
-
-# >  美图秀秀 *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
-美图秀秀 = type=http-response,pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/mtxx.js
-
-# > 酷安完美去首页广告、信息流广告、评论广告 -api.coolapk.com
-酷安完美去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.coolapk\.com\/v6\/(feed\/(replyList|detail)|main\/indexV8|dataList),script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/coolapk.js
-
-# > 起点开屏页广告,每日导读去除,冷启动强制跳转精选页去除,去除发现页弹出的活动弹窗,去除下方(精选 发现 中间的)活动时的tab,去除书架右下角的活动/广告的悬浮icon
-起点完美去广告 = type=http-response,pattern=^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/(deeplink\/geturl|dailyrecommend\/getdailyrecommend)|v1\/(client\/getconf$|bookshelf\/getHoverAdv|adv\/getadvlistbatch\?positions=iOS_tab)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/qidian.js
-
 # > 迅雷会员
 迅雷会员 = type=http-response,requires-body=1,max-size=0,pattern=https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo,script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/xunlei.js
-
-# youtobe去首页瀑布流广告
-youtube = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next),requires-body=1,binary-body-mode=1,max-size=2097152,script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/youtube.js
