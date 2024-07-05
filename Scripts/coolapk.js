@@ -1,39 +1,100 @@
 /***********************************
 
 > 应用名称：酷安净化
-> 脚本作者：ddgksf2013
-> 微信账号：墨鱼手记
-> 更新时间：2023-08-08
-> 通知频道：https://t.me/ddgksf2021
-> 贡献投稿：https://t.me/ddgksf2013_bot
-> 问题反馈：ddgksf2013@163.com
-> 特别提醒：如需转载请注明出处，谢谢合作！
-> 特别说明：⚠️⚠️⚠️
-          本脚本仅供学习交流使用，禁止转载、售卖
-          ⚠️⚠️⚠️
+> 脚本作者：RuCu6
+> 更新时间：2023-11-15 17:20
+> 特别说明：⚠️⚠️⚠️本脚本仅供学习交流使用，禁止转载、售卖⚠️⚠️⚠️
 		  
-    
-[rewrite_local]
+[Map Local]
+^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch data-type=text data="{}" status-code=200
 
-# > 酷安_开屏广告@ddgksf2013
-^https?:\/\/api.coolapk.com\/v6\/main\/init url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
-# > 酷安_推广广告@ddgksf2013
-^https?:\/\/api.coolapk.com\/v6\/dataList url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
-# > 酷安_首页广告@ddgksf2013
-^https?:\/\/api.coolapk.com\/v6\/main\/indexV8 url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
-# > 酷安_评论广告@ddgksf2013
-^https?:\/\/api.coolapk.com\/v6\/feed\/replyList url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
-# > 酷安_商品推广@ddgksf2013
-^https?:\/\/api.coolapk.com\/v6\/feed\/detail url script-response-body https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js
-# > 酷安_屏蔽热词@ddgksf2013
-^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch url reject-dict
+[Script]
+移除酷安广告 = type=http-response, pattern=^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)\?, script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/coolapk.js, requires-body=true
 
-[mitm] 
+移除酷安广告 = type=http-response, pattern=^https:\/\/api\.coolapk\.com\/v6\/main\/(dataList|indexV8|init), script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/coolapk.js, requires-body=true
 
-hostname=api.coolapk.com
+移除酷安广告 = type=http-response, pattern=^https:\/\/api\.coolapk\.com\/v6\/page\/dataList\?, script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/coolapk.js, requires-body=true
 
+[MITM]
+hostname = %APPEND% api.coolapk.com
 
 ***********************************/
-const version = 'V1.0.10';
- 
-if(-1!=$request.url.indexOf("replyList")){var t=JSON.parse($response.body);t.data.length&&(t.data=t.data.filter(t=>t.id)),$done({body:JSON.stringify(t)})}else if(-1!=$request.url.indexOf("main/init")){var t=JSON.parse($response.body);t.data.length&&(t.data=t.data.filter(t=>!(945==t.entityId||6390==t.entityId))),$done({body:JSON.stringify(t)})}else if(-1!=$request.url.indexOf("indexV8")){var t=JSON.parse($response.body);t.data=t.data.filter(t=>!("sponsorCard"==t.entityTemplate||8639==t.entityId||29349==t.entityId||33006==t.entityId||32557==t.entityId||-1!=t.title.indexOf("值得买")||-1!=t.title.indexOf("红包"))),$done({body:JSON.stringify(t)})}else if(-1!=$request.url.indexOf("dataList")){var t=JSON.parse($response.body);t.data=t.data.filter(t=>!("sponsorCard"==t.entityTemplate||-1!=t.title.indexOf("精选配件"))),$done({body:JSON.stringify(t)})}else if(-1!=$request.url.indexOf("detail")){var t=JSON.parse($response.body);t.data?.hotReplyRows?.length&&(t.data.hotReplyRows=t.data.hotReplyRows.filter(t=>t.id)),t.data?.topReplyRows?.length&&(t.data.topReplyRows=t.data.topReplyRows.filter(t=>t.id)),t.data?.include_goods_ids&&(t.data.include_goods_ids=[]),t.data?.include_goods&&(t.data.include_goods=[]),t.data?.detailSponsorCard&&(t.data.detailSponsorCard=[]),$done({body:JSON.stringify(t)})}else $done($response);
+
+const url = $request.url;
+if (!$response.body) $done({});
+let obj = JSON.parse($response.body);
+
+if (url.includes("/feed/detail")) {
+  if (obj.data?.hotReplyRows?.length > 0) {
+    obj.data.hotReplyRows = obj.data.hotReplyRows.filter((item) => item?.id);
+  }
+  if (obj.data?.topReplyRows?.length > 0) {
+    obj.data.topReplyRows = obj.data.topReplyRows.filter((item) => item?.id);
+  }
+  const item = ["detailSponsorCard", "include_goods", "include_goods_ids"];
+  for (let i of item) {
+    if (obj.data?.[i]) {
+      obj.data[i] = [];
+    }
+  }
+} else if (url.includes("/feed/replyList")) {
+  if (obj.data?.length > 0) {
+    obj.data = obj.data.filter((item) => item?.id);
+  }
+} else if (url.includes("/main/dataList")) {
+  if (obj.data?.length > 0) {
+    obj.data = obj.data.filter((item) => !(item?.entityTemplate === "sponsorCard" || item?.title === "精选配件"));
+  }
+} else if (url.includes("/main/indexV8")) {
+  if (obj.data?.length > 0) {
+    obj.data = obj.data.filter(
+      (item) =>
+        !(
+          item?.entityTemplate === "sponsorCard" ||
+          item?.entityId === 8639 ||
+          item?.entityId === 29349 ||
+          item?.entityId === 33006 ||
+          item?.entityId === 32557 ||
+          item?.title?.includes("值得买") ||
+          item?.title?.includes("红包")
+        )
+    );
+  }
+} else if (url.includes("/main/init")) {
+  // 整体配置
+  if (obj.data?.length > 0) {
+    let newDatas = [];
+    for (let item of obj.data) {
+      // 944热门搜索 945开屏广告 6390首页Tab
+      if ([944, 945, 6390]?.includes(item?.entityId)) {
+        continue;
+      } else {
+        if (item?.entityId === 20131) {
+          // 发现页 顶部项目
+          if (item?.entities?.length > 0) {
+            let newEnts = [];
+            for (let i of item.entities) {
+              if (i?.title === "酷品") {
+                continue;
+              } else {
+                newEnts.push(i);
+              }
+            }
+            item.entities = newEnts;
+          }
+        }
+        newDatas.push(item);
+      }
+    }
+    obj.data = newDatas;
+  }
+} else if (url.includes("/page/dataList")) {
+  if (obj.data?.length > 0) {
+    obj.data = obj.data.filter(
+      (item) =>
+        !(item?.title === "酷安热搜" || item?.entityTemplate === "imageScaleCard" || item?.entityTemplate === "sponsorCard")
+    );
+  }
+}
+
+$done({ body: JSON.stringify(obj) });
