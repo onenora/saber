@@ -61,9 +61,7 @@ DOMAIN,wxsnsdythumb.wxs.qq.com
 DOMAIN,ads-shopping.shouqianba.com
 DOMAIN-SUFFIX,doubleclick.net
 # > 番茄小说 去广告
-DOMAIN-SUFFIX,zijieapi.com
 DOMAIN,dig.bdurl.net
 DOMAIN,dig.zjurl.cn
-DOMAIN,is.snssdk.com,DIRECT
 DOMAIN,log5-applog.fqnovel.com
 DOMAIN,rtlog5-applog.fqnovel.com
