@@ -2,7 +2,7 @@
 #!desc=按ASN分流telegram
 #!author=onenora
 //@Update        2024-03-13
-//@ScriptURL     https://fastly.jsdelivr.net/gh//onenora/saber@main/Filter/telegram.list
+//@ScriptURL     https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/telegram.list
 
 PROCESS-NAME,org.telegram.messenger
 DOMAIN-SUFFIX,comments.app // @CommentsBot

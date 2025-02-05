@@ -3,7 +3,7 @@
 //@UpdateTime        2024-07-09
 //@Function       分流配置（自用PROXY♻️建議使用）
 //@Suitable        二改后仅适合自己使用
-//@ScriptURL     https://fastly.jsdelivr.net/gh//onenora/saber@main/Filter/Apple.txt
+//@ScriptURL     https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/Apple.txt
 #Apple
 
 DOMAIN,a1.mzstatic.com
