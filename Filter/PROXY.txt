@@ -11,7 +11,7 @@
 #>Twitter
 DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,pscp.tv
-DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,t.coerhiy.io
 DOMAIN-SUFFIX,twimg.co
 DOMAIN-SUFFIX,twimg.com
 DOMAIN-SUFFIX,twimg.org
