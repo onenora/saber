@@ -1,9 +1,9 @@
 #!name=DIRECT
 #!desc=DIRECT分流
 #!author=onenora
-//@UpdateTime        2024-07-09
-// @Function          分流配置（自用DIRECT✅建議使用）
-// @ScriptURL         https://fastly.jsdelivr.net/gh//onenora/saber@main/Filter/DIRECT.txt
+//@UpdateTime    2025-03-23
+// @ScriptURL     https://fastly.jsdelivr.net/gh//onenora/saber@main/Filter/direct.txt
+
 # ===DIRECT✅========
 # New Add Rules
 DOMAIN-SUFFIX,serhiy.io
@@ -346,3 +346,54 @@ DOMAIN-SUFFIX,zmzapi.com
 DOMAIN-SUFFIX,zmzapi.net
 DOMAIN-SUFFIX,zmzfile.com
 DOMAIN-SUFFIX,manmanbuy.com
+# 新增 DOMAIN-SUFFIX 规则
+DOMAIN-SUFFIX,bstarstatic.com
+DOMAIN-SUFFIX,tipsoon.com
+DOMAIN-SUFFIX,gcloudsdk.com
+DOMAIN-SUFFIX,caiyunapp.com
+DOMAIN-SUFFIX,caiyuncdn.com
+DOMAIN-SUFFIX,colorfulclouds.net
+DOMAIN-SUFFIX,baidubcr.com
+DOMAIN-SUFFIX,bcebos.com
+DOMAIN-SUFFIX,skk.moe
+DOMAIN-SUFFIX,pusher.com
+DOMAIN-SUFFIX,inftab.com
+DOMAIN-SUFFIX,infinitynewtab.com
+DOMAIN-SUFFIX,chinamobile.com
+DOMAIN-SUFFIX,alookweb.com
+DOMAIN-SUFFIX,gcloudcs.com
+DOMAIN-SUFFIX,alipan.com
+DOMAIN-SUFFIX,ksyungslb.com
+DOMAIN-SUFFIX,tanx.com
+DOMAIN-SUFFIX,gcloudsvcs.com
+DOMAIN-SUFFIX,uhabo.com
+DOMAIN-SUFFIX,taofen8.com
+DOMAIN-SUFFIX,volces.com
+DOMAIN-SUFFIX,ifconfig.me
+DOMAIN-SUFFIX,faceu.com
+DOMAIN-SUFFIX,ksyungslb.com
+DOMAIN-SUFFIX,bytegoofy.com
+DOMAIN-SUFFIX,bytemastatic.com
+DOMAIN-SUFFIX,volcsiriusbd.com
+DOMAIN-SUFFIX,one-punch.win
+DOMAIN-SUFFIX,effirst.com
+DOMAIN-SUFFIX,horain.net
+DOMAIN-SUFFIX,id6.me
+DOMAIN-SUFFIX,mmarket.com
+DOMAIN-SUFFIX,tjt360.com
+DOMAIN-SUFFIX,dailygn.com
+DOMAIN-SUFFIX,bdxiguaimg.com
+DOMAIN-SUFFIX,bdxiguastatic.com
+DOMAIN-SUFFIX,xaykt.com
+DOMAIN-SUFFIX,idaqimg.com
+DOMAIN-SUFFIX,fmswift.net
+DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,doutuimao.net
+DOMAIN-SUFFIX,funshion.com
+DOMAIN-SUFFIX,cantips.net
+DOMAIN-SUFFIX,elemecdn.com
+DOMAIN-SUFFIX,searchpstatp.com
+DOMAIN-SUFFIX,byteorge.com
+DOMAIN-SUFFIX,cdntips.net
+DOMAIN-SUFFIX,bilicomic.com
+DOMAIN-SUFFIX,bilicomics.com

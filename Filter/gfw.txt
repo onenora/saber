@@ -1,10 +1,9 @@
 #!name=GFWList
 #!desc=GFW分流
 #!author=onenora
-//@UpdateTime        2024-07-09
-//@Function       分流配置（自用PROXY♻️建議使用）
-//@Suitable        二改后仅适合自己使用
+//@Update        2025-03-17
 //@ScriptURL     https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gfw.txt
+
 # GFWList 域名列表 gfw.txt
 DOMAIN-SUFFIX,000webhost.com
 DOMAIN-SUFFIX,030buy.com

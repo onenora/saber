@@ -1,3 +1,9 @@
+#!name=chatGPT
+#!desc=AI chatGPT分流
+#!author=onenora
+//@UpdateTime    2025-03-23
+//@ScriptURL    https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gpt.list
+
 DOMAIN,challenges.cloudflare.com
 DOMAIN,cdn.auth0.com
 DOMAIN,api.statsig.com

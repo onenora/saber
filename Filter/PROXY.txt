@@ -1,17 +1,13 @@
 #!name=PROXY♻️
-#!desc=常用域名PROXY
+#!desc=常用的国外顶级域名
 #!author=onenora
-//@ScriptName    自用分流	
-//@Author	       @onenora
-//@UpdateTime        2024-07-09
-//@Function       分流配置（自用PROXY♻️建議使用）	
-//@Suitable        二改后仅适合自己使用	
-//@ScriptURL    https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/PROXY.txt
+//@UpdateTime    2025-03-23
+//@ScriptURL    https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/proxy.txt
 
 #>Twitter
 DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,pscp.tv
-DOMAIN-SUFFIX,t.coerhiy.io
+DOMAIN-SUFFIX,t.co
 DOMAIN-SUFFIX,twimg.co
 DOMAIN-SUFFIX,twimg.com
 DOMAIN-SUFFIX,twimg.org
@@ -19,6 +15,7 @@ DOMAIN-SUFFIX,twitpic.com
 DOMAIN-SUFFIX,twitter.com
 DOMAIN-SUFFIX,twitter.jp
 DOMAIN-SUFFIX,vine.co
+
 #>Microsoft
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,linkedin.com
@@ -33,27 +30,33 @@ DOMAIN,az416426.vo.msecnd.net
 DOMAIN,az668014.vo.msecnd.net
 DOMAIN-SUFFIX,onedrive.live.com
 DOMAIN-SUFFIX,xboxlive.com
+
 #>GitHub
 DOMAIN-SUFFIX,github.blog
 DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,githubassets.com
 DOMAIN-SUFFIX,githubusercontent.com
+
 #>pixiv
 DOMAIN-SUFFIX,pixiv.net
 DOMAIN-SUFFIX,pixiv.org
 DOMAIN-SUFFIX,pximg.net
+
 #>Pornhub
 DOMAIN-SUFFIX,phncdn.com
 DOMAIN-SUFFIX,pornhub.com
 DOMAIN-SUFFIX,pornhubpremium.com
+
 #>台湾好
 DOMAIN-SUFFIX,skyking.com.tw
 DOMAIN,hamifans.emome.net
+
 #>Twitch
 DOMAIN-SUFFIX,twitch.tv
 DOMAIN-SUFFIX,twitchcdn.net
 DOMAIN-SUFFIX,ttvnw.net
+
 #>Facebook
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,fb.com
@@ -79,7 +82,8 @@ IP-CIDR,54.162.243.80/32,no-resolve
 IP-CIDR,54.173.34.141/32,no-resolve
 IP-CIDR,54.235.23.242/32,no-resolve
 IP-CIDR,169.45.248.118/32,no-resolve
-#Google
+
+#>Google
 DOMAIN-KEYWORD,google
 DOMAIN-SUFFIX,ampproject.org
 DOMAIN-SUFFIX,android.com
@@ -133,12 +137,14 @@ DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
-#Clubhouse
+
+#>Clubhouse
 DOMAIN-SUFFIX,clubhouseapi.com
 DOMAIN-SUFFIX,clubhouse.pubnub.com
 DOMAIN-SUFFIX,joinclubhouse.com
 DOMAIN-SUFFIX,ap3.agora.io
-#Topblockedsites
+
+#>Top Blocked Sites
 DOMAIN-SUFFIX,meta.com
 DOMAIN-SUFFIX,kenengba.com
 DOMAIN-SUFFIX,akamai.net
@@ -197,39 +203,41 @@ DOMAIN-SUFFIX,sstatic.net
 DOMAIN-SUFFIX,stackoverflow.com
 DOMAIN-SUFFIX,staticflickr.com
 DOMAIN-SUFFIX,squarespace.com
-DOMAIN-SUFFIX,symcd.com
-DOMAIN-SUFFIX,symcb.com
-DOMAIN-SUFFIX,symauth.com
-DOMAIN-SUFFIX,ubnt.com
-DOMAIN-SUFFIX,thepiratebay.org
-DOMAIN-SUFFIX,tumblr.com
-DOMAIN-SUFFIX,wikipedia.com
+DOMAIN-SUFFIX,wordpress.com
 DOMAIN-SUFFIX,wikipedia.org
 DOMAIN-SUFFIX,wikimedia.org
-DOMAIN-SUFFIX,wordpress.com
-DOMAIN-SUFFIX,wsj.com
-DOMAIN-SUFFIX,wsj.net
-DOMAIN-SUFFIX,wp.com
 DOMAIN-SUFFIX,vimeo.com
-DOMAIN-SUFFIX,tapbots.com
 DOMAIN-SUFFIX,medium.com
 DOMAIN-SUFFIX,fast.com
-#SoundCloud
-DOMAIN-SUFFIX,soundcloud.com
-DOMAIN-SUFFIX,sndcdn.com
-#DNSLeak
-DOMAIN-SUFFIX,dnsleaktest.com
-DOMAIN-SUFFIX,dnsleak.com
-DOMAIN-SUFFIX,expressvpn.com
-DOMAIN-SUFFIX,nordvpn.com
-DOMAIN-SUFFIX,surfshark.com
-DOMAIN-SUFFIX,ipleak.net
-DOMAIN-SUFFIX,perfect-privacy.com
-DOMAIN-SUFFIX,browserleaks.com
-DOMAIN-SUFFIX,browserleaks.org
-DOMAIN-SUFFIX,vpnunlimited.com
-DOMAIN-SUFFIX,whoer.net
-DOMAIN-SUFFIX,whrq.net
+
+#>RSS
+DOMAIN-SUFFIX,feedx.net
+DOMAIN-SUFFIX,rssfeed.today
+DOMAIN-SUFFIX,nicegram.app
+DOMAIN-SUFFIX,mudvod.tv 
+DOMAIN-SUFFIX,macbl.com
+DOMAIN-SUFFIX,misakaf.org
+DOMAIN-SUFFIX,poloemby.xyz
+DOMAIN-SUFFIX,emby.vip
+DOMAIN,xn--cnq51x.live
+
+#>YouTube
+DOMAIN,yt3.ggpht.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,withyoutube.com
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,youtube-nocookie.com
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,youtubeeducation.com
+DOMAIN-SUFFIX,youtubegaming.com
+DOMAIN-SUFFIX,youtubekids.com
+DOMAIN-SUFFIX,yt.be
+DOMAIN-SUFFIX,ytimg.com
+DOMAIN-KEYWORD,youtube
+
+#>Spotify
+DOMAIN-SUFFIX,spotify.com
+
 #OthernewaddRules
 DOMAIN-SUFFIX,v2ex.com
 DOMAIN-SUFFIX,koyeb.com

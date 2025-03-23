@@ -2,7 +2,7 @@
 #!desc=REJECT AD
 #!author=onenora
 //@Update        2024-07-09
-//@ScriptURL     https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/REJECT.txt
+//@ScriptURL     https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt
 
 # ==========REJECT🚫=======
 # > 铁路12306

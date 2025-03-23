@@ -1,16 +1,13 @@
 
 #### DOMAIN-SET:
 
-- **直连域名列表 DIRECTtxt**：
-  - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/DIRECTtxt](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/DIRECTtxt)
+- **直连域名列表 direct.txt**：
+  - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/direct.txt](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/direct.txt)
 - **代理域名列表 proxy.txt**：
   - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/proxy.txt](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/proxy.txt)
 - **广告域名列表 reject.txt**：
   - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt)
-- **私有网络专用域名列表 private.txt**：
-  - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/private.txt](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/private.txt)
-- **Apple 在中国大陆可直连的域名列表 apple.txt**：
-  - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/apple.txt](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/apple.txt)
+
 - **GFWList 域名列表 gfw.txt**：
   - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gfw.txt](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gfw.txt)
 - **Telegram 使用的 IP 地址列表 telegramcidr.list**：
@@ -47,12 +44,10 @@ PROCESS-NAME,Folx,DIRECT
 PROCESS-NAME,NetTransport,DIRECT
 PROCESS-NAME,uTorrent,DIRECT
 PROCESS-NAME,WebTorrent,DIRECT
-DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/Private.txt,DIRECT
-DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/REJECT.txt,REJECT
+DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt,REJECT
 RULE-SET,SYSTEM,DIRECT
-DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/Apple.txt,DIRECT
-DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/PROXY.txt,PROXY
-DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/DIRECTtxt,DIRECT
+DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/proxy.txt,PROXY
+DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/direct.txt,DIRECT
 RULE-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/telegram.list,PROXY
 RULE-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gpt.list,PROXY
 RULE-SET,LAN,DIRECT
@@ -86,10 +81,9 @@ PROCESS-NAME,Folx,DIRECT
 PROCESS-NAME,NetTransport,DIRECT
 PROCESS-NAME,uTorrent,DIRECT
 PROCESS-NAME,WebTorrent,DIRECT
-DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/DIRECT.txt,DIRECT
-DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/Private.txt,DIRECT
+DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/direct.txt,DIRECT
 DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/Apple.txt,DIRECT
-RULE-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/REJECT.txt,REJECT
+RULE-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt,REJECT
 RULE-SET,SYSTEM,DIRECT
 RULE-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/telegram.list,PROXY
 RULE-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gpt.list,PROXY
