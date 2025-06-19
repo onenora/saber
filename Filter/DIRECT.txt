@@ -2,7 +2,7 @@
 #!desc=DIRECT分流
 #!author=onenora
 //@UpdateTime    2025-03-23
-// @ScriptURL     https://fastly.jsdelivr.net/gh//onenora/saber@main/Filter/direct.txt
+//@ScriptURL     https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/direct.txt
 
 # ===DIRECT✅========
 # New Add Rules
@@ -91,7 +91,6 @@ DOMAIN-SUFFIX,clarivate.com
 DOMAIN-SUFFIX,classix-unlimited.co.uk
 DOMAIN-SUFFIX,cmbchina.com
 DOMAIN-SUFFIX,cmbimg.com
-DOMAIN-SUFFIX,cn
 DOMAIN-SUFFIX,com-hs-hkdy.com
 DOMAIN-SUFFIX,ctrip.com
 DOMAIN-SUFFIX,czybjz.com
@@ -397,3 +396,4 @@ DOMAIN-SUFFIX,byteorge.com
 DOMAIN-SUFFIX,cdntips.net
 DOMAIN-SUFFIX,bilicomic.com
 DOMAIN-SUFFIX,bilicomics.com
+DOMAIN,p49-imap.mail.me.com
