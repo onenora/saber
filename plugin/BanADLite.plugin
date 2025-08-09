@@ -2,7 +2,9 @@
 #!desc=打咩哥自用的广告过滤器(酷安,起点,微博,迅雷,油管)
 #!homepage=https://github.com/onenora/saber/Moudle/BanADLite.plugin
 #!author=onenora
+#!tag=去广告
 #!icon=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Dukou.png
+#!date=2025-06-30
 
 #主机名部分
 [MITM]
@@ -106,3 +108,4 @@ http-response ^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=tr
 http-response ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=user_center script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/weibo_json.js, requires-body=true, timeout=10, tag=微博国际版_用户中心
 # > 微博国际版_热搜处理@ddgksf2013
 http-response ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=search_topic script-path=https://raw.githubusercontent.com/onenora/saber/main/Scripts/weibo_json.js, requires-body=true, timeout=10, tag=微博国际版_热搜处理
+

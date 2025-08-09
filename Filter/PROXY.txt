@@ -1,7 +1,7 @@
 #!name=PROXY♻️
 #!desc=常用的国外顶级域名
 #!author=onenora
-//@UpdateTime    2025-06-19
+//@UpdateTime    2025-06-30
 //@ScriptURL    https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/proxy.txt
 
 #>Twitter
@@ -261,3 +261,8 @@ DOMAIN-SUFFIX,pxyzjmspfl.work
 DOMAIN-SUFFIX,bugsnag.com
 DOMAIN-SUFFIX,czbooks.net
 DOMAIN-SUFFIX,gitbook.io
+DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,69shuba.pro
+DOMAIN-SUFFIX,koyeb.app
+DOMAIN-SUFFIX,paimon.moe
+DOMAIN-SUFFIX,v2raya.org

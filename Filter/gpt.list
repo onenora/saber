@@ -1,9 +1,57 @@
 #!name=chatGPT
 #!desc=AI chatGPT分流
 #!author=onenora
-//@UpdateTime    2025-03-23
+//@UpdateTime    2025-06-30
 //@ScriptURL    https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gpt.list
 
+#Copilot
+DOMAIN,api.githubcopilot.com
+DOMAIN,copilot-proxy.githubusercontent.com
+DOMAIN,copilot.microsoft.com
+DOMAIN,sydney.bing.com
+DOMAIN,www.bing.com
+#Gemini
+DOMAIN,ai.google.dev
+DOMAIN,aida.googleapis.com
+DOMAIN,aistudio.google.com
+DOMAIN,alkalicore-pa.clients6.google.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,bard.google.com
+DOMAIN,deepmind.com
+DOMAIN,deepmind.google
+DOMAIN,geller-pa.googleapis.com
+DOMAIN,gemini.google.com
+DOMAIN,generativeai.google
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN,makersuite.google.com
+DOMAIN,proactivebackend-pa.googleapis.com
+#Claude
+DOMAIN-SUFFIX,claudeusercontent.com
+IP-CIDR,160.79.104.0/23,no-resolve
+IP-CIDR6,2607:6bc0::/48,no-resolve
+#JetBrainsAI
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN-SUFFIX,grazie.aws.intellij.net
+DOMAIN-SUFFIX,jetbrains.ai
+#MetaAI
+DOMAIN,imagine.meta.com
+DOMAIN-SUFFIX,meta.ai
+#Perplexity
+DOMAIN-SUFFIX,pplx.ai
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,perplexity.com
+#MistralAI
+DOMAIN,chat.mistral.ai
+DOMAIN,console.mistral.ai
+DOMAIN-SUFFIX,mistral.ai
+#GrokAI
+DOMAIN,api.x.ai
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+#TraeAI
+DOMAIN,trae-api-sg.mchost.guru
+DOMAIN-SUFFIX,trae.ai
+#Chat GPT
 DOMAIN,challenges.cloudflare.com
 DOMAIN,cdn.auth0.com
 DOMAIN,api.statsig.com
@@ -29,6 +77,14 @@ DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,gatewayai.com
 DOMAIN-SUFFIX,tktn.be
+DOMAIN,chatgpt.livekit.cloud
+DOMAIN,host.livekit.cloud
+DOMAIN,openai.com.cdn.cloudflare.net
+DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN,turn.livekit.cloud
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,sora.com
 IP-CIDR,50.117.27.0/24,no-resolve
 IP-CIDR,69.46.75.0/24,no-resolve
 IP-CIDR,205.164.56.29/24,no-resolve

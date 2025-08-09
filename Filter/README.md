@@ -8,8 +8,6 @@
 - **广告域名列表 reject.txt**：
   - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt)
 
-- **GFWList 域名列表 gfw.txt**：
-  - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gfw.txt](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gfw.txt)
 - **Telegram 使用的 IP 地址列表 telegramcidr.list**：
   - [https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/telegram.list](https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/telegram.list)
 
@@ -82,12 +80,10 @@ PROCESS-NAME,NetTransport,DIRECT
 PROCESS-NAME,uTorrent,DIRECT
 PROCESS-NAME,WebTorrent,DIRECT
 DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/direct.txt,DIRECT
-DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/Apple.txt,DIRECT
 RULE-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt,REJECT
 RULE-SET,SYSTEM,DIRECT
 RULE-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/telegram.list,PROXY
 RULE-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gpt.list,PROXY
-DOMAIN-SET,https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/gfw.txt,PROXY
 FINAL,DIRECT,dns-failed
 ```
 ## 致谢

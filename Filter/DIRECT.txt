@@ -5,13 +5,6 @@
 //@ScriptURL     https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/direct.txt
 
 # ===DIRECT✅========
-# New Add Rules
-DOMAIN-SUFFIX,serhiy.io
-DOMAIN-SUFFIX,mazingchina.com
-DOMAIN-SUFFIX,weibo.com
-DOMAIN-SUFFIX,1biqug.com
-DOMAIN-SUFFIX,69shu.com
-DOMAIN-SUFFIX,seto.teracloud.jp
 # Baidu/iqiyi
 DOMAIN-SUFFIX,baidu.com
 DOMAIN-SUFFIX,baidubcr.com
@@ -397,3 +390,4 @@ DOMAIN-SUFFIX,cdntips.net
 DOMAIN-SUFFIX,bilicomic.com
 DOMAIN-SUFFIX,bilicomics.com
 DOMAIN,p49-imap.mail.me.com
+DOMAIN-SUFFIX,wxapp.tc.qq.com
