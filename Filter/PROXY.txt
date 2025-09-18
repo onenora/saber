@@ -1,7 +1,7 @@
 #!name=PROXY♻️
 #!desc=常用的国外顶级域名
 #!author=onenora
-//@UpdateTime    2025-06-30
+//@UpdateTime    2025-09-19
 //@ScriptURL    https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/proxy.txt
 
 #>Twitter
@@ -66,6 +66,7 @@ DOMAIN-SUFFIX,fbcdn.net
 DOMAIN-SUFFIX,fbsbx.com
 DOMAIN-SUFFIX,fbworkmail.com
 DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,instagr.am
 DOMAIN-SUFFIX,m.me
 DOMAIN-SUFFIX,messenger.com
 DOMAIN-SUFFIX,oculus.com
@@ -256,13 +257,12 @@ DOMAIN-SUFFIX,t66y.com
 DOMAIN-SUFFIX,ibm.com
 DOMAIN-SUFFIX,plex.tv
 DOMAIN,relay.firefox.com
-DOMAIN-SUFFIX,cloudflare.com
-DOMAIN-SUFFIX,pxyzjmspfl.work
+DOMAIN-SUFFIX,cloudflare.com // Added for: cdnjs.cloudflare.com:443
+DOMAIN-SUFFIX,pxyzjmspfl.work // Added for: snerbnew.pxyzjmspfl.work:443
 DOMAIN-SUFFIX,bugsnag.com
-DOMAIN-SUFFIX,czbooks.net
-DOMAIN-SUFFIX,gitbook.io
-DOMAIN-SUFFIX,x.com
-DOMAIN-SUFFIX,69shuba.pro
-DOMAIN-SUFFIX,koyeb.app
-DOMAIN-SUFFIX,paimon.moe
-DOMAIN-SUFFIX,v2raya.org
+DOMAIN-SUFFIX,czbooks.net // Added for: czbooks.net:443
+DOMAIN-SUFFIX,gitbook.io // Added for: pingshunhuangalex.gitbook.io:443
+DOMAIN-SUFFIX,69shuba.com // Added for: www.69shuba.com:443
+DOMAIN-SUFFIX,itunes.apple.com // Added for: downloaddispatch.itunes.apple.com:443
+DOMAIN-SUFFIX,facebook.com // Added for: graph.facebook.com:443
+DOMAIN-SUFFIX,googleapis.com // Added for: oauth2.googleapis.com:443
