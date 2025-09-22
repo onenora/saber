@@ -11,13 +11,13 @@
 hostname = %APPEND% api.coolapk.com, api-access.pangolin-sdk-toutiao.com, magev6.if.qidian.com, bootpreload.uve.weibo.com, weibointl.api.weibo.cn, api.weibo.cn, business-cdn.shouji.sogou.com, mp.weixin.qq.com, szextshort.weixin.qq.com, static.zhihu.com, ems.youku.com, optimus-ads.amap.com, api.bilibili.com, app.bilibili.com, api.m.jd.com,img*.360buyimg.com
 
 [Rewrite]
-# -----酷安去首页广告、信息流广告、评论广告@kelee @ddgksf2013----------
-^https:\/\/api\.coolapk\.com\/v6\/feed\/detail\? response-body-json-jq 'if .data?.hotReplyRows? and (.data.hotReplyRows|type)=="array" and (.data.hotReplyRows|length>0) then .data.hotReplyRows |= map(select(.id?)) else . end | if .data?.topReplyRows? and (.data.topReplyRows|type)=="array" and (.data.topReplyRows|length>0) then .data.topReplyRows |= map(select(.id?)) else . end | reduce ("detailSponsorCard","include_goods","include_goods_ids") as $key (.; .data[$key]=[])'
-^https:\/\/api\.coolapk\.com\/v6\/feed\/replyList response-body-json-jq 'if (.data? and (.data|type)=="array" and (.data|length>0)) then .data |= map(select(.id?)) else . end'
-^https:\/\/api\.coolapk\.com\/v6\/main\/dataList response-body-json-jq 'if (.data? and (.data|type)=="array" and (.data|length>0)) then .data |= map(select((.entityTemplate?!="sponsorCard") and (.title?!="精选配件"))) else . end'
-^https:\/\/api\.coolapk\.com\/v6\/page\/dataList response-body-json-jq 'if (.data? and (.data|type)=="array" and (.data|length>0)) then .data |= map(select((.title?!="酷安热搜") and (.entityTemplate?!="imageScaleCard") and (.entityTemplate?!="sponsorCard"))) else . end'
-^https:\/\/api\.coolapk\.com\/v6\/main\/indexV8 response-body-json-jq 'if (.data? and (.data|type)=="array" and (.data|length>0)) then .data |= map(select((.entityTemplate?!="sponsorCard") and ((.entityId // 0) as $id | [8639,29349,33006,32557] | index($id) | not) and ((.title // "" | test("值得买|红包")) | not))) else . end'
-^https:\/\/api\.coolapk\.com\/v6\/main\/init response-body-json-jq 'if (.data? and (.data|type)=="array" and (.data|length>0)) then .data |= map(select((.entityId? | [944,945,6390] | index(.) | not)) | if .entityId==20131 and (.entities? and (.entities|type)=="array") then .entities |= map(select(.title?!="酷品")) else . end) else . end'
+# -----酷安去首页广告、信息流广告、评论广告@RuCu6 @kelee---------
+^https:\/\/api\.coolapk\.com\/v6\/feed\/detail\? response-body-json-jq '.data.hotReplyRows |= if . then map(select(.id?)) else . end | .data.topReplyRows |= if . then map(select(.id?)) else . end | reduce ("detailSponsorCard", "include_goods", "include_goods_ids") as $key (.; .data[$key]=[])'
+^https:\/\/api\.coolapk\.com\/v6\/feed\/replyList response-body-json-jq 'if .data? and ((.data | type) == "array") and (.data | length > 0) then .data |= map(select(.id?)) else . end'
+^https:\/\/api\.coolapk\.com\/v6\/main\/dataList response-body-json-jq '.data |= (if (type=="array" and length>0) then map(select((.entityTemplate!="sponsorCard") and (.title!="精选配件"))) else . end)'
+^https:\/\/api\.coolapk\.com\/v6\/page\/dataList response-body-json-jq 'if (.data | length > 0) then .data |= map(select((.title? != "酷安热搜") and (.entityTemplate? != "imageScaleCard") and (.entityTemplate? != "sponsorCard"))) else . end'
+^https:\/\/api\.coolapk\.com\/v6\/main\/indexV8 response-body-json-jq '.data |= (if length > 0 then map(select((.entityTemplate != "sponsorCard") and ([8639,29349,33006,32557] | index(.entityId) | not) and ((.title // "" | test("值得买|红包")) | not))) else . end)'
+^https:\/\/api\.coolapk\.com\/v6\/main\/init response-body-json-jq '.data |= map(select(.entityId? | [944,945,6390] | index(.) | not) | if .entityId == 20131 then .entities |= map(select(.title != "酷品")) else . end)'
 ^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch - reject-dict
 ^https?://api-access\.pangolin-sdk-toutiao\.com/api/ad/union/sdk - reject
 
