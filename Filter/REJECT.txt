@@ -1,8 +1,8 @@
 #!name=REJECT🚫
 #!desc=REJECT AD
 #!author=onenora
-//@Update        2024-07-09
 //@ScriptURL     https://fastly.jsdelivr.net/gh/onenora/saber@main/Filter/reject.txt
+//@Update        2025-9-25
 
 # ==========REJECT🚫=======
 # > 铁路12306
@@ -65,3 +65,25 @@ DOMAIN,dig.bdurl.net
 DOMAIN,dig.zjurl.cn
 DOMAIN,log5-applog.fqnovel.com
 DOMAIN,rtlog5-applog.fqnovel.com
+
+//@Update 2025-09-23
+# > 字节跳动
+DOMAIN,log.snssdk.com
+DOMAIN,applog.snssdk.com
+DOMAIN,applog.byteintl.com
+DOMAIN,mon.snssdk.com
+DOMAIN,mon.byteintl.com
+# > 友盟统计
+DOMAIN,msg.umeng.com
+DOMAIN,ulogs.umeng.com
+DOMAIN,alog.umeng.com
+# > 极光推送
+DOMAIN,stats.jpush.cn
+DOMAIN,device.jpush.cn
+# > 其它常见平台
+DOMAIN,adashx.m.taobao.com
+DOMAIN,adashx4yt.m.taobao.com
+DOMAIN,adashx4yt.m.taobao.com
+DOMAIN,adashxgc.ut.taobao.com
+DOMAIN,adashx.ut.taobao.com
+DOMAIN,adashx4yt.ut.taobao.com

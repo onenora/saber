@@ -10,6 +10,69 @@
 [MITM]
 hostname = %APPEND% api.coolapk.com, api-access.pangolin-sdk-toutiao.com, magev6.if.qidian.com, bootpreload.uve.weibo.com, weibointl.api.weibo.cn, api.weibo.cn, business-cdn.shouji.sogou.com, mp.weixin.qq.com, szextshort.weixin.qq.com, static.zhihu.com, ems.youku.com, optimus-ads.amap.com, api.bilibili.com, app.bilibili.com, api.m.jd.com,img*.360buyimg.com
 
+[Rule]
+# 字节跳动广告平台
+DOMAIN-SUFFIX,byteadverts.com,REJECT
+DOMAIN,lf-ad-ies.bytecdn.cn,REJECT
+DOMAIN,extlog.snssdk.com,REJECT
+DOMAIN,i.snssdk.com,REJECT
+DOMAIN,mcs.snssdk.com,REJECT
+DOMAIN-SUFFIX,bds.snssdk.com,REJECT
+
+# 腾讯广点通广告与上报
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,ugdtimg.com,REJECT
+DOMAIN-SUFFIX,l.qq.com,REJECT
+DOMAIN,qzs.gdtimg.com,REJECT
+DOMAIN,pgdt.gtimg.cn,REJECT
+DOMAIN,pgdt.ugdtimg.com,REJECT
+DOMAIN,c2.gdt.qq.com,REJECT
+DOMAIN,2fwin.gdt.qq.com,REJECT
+DOMAIN,adsmind.gdtimg.com,REJECT
+DOMAIN,adsmind.ugdtimg.com,REJECT
+DOMAIN,ad.tencentmusic.com,REJECT
+DOMAIN,mc.tencentmusic.com,REJECT
+DOMAIN,mi.gdt.qq.com,REJECT
+
+# 电商/本地生活广告与追踪（阿里、京东、美团、小米等）
+DOMAIN,ossgw.alicdn.com,REJECT
+DOMAIN,hudong.alicdn.com,REJECT
+DOMAIN,et.tanx.com,REJECT
+DOMAIN,df.tanx.com,REJECT
+DOMAIN,opehs.tanx.com,REJECT
+DOMAIN,beacon-api.aliyuncs.com,REJECT
+DOMAIN,adash.man.aliyuncs.com,REJECT
+
+# 个推推送 SDK
+DOMAIN-SUFFIX,getui.com,REJECT
+DOMAIN-SUFFIX,getui.net,REJECT
+DOMAIN-SUFFIX,igexin.com,REJECT
+
+# 其它广告联盟与追踪
+DOMAIN-SUFFIX,supersonicads.com,REJECT
+DOMAIN-SUFFIX,appsad.cn,REJECT
+DOMAIN-SUFFIX,applovin.com,REJECT
+DOMAIN-SUFFIX,vungle.com,REJECT
+DOMAIN-SUFFIX,unityads.unitychina.cn,REJECT
+DOMAIN-SUFFIX,tapjoy.com,REJECT
+DOMAIN-SUFFIX,ads.vungle.com,REJECT
+DOMAIN-SUFFIX,adsmoloco.com,REJECT
+DOMAIN-SUFFIX,tradplusad.com,REJECT
+DOMAIN-SUFFIX,fancyapi.com,REJECT
+DOMAIN-SUFFIX,medproad.com,REJECT
+DOMAIN-SUFFIX,1rtb.net,REJECT
+DOMAIN-SUFFIX,1rtb.com,REJECT
+DOMAIN-SUFFIX,halomobi.com,REJECT
+DOMAIN-SUFFIX,hubcloud.com.cn,REJECT
+DOMAIN-SUFFIX,inmobi.cn,REJECT
+DOMAIN-SUFFIX,puata.info,REJECT
+DOMAIN-SUFFIX,beizi.biz,REJECT
+DOMAIN-SUFFIX,miaozhen.com,REJECT
+
+# Google 广告服务
+DOMAIN-SUFFIX,doubleclick-cn.net,REJECT
+DOMAIN-SUFFIX,googlesyndication-cn.com,REJECT
+
 [Rewrite]
 # -----酷安去首页广告、信息流广告、评论广告@RuCu6 @kelee---------
 ^https:\/\/api\.coolapk\.com\/v6\/feed\/detail\? response-body-json-jq '.data.hotReplyRows |= if . then map(select(.id?)) else . end | .data.topReplyRows |= if . then map(select(.id?)) else . end | reduce ("detailSponsorCard", "include_goods", "include_goods_ids") as $key (.; .data[$key]=[])'
