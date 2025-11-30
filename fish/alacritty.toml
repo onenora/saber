@@ -1,34 +1,207 @@
+# ========================= 通用设置 =========================
+[general]
+live_config_reload = true     # 自动重载配置
+working_directory = "None"    # 使用当前工作目录
 
+# ========================= 光标设置 =========================
+[cursor]
+style = { shape = "Beam", blinking = "On" }      # 光标样式
+vi_mode_style = { shape = "Block", blinking = "Off" }  # vi 模式光标样式
+blink_interval = 750      # 光标闪烁速度（毫秒）
+unfocused_hollow = true   # 失去焦点时显示空心光标
+
+# ========================= 字体设置 =========================
+[font]
+size = 18.0
+builtin_box_drawing = true   # 使用内置框线字符
+
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "Hack Nerd Font"
+style = "Italic"
+
+[font.offset]
+x = 0
+y = 8    # 字体整体偏移
+
+[font.glyph_offset]
+x = 0
+y = 2    # 字符偏移调整
+
+# ========================= 键盘快捷键设置 =========================
+# 清除历史
+[[keyboard.bindings]]
+action = "ClearHistory"
+key = "R"
+mode = "~Vi|~Search"
+mods = "Command"    # Command + R 清除历史
+
+# 退出
+[[keyboard.bindings]]
+action = "Quit"
+key = "W"
+mods = "Command|Shift"    # Command + Shift + W 退出
+
+# 新建实例/窗口
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Command"          # Command + N 新建实例
+
+[[keyboard.bindings]]
+action = "CreateNewWindow"
+key = "T"
+mods = "Command"          # Command + T 新建窗口
+
+# 隐藏窗口
+[[keyboard.bindings]]
+action = "Hide"
+key = "W"
+mods = "Command"          # Command + W 隐藏窗口
+
+# 光标移动
+[[keyboard.bindings]]
+chars = "\u001Bb"
+key = "Left"
+mods = "Alt"             # Option + ← 光标向左移动一个单词
+
+[[keyboard.bindings]]
+chars = "\u001Bf"
+key = "Right"
+mods = "Alt"             # Option + → 光标向右移动一个单词
+
+[[keyboard.bindings]]
+chars = "\u0001"
+key = "Left"
+mods = "Command"         # Command + ← 移动到行首
+
+[[keyboard.bindings]]
+chars = "\u0005"
+key = "Right"
+mods = "Command"         # Command + → 移动到行尾
+
+# 删除操作
+[[keyboard.bindings]]
+chars = "\u0015"
+key = "Back"
+mods = "Command"         # Command + Delete 删除字符
+
+[[keyboard.bindings]]
+chars = "\u001B\u007F"
+key = "Back"
+mods = "Alt"             # Option + Delete 删除前一个单词
+
+# 标签页切换
+[[keyboard.bindings]]
+chars = "\u001Cp"
+key = "LBracket"
+mods = "Command|Shift"   # Command + Shift + [ 切换到上一个标签
+
+[[keyboard.bindings]]
+chars = "\u001Cn"
+key = "RBracket"
+mods = "Command|Shift"   # Command + Shift + ] 切换到下一个标签
+
+# 清屏
+[[keyboard.bindings]]
+chars = "\u000c"
+key = "K"
+mods = "Command"         # Command + K 清屏
+
+# 分屏 (tmux 配合)
+[[keyboard.bindings]]
+chars = "\u001c\""
+key = "D"
+mods = "Command"         # Command + D 水平分屏
+
+[[keyboard.bindings]]
+chars = "\u001c%"
+key = "D"
+mods = "Command|Shift"   # Command + Shift + D 垂直分屏
+
+# ========================= 滚动设置 =========================
+[scrolling]
+history = 100000         # 滚动历史条数
+multiplier = 4           # 滚动速度倍率
+
+# ========================= 选中设置 =========================
+[selection]
+save_to_clipboard = true                         # 选中自动复制到剪贴板
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"     # 语义转义字符
+
+# ========================= Shell 设置 =========================
+[terminal.shell]
+program = "/opt/homebrew/bin/fish"  # 默认 Shell
+args = ["--login"]                   # 登录模式启动
+
+# ========================= 窗口设置 =========================
+[window]
+decorations = "transparent"             # 窗口装饰
+decorations_theme_variant = "Dark"  # 主题风格
+resize_increments = true                # 窗口大小增量调整
+opacity = 0.85                                   # 窗口透明度
+blur = true                                   # 模糊效果 (macOS)
+dynamic_title = true                       # 动态标题
+
+[window.position]
+x = 80
+y = 100                               # 窗口初始位置
+
+[window.dimensions]
+columns = 120
+lines = 25                             # 窗口初始大小
+
+[window.padding]
+x = 20
+y = 26                                # 窗口内边距
+
+# ========================= 颜色设置 =========================
 [colors]
-draw_bold_text_with_bright_colors = false
+draw_bold_text_with_bright_colors = true  # 加粗文本是否使用亮色
 
-[colors.bright]
-black = "#4d4d4d"
-blue = "#a277ff"
-cyan = "#61ffca"
-green = "#61ffca"
+# 普通颜色
+[colors.normal]
+black   = "#110f18"
+blue    = "#a277ff"
+cyan    = "#61ffca"
+green   = "#61ffca"
 magenta = "#a277ff"
-red = "#ff6767"
-white = "#edecee"
-yellow = "#ffca85"
+red     = "#ff6767"
+white   = "#edecee"
+yellow  = "#ffca85"
 
+# 亮色
+[colors.bright]
+black   = "#4d4d4d"
+blue    = "#a277ff"
+cyan    = "#61ffca"
+green   = "#61ffca"
+magenta = "#a277ff"
+red     = "#ff6767"
+white   = "#edecee"
+yellow  = "#ffca85"
+
+# 光标颜色
 [colors.cursor]
 cursor = "#a277ff"
 
-[colors.normal]
-black = "#110f18"
-blue = "#a277ff"
-cyan = "#61ffca"
-green = "#61ffca"
-magenta = "#a277ff"
-red = "#ff6767"
-white = "#edecee"
-yellow = "#ffca85"
-
+# 背景和前景色
 [colors.primary]
 background = "#15141b"
 foreground = "#edecee"
 
+# 搜索匹配
 [colors.search.focused_match]
 background = "#9F7AF5"
 foreground = "#ffffff"
@@ -37,178 +210,7 @@ foreground = "#ffffff"
 background = "#ffffff"
 foreground = "#000000"
 
+# 选中颜色
 [colors.selection]
 background = "#29263c"
 text = "CellForeground"
-
-[cursor.style]
-shape = "Beam"
-
-[font]
-size = 18.0
-
-[font.bold]
-family = "Hack Nerd Font"
-style = "Regular"
-
-[font.bold_italic]
-family = "Hack Nerd Font"
-style = "Italic"
-
-[font.glyph_offset]
-x = 0
-y = 3
-
-[font.italic]
-family = "Hack Nerd Font"
-style = "Italic"
-
-[font.normal]
-family = "Hack Nerd Font"
-style = "Regular"
-
-[font.offset]
-x = 0
-y = 9
-
-[[keyboard.bindings]]
-action = "Quit"
-key = "W"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-action = "SpawnNewInstance"
-key = "N"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001Bb"
-key = "Left"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001Bf"
-key = "Right"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u0001"
-key = "Left"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u0005"
-key = "Right"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u0015"
-key = "Back"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001B\u007F"
-key = "Back"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001Cc"
-key = "T"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C&"
-key = "W"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001Cp"
-key = "LBracket"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001Cn"
-key = "RBracket"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u001C1"
-key = "Key1"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C2"
-key = "Key2"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C3"
-key = "Key3"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C4"
-key = "Key4"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C5"
-key = "Key5"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C6"
-key = "Key6"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C7"
-key = "Key7"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C8"
-key = "Key8"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = "\u001C9"
-key = "Key9"
-mods = "Command"
-
-[[keyboard.bindings]]
-action = "ReceiveChar"
-key = "Back"
-
-[scrolling]
-history = 100000
-multiplier = 4
-
-[selection]
-save_to_clipboard = true
-semantic_escape_chars = ",│`|:\"' ()[]{}<>"
-
-[terminal.shell]
-args = ["--login", "--command", "tmux new-session -A -D -s main"]
-program = "/opt/homebrew/bin/fish"
-
-[window]
-decorations = "transparent"
-
-[window.dimensions]
-columns = 100
-lines = 25
-
-[window.padding]
-x = 20
-y = 22
-
-[window.position]
-x = 80
-y = 100
-
-[general]
-live_config_reload = true
-import = ["~/.config/alacritty/dracula.toml"]
-
-[terminal]
