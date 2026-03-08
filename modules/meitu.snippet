@@ -1,0 +1,13 @@
+#!name=美图
+#!desc=美图系列VIP
+#!icon=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Dukou.png
+#!author=chxm1023 ikun
+//@UpdateTime    2026-03-08 14:30
+//@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/modules/meitu.snippet
+
+# 美图秀秀
+^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) url script-response-body https://raw.githubusercontent.com/onenora/saber/main/scripts/mt.js
+# 美图子应用 (Wink等)
+^https:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show) url script-response-body https://raw.githubusercontent.com/onenora/saber/main/scripts/mt.js
+
+hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
