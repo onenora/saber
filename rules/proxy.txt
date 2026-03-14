@@ -42,6 +42,7 @@ DOMAIN-SUFFIX,whatsapp.net
 #> Google / YouTube
 
 # === 域名规则===
+DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,ampproject.org
 DOMAIN-SUFFIX,android.com
 DOMAIN-SUFFIX,androidify.com
@@ -274,6 +275,7 @@ DOMAIN,embyty.entertang.work
 DOMAIN,ebook.xiao313.dpdns.org
 DOMAIN-SUFFIX,manus.im
 DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,greasyfork.org
 DOMAIN-SUFFIX,linux.do
 DOMAIN,xireiki.com
@@ -300,7 +302,7 @@ DOMAIN-SUFFIX,dxmwx.org
 DOMAIN-SUFFIX,iturrit.com
 DOMAIN,singlelogin.me
 DOMAIN,guide.v2fly.org
-
+DOMAIN-SUFFIX, egernapp.com
 # ==============================
 # IP Rules (集中放置)
 # ==============================
