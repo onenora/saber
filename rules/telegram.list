@@ -2,7 +2,7 @@
 #!desc=按ASN分流telegram
 #!author=onenora
 //@UpdateTime    2026-03-03 00:03
-//@ScriptURL     https://fastly.jsdelivr.net/gh/onenora/saber@main/rules/telegram.list
+//@ScriptURL     https://raw.githubusercontent.com/onenora/saber/main/rules/telegram.list
 
 DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,tx.me

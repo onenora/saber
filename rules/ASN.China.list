@@ -2,7 +2,7 @@
 #!desc=按ASN分流中国大陆IP与域名直连
 #!author=VirgilClyne
 //@UpdateTime    2026-03-03 00:03
-//@ScriptURL    https://fastly.jsdelivr.net/gh/onenora/saber@main/rules/ASN.China.list
+//@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/ASN.China.list
 
 IP-ASN,4134 // 中国电信骨干网
 IP-ASN,4538 // 中国教育科研网络中心

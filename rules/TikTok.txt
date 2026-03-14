@@ -2,7 +2,7 @@
 #!desc=TikTok分流
 #!author=onenora
 //@UpdateTime    2026-03-03 00:03
-//@ScriptURL     https://fastly.jsdelivr.net/gh/onenora/saber@main/rules/TikTok.txt
+//@ScriptURL     https://raw.githubusercontent.com/onenora/saber/main/rules/TikTok.txt
 
 DOMAIN,lf16-effectcdn.byteeffecttos-g.com
 DOMAIN,lf16-pkgcdn.pitaya-clientai.com

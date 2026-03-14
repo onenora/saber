@@ -1,10 +1,12 @@
 #!name=PROXY♻️
-#!desc=常用的国外顶级域名
+#!desc=ASN + Domain 混合规则
 #!author=onenora
-//@UpdateTime    2026-03-03 21:55
-//@ScriptURL    https://fastly.jsdelivr.net/gh/onenora/saber@main/rules/proxy.txt
+//@UpdateTime    2026-03-14 15:15
+//@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/proxy.txt
 
-#>Twitter
+#> Twitter (X)
+
+# === 域名规则===
 DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,t.co
@@ -15,49 +17,11 @@ DOMAIN-SUFFIX,twitpic.com
 DOMAIN-SUFFIX,twitter.com
 DOMAIN-SUFFIX,twitter.jp
 DOMAIN-SUFFIX,vine.co
+DOMAIN-SUFFIX,x.com
 
-#>Microsoft
-DOMAIN-SUFFIX,bing.com
-DOMAIN-SUFFIX,linkedin.com
-DOMAIN-SUFFIX,licdn.com
-DOMAIN-SUFFIX,msn.com
-DOMAIN-SUFFIX,skype.com
-DOMAIN-SUFFIX,aka.ms
-DOMAIN-SUFFIX,streaming.mediaservices.windows.net
-DOMAIN,assets1.xboxlive.com
-DOMAIN,assets2.xboxlive.com
-DOMAIN,az416426.vo.msecnd.net
-DOMAIN,az668014.vo.msecnd.net
-DOMAIN-SUFFIX,onedrive.live.com
-DOMAIN-SUFFIX,xboxlive.com
+#> Facebook / Instagram / WhatsApp
 
-#>GitHub
-DOMAIN-SUFFIX,github.blog
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,github.io
-DOMAIN-SUFFIX,githubassets.com
-DOMAIN-SUFFIX,githubusercontent.com
-
-#>pixiv
-DOMAIN-SUFFIX,pixiv.net
-DOMAIN-SUFFIX,pixiv.org
-DOMAIN-SUFFIX,pximg.net
-
-#>Pornhub
-DOMAIN-SUFFIX,phncdn.com
-DOMAIN-SUFFIX,pornhub.com
-DOMAIN-SUFFIX,pornhubpremium.com
-
-#>台湾好
-DOMAIN-SUFFIX,skyking.com.tw
-DOMAIN,hamifans.emome.net
-
-#>Twitch
-DOMAIN-SUFFIX,twitch.tv
-DOMAIN-SUFFIX,twitchcdn.net
-DOMAIN-SUFFIX,ttvnw.net
-
-#>Facebook
+# === 域名规则===
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,fb.me
@@ -74,17 +38,10 @@ DOMAIN-SUFFIX,oculuscdn.com
 DOMAIN-SUFFIX,rocksdb.org
 DOMAIN-SUFFIX,whatsapp.com
 DOMAIN-SUFFIX,whatsapp.net
-IP-CIDR,3.123.36.126/32,no-resolve
-IP-CIDR,35.157.215.84/32,no-resolve
-IP-CIDR,35.157.217.255/32,no-resolve
-IP-CIDR,52.58.209.134/32,no-resolve
-IP-CIDR,54.93.124.31/32,no-resolve
-IP-CIDR,54.162.243.80/32,no-resolve
-IP-CIDR,54.173.34.141/32,no-resolve
-IP-CIDR,54.235.23.242/32,no-resolve
-IP-CIDR,169.45.248.118/32,no-resolve
 
-#>Google
+#> Google / YouTube
+
+# === 域名规则===
 DOMAIN-SUFFIX,ampproject.org
 DOMAIN-SUFFIX,android.com
 DOMAIN-SUFFIX,androidify.com
@@ -138,19 +95,61 @@ DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
 
-#>Clubhouse
+#> Microsoft (重点)
+
+# === 域名规则===
+# A. AI 与 必应 (Copilot / Bing)
+DOMAIN-SUFFIX,copilot.microsoft.com
+DOMAIN-SUFFIX,bing.com
+DOMAIN-SUFFIX,bing.net
+# B. 存储与协作 (OneDrive / Sharepoint)
+DOMAIN-SUFFIX,onedrive.live.com
+DOMAIN-SUFFIX,1drv.ms
+DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,storage.live.com
+# C. 开发工具 (GitHub)
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubusercontent.com
+DOMAIN-SUFFIX,objects.githubusercontent.com
+
+#> pixiv
+# === 域名规则 ===
+DOMAIN-SUFFIX,pixiv.net
+DOMAIN-SUFFIX,pixiv.org
+DOMAIN-SUFFIX,pximg.net
+
+#> Pornhub
+# === 域名规则 ===
+DOMAIN-SUFFIX,phncdn.com
+DOMAIN-SUFFIX,pornhub.com
+DOMAIN-SUFFIX,pornhubpremium.com
+
+#> 台湾好
+# === 域名规则 ===
+DOMAIN-SUFFIX,skyking.com.tw
+DOMAIN,hamifans.emome.net
+
+#> Twitch
+# === 域名规则 ===
+DOMAIN-SUFFIX,twitch.tv
+DOMAIN-SUFFIX,twitchcdn.net
+DOMAIN-SUFFIX,ttvnw.net
+
+#> Clubhouse
+# === 域名规则 ===
 DOMAIN-SUFFIX,clubhouseapi.com
 DOMAIN-SUFFIX,clubhouse.pubnub.com
 DOMAIN-SUFFIX,joinclubhouse.com
 DOMAIN-SUFFIX,ap3.agora.io
 
-#>Top Blocked Sites
+#> Top Blocked Sites
+# === 域名规则 ===
 DOMAIN-SUFFIX,meta.com
 DOMAIN-SUFFIX,kenengba.com
 DOMAIN-SUFFIX,snapchat.com
 DOMAIN-SUFFIX,amazon.com
 DOMAIN-SUFFIX,angularjs.org
-DOMAIN-SUFFIX,amazon.com
 DOMAIN-SUFFIX,bitbucket.org
 DOMAIN-SUFFIX,blogsmithmedia.com
 DOMAIN-SUFFIX,box.net
@@ -197,19 +196,20 @@ DOMAIN-SUFFIX,wikimedia.org
 DOMAIN-SUFFIX,vimeo.com
 DOMAIN-SUFFIX,medium.com
 
-#>RSS
+#> RSS
+# === 域名规则 ===
 DOMAIN-SUFFIX,feedx.net
 DOMAIN-SUFFIX,rssfeed.today
 DOMAIN-SUFFIX,nicegram.app
-DOMAIN-SUFFIX,mudvod.tv 
+DOMAIN-SUFFIX,mudvod.tv
 DOMAIN-SUFFIX,macbl.com
 DOMAIN-SUFFIX,misakaf.org
 DOMAIN-SUFFIX,poloemby.xyz
 DOMAIN-SUFFIX,emby.vip
 DOMAIN,xn--cnq51x.live
 
-#>YouTube
-DOMAIN,yt3.ggpht.com
+#> YouTube
+# === 域名规则 ===
 DOMAIN-SUFFIX,gvt2.com
 DOMAIN-SUFFIX,withyoutube.com
 DOMAIN-SUFFIX,youtube-nocookie.com
@@ -218,10 +218,12 @@ DOMAIN-SUFFIX,youtubeeducation.com
 DOMAIN-SUFFIX,youtubegaming.com
 DOMAIN-SUFFIX,youtubekids.com
 
-#>Spotify
+#> Spotify
+# === 域名规则 ===
 DOMAIN-SUFFIX,spotify.com
 
-#OthernewaddRules
+#> OthernewaddRules
+# === 域名规则 ===
 DOMAIN-SUFFIX,v2ex.com
 DOMAIN-SUFFIX,koyeb.com
 DOMAIN,bobtranslate.com
@@ -239,15 +241,18 @@ DOMAIN-SUFFIX,t66y.com
 DOMAIN-SUFFIX,ibm.com
 DOMAIN-SUFFIX,plex.tv
 DOMAIN,relay.firefox.com
-DOMAIN-SUFFIX,pxyzjmspfl.work // Added for: snerbnew.pxyzjmspfl.work:443
+DOMAIN-SUFFIX,pxyzjmspfl.work //Added for: snerbnew.pxyzjmspfl.work:443
 DOMAIN-SUFFIX,bugsnag.com
-DOMAIN-SUFFIX,czbooks.net // Added for: czbooks.net:443
-DOMAIN-SUFFIX,gitbook.io // Added for: pingshunhuangalex.gitbook.io:443
-DOMAIN-SUFFIX,69shuba.com // Added for: www.69shuba.com:443
-DOMAIN-SUFFIX,itunes.apple.com // Added for: downloaddispatch.itunes.apple.com:443
-DOMAIN-SUFFIX,x.com
+DOMAIN-SUFFIX,czbooks.net //Added for: czbooks.net:443
+DOMAIN-SUFFIX,gitbook.io //Added for: pingshunhuangalex.gitbook.io:443
+DOMAIN-SUFFIX,69shuba.com //Added for: www.69shuba.com:443
+DOMAIN,itunes.apple.com
 DOMAIN-SUFFIX,gyks.cf
 DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,hysteria.network
 DOMAIN-SUFFIX,sagernet.org
 DOMAIN-SUFFIX,nodeseek.com
@@ -256,17 +261,13 @@ DOMAIN-SUFFIX,browser-intake-datadoghq.com
 DOMAIN-SUFFIX,influxdata.com
 DOMAIN-SUFFIX,workers.dev
 DOMAIN-SUFFIX,reddit.com
-IP-CIDR,142.251.46.81/32,no-resolve
-
 DOMAIN-SUFFIX,get.store
 DOMAIN-SUFFIX,imput.net
 DOMAIN-SUFFIX,alipayobjects.com
 DOMAIN-SUFFIX,redditstatic.com
 DOMAIN-SUFFIX,huggingface.co
-
 DOMAIN,scripting-import.bytevalley.workers.dev
 DOMAIN-SUFFIX,uukanshu.cc
-DOMAIN,archive.is
 DOMAIN-SUFFIX,etflix.lol
 DOMAIN-SUFFIX,asia.nikkei.com
 DOMAIN,embyty.entertang.work
@@ -299,4 +300,161 @@ DOMAIN-SUFFIX,dxmwx.org
 DOMAIN-SUFFIX,iturrit.com
 DOMAIN,singlelogin.me
 DOMAIN,guide.v2fly.org
-DOMAIN,www.shazam.com
+
+# ==============================
+# IP Rules (集中放置)
+# ==============================
+IP-ASN,63179,no-resolve
+IP-ASN,54888,no-resolve
+IP-ASN,35995,no-resolve
+IP-ASN,13414,no-resolve
+IP-CIDR,3.123.36.126/32,no-resolve
+IP-CIDR,35.157.215.84/32,no-resolve
+IP-CIDR,35.157.217.255/32,no-resolve
+IP-CIDR,52.58.209.134/32,no-resolve
+IP-CIDR,54.93.124.31/32,no-resolve
+IP-CIDR,54.162.243.80/32,no-resolve
+IP-CIDR,54.173.34.141/32,no-resolve
+IP-CIDR,54.235.23.242/32,no-resolve
+IP-CIDR,169.45.248.118/32,no-resolve
+# --- Meta (Facebook / Instagram / WhatsApp) ---
+IP-ASN,32934,no-resolve
+IP-ASN,34825,no-resolve
+IP-ASN,54115,no-resolve
+IP-ASN,63293,no-resolve
+IP-ASN,149642,no-resolve
+# --- Google ---
+IP-ASN,15169,no-resolve
+IP-ASN,139070,no-resolve
+IP-ASN,6432,no-resolve
+IP-ASN,55023,no-resolve
+IP-ASN,45566,no-resolve
+IP-ASN,43515,no-resolve
+IP-ASN,41264,no-resolve
+IP-ASN,40873,no-resolve
+IP-ASN,396982,no-resolve
+IP-ASN,396178,no-resolve
+IP-ASN,395973,no-resolve
+IP-ASN,394639,no-resolve
+IP-ASN,394507,no-resolve
+IP-ASN,394089,no-resolve
+IP-ASN,36987,no-resolve
+IP-ASN,36561,no-resolve
+IP-ASN,36520,no-resolve
+IP-ASN,36492,no-resolve
+IP-ASN,36411,no-resolve
+IP-ASN,36385,no-resolve
+IP-ASN,36384,no-resolve
+IP-ASN,36383,no-resolve
+IP-ASN,36040,no-resolve
+IP-ASN,36039,no-resolve
+IP-ASN,33715,no-resolve
+IP-ASN,32381,no-resolve
+IP-ASN,26910,no-resolve
+IP-ASN,26684,no-resolve
+IP-ASN,22859,no-resolve
+IP-ASN,22577,no-resolve
+IP-ASN,214611,no-resolve
+IP-ASN,214609,no-resolve
+IP-ASN,209539,no-resolve
+IP-ASN,209519,no-resolve
+IP-ASN,209504,no-resolve
+IP-ASN,19527,no-resolve
+IP-ASN,19448,no-resolve
+IP-ASN,19425,no-resolve
+IP-ASN,16591,no-resolve
+IP-ASN,16550,no-resolve
+IP-ASN,151231,no-resolve
+IP-ASN,13949,no-resolve
+IP-ASN,139190,no-resolve
+# --- Microsoft ---
+IP-ASN,8075,no-resolve
+IP-ASN,12076,no-resolve
+# --- Amazon / AWS ---
+IP-ASN,699,no-resolve
+IP-ASN,801,no-resolve
+IP-ASN,7224,no-resolve
+IP-ASN,8987,no-resolve
+IP-ASN,9059,no-resolve
+IP-ASN,62785,no-resolve
+IP-ASN,63088,no-resolve
+IP-ASN,58588,no-resolve
+IP-ASN,40045,no-resolve
+IP-ASN,400098,no-resolve
+IP-ASN,39111,no-resolve
+IP-ASN,399834,no-resolve
+IP-ASN,399991,no-resolve
+IP-ASN,395343,no-resolve
+IP-ASN,401395,no-resolve
+IP-ASN,38895,no-resolve
+IP-ASN,36263,no-resolve
+IP-ASN,274698,no-resolve
+IP-ASN,264167,no-resolve
+IP-ASN,21664,no-resolve
+IP-ASN,214101,no-resolve
+IP-ASN,19047,no-resolve
+IP-ASN,17493,no-resolve
+IP-ASN,16509,no-resolve
+IP-ASN,154263,no-resolve
+IP-ASN,14618,no-resolve
+IP-ASN,135630,no-resolve
+IP-ASN,10291,no-resolve
+IP-ASN,10124,no-resolve
+# --- Cloudflare ---
+IP-ASN,13335,no-resolve
+IP-ASN,132892,no-resolve
+IP-ASN,133877,no-resolve
+IP-ASN,139242,no-resolve
+IP-ASN,14789,no-resolve
+IP-ASN,202623,no-resolve
+IP-ASN,203898,no-resolve
+IP-ASN,209242,no-resolve
+IP-ASN,394536,no-resolve
+IP-ASN,395747,no-resolve
+IP-ASN,400095,no-resolve
+# --- Fastly ---
+IP-ASN,895,no-resolve
+IP-ASN,149097,no-resolve
+IP-ASN,394192,no-resolve
+IP-ASN,54113,no-resolve
+# --- Leaseweb ---
+IP-ASN,60626,no-resolve
+IP-ASN,60781,no-resolve
+IP-ASN,7203,no-resolve
+IP-ASN,136988,no-resolve
+IP-ASN,134351,no-resolve
+IP-ASN,133752,no-resolve
+IP-ASN,15003,no-resolve
+IP-ASN,16265,no-resolve
+IP-ASN,19148,no-resolve
+IP-ASN,202134,no-resolve
+IP-ASN,203774,no-resolve
+IP-ASN,203928,no-resolve
+IP-ASN,205544,no-resolve
+IP-ASN,25847,no-resolve
+IP-ASN,27411,no-resolve
+IP-ASN,28753,no-resolve
+IP-ASN,30633,no-resolve
+IP-ASN,32613,no-resolve
+IP-ASN,32804,no-resolve
+IP-ASN,38930,no-resolve
+IP-ASN,393886,no-resolve
+IP-ASN,394380,no-resolve
+IP-ASN,395954,no-resolve
+IP-ASN,396190,no-resolve
+IP-ASN,396362,no-resolve
+# --- Netflix ---
+IP-ASN,2906,no-resolve
+IP-ASN,394406,no-resolve
+IP-ASN,40027,no-resolve
+IP-ASN,55095,no-resolve
+IP-ASN,136292,no-resolve
+# --- Telegram ---
+IP-ASN,211157,no-resolve
+IP-ASN,44907,no-resolve
+IP-ASN,59930,no-resolve
+IP-ASN,62014,no-resolve
+IP-ASN,62041,no-resolve
+# --- Tor ---
+IP-ASN,44270,no-resolve
+IP-CIDR,142.251.46.81/32,no-resolve
