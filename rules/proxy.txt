@@ -264,7 +264,6 @@ DOMAIN-SUFFIX,workers.dev
 DOMAIN-SUFFIX,reddit.com
 DOMAIN-SUFFIX,get.store
 DOMAIN-SUFFIX,imput.net
-DOMAIN-SUFFIX,alipayobjects.com
 DOMAIN-SUFFIX,redditstatic.com
 DOMAIN-SUFFIX,huggingface.co
 DOMAIN,scripting-import.bytevalley.workers.dev
