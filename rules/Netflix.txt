@@ -1,0 +1,53 @@
+#!name=Netflix
+#!desc=Netflix 分流规则，基于 blackmatrix7
+#!author=onenora
+//@UpdateTime    2026-03-21 18:31
+//@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/Netflix.txt
+
+# === 来源: blackmatrix7/Netflix ===
+# https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/Netflix
+
+# 域名规则
+DOMAIN,e13252.dscg.akamaiedge.net
+DOMAIN,h-netflix.online-metrix.net
+DOMAIN,netflix.com.edgesuite.net
+DOMAIN-SUFFIX,cookielaw.org
+DOMAIN-SUFFIX,fast.com
+DOMAIN-SUFFIX,flxvpn.net
+DOMAIN-SUFFIX,netflix.ca
+DOMAIN-SUFFIX,netflix.com
+DOMAIN-SUFFIX,netflix.com.au
+DOMAIN-SUFFIX,netflix.com.edgesuite.net
+DOMAIN-SUFFIX,netflix.net
+DOMAIN-SUFFIX,netflixdnstest0.com
+DOMAIN-SUFFIX,netflixdnstest1.com
+DOMAIN-SUFFIX,netflixdnstest2.com
+DOMAIN-SUFFIX,netflixdnstest3.com
+DOMAIN-SUFFIX,netflixdnstest4.com
+DOMAIN-SUFFIX,netflixdnstest5.com
+DOMAIN-SUFFIX,netflixdnstest6.com
+DOMAIN-SUFFIX,netflixdnstest7.com
+DOMAIN-SUFFIX,netflixdnstest8.com
+DOMAIN-SUFFIX,netflixdnstest9.com
+DOMAIN-SUFFIX,netflixdnstest10.com
+DOMAIN-SUFFIX,netflixinvestor.com
+DOMAIN-SUFFIX,netflixstudios.com
+DOMAIN-SUFFIX,netflixtechblog.com
+DOMAIN-SUFFIX,nflxext.com
+DOMAIN-SUFFIX,nflximg.com
+DOMAIN-SUFFIX,nflximg.net
+DOMAIN-SUFFIX,nflxsearch.net
+DOMAIN-SUFFIX,nflxso.net
+DOMAIN-SUFFIX,nflxvideo.net
+DOMAIN-SUFFIX,onetrust.com
+DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
+DOMAIN-KEYWORD,dualstack.apiproxy-
+DOMAIN-KEYWORD,dualstack.ichnaea-web-
+DOMAIN-KEYWORD,netflixdnstest
+
+# ASN 规则
+IP-ASN,2906,no-resolve
+IP-ASN,40027,no-resolve
+IP-ASN,55095,no-resolve
+IP-ASN,136292,no-resolve
+IP-ASN,394406,no-resolve
