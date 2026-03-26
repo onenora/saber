@@ -104,9 +104,8 @@ DOMAIN, sugar.zhihu.com, REJECT
 
 [Script]
 # > 酷安
-http-response ^https:\/\/api\.coolapk\.com\/v6\/main\/(init|indexV8|dataList) script-path=https://raw.githubusercontent.com/onenora/saber/main/scripts/coolapk.js, requires-body=true, timeout=60, tag=酷安
+http-response ^https:\/\/api\.coolapk\.com\/v6\/main\/(init|indexV8) script-path=https://raw.githubusercontent.com/onenora/saber/main/scripts/coolapk.js, requires-body=true, timeout=60, tag=酷安
+http-response ^https:\/\/api\.coolapk\.com\/v6\/(page\/)?dataList script-path=https://raw.githubusercontent.com/onenora/saber/main/scripts/coolapk.js, requires-body=true, timeout=60, tag=酷安
 http-response ^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList) script-path=https://raw.githubusercontent.com/onenora/saber/main/scripts/coolapk.js, requires-body=true, timeout=60, tag=酷安
-http-response ^https:\/\/api\.coolapk\.com\/v6\/page\/dataList script-path=https://raw.githubusercontent.com/onenora/saber/main/scripts/coolapk.js, requires-body=true, timeout=60, tag=酷安
-
 # > 起点
 http-response ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v[23]\/deeplink\/geturl|v1\/(client\/getconf|bookshelf\/getHoverAdv|adv\/getadvlistbatch)) script-path=https://raw.githubusercontent.com/onenora/saber/main/scripts/qd.js, requires-body=true, timeout=60, tag=起点
