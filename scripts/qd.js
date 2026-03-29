@@ -91,11 +91,14 @@ try {
         }
     }
 
-    // ==================== 5. 全局配置深度净化 (getconf) ====================
-    else if (
-        url.includes('v1/client/getconf') ||
-        url.includes('young/getconf')
-    ) {
+    // ==================== 5. 青少年模式配置（激进清空）====================
+    else if (url.includes('young/getconf')) {
+        console.log(`[起点优化] 🚫 青少年模式配置: 激进清空 Data`);
+        body.Data = {};
+    }
+
+    // ==================== 6. 全局配置深度净化 (getconf) ====================
+    else if (url.includes('v1/client/getconf')) {
         console.log(`[起点优化] ⚙️ 全局配置 (getconf): 开始深度净化...`);
 
         // 干掉第三方联盟

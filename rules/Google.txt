@@ -1,11 +1,8 @@
 #!name=Google
 #!desc=Google / YouTube 分流规则
 #!author=onenora
-//@UpdateTime    2026-03-21 18:31
+//@UpdateTime    2026-03-29 00:00
 //@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/Google.txt
-
-# === 来源: blackmatrix7/Google (核心域名) ===
-# https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/Google
 
 # 域名规则
 DOMAIN,voice.telephony.goog

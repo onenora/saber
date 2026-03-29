@@ -1,7 +1,7 @@
 #!name=DIRECT
 #!desc=China Direct Routing Rules
 #!author=onenora
-//@UpdateTime    2026-03-14 15:15
+//@UpdateTime    2026-03-29 00:00
 //@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/direct.txt
 
 # 1. Local & Private IP (局域网直连，优先级最高，防止路由回环)

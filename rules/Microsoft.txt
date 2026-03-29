@@ -1,63 +1,49 @@
 #!name=Microsoft
 #!desc=Microsoft 核心服务分流规则
 #!author=onenora
-//@UpdateTime    2026-03-21 18:31
+//@UpdateTime    2026-03-29 00:00
 //@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/Microsoft.txt
 
-# === 来源: blackmatrix7/Microsoft (精简版) ===
-# https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/Microsoft
-# 完整规则 700+ 条，此处保留核心服务域名
-
-# A. AI 与搜索 (Copilot / Bing)
+# A. Copilot（需代理）
 DOMAIN,copilot.microsoft.com
-DOMAIN,sydney.bing.com
-DOMAIN,www.bing.com
-DOMAIN-SUFFIX,bing.com
-DOMAIN-SUFFIX,bing.net
-DOMAIN-KEYWORD,bing
-DOMAIN-KEYWORD,microsoft
-DOMAIN-KEYWORD,onedrive
 
-# B. 存储与协作 (OneDrive / SharePoint)
-DOMAIN-SUFFIX,1drv.ms
-DOMAIN-SUFFIX,onedrive.com
-DOMAIN-SUFFIX,onedrive.live.com
-DOMAIN-SUFFIX,sharepoint.com
-DOMAIN-SUFFIX,sharepointonline.com
-DOMAIN-SUFFIX,storage.live.com
+# B. 存储与协作（需代理）
+DOMAIN,onedrive.live.com
+DOMAIN,storage.live.com
+DOMAIN,1drv.ms
+DOMAIN,sharepoint.com
+DOMAIN,sharepointonline.com
+DOMAIN,api.onedrive.com
 
-# C. 开发工具 (GitHub / VS Code)
-DOMAIN-SUFFIX,github.com
-DOMAIN-SUFFIX,github.io
-DOMAIN-SUFFIX,githubassets.com
-DOMAIN-SUFFIX,githubusercontent.com
-DOMAIN-SUFFIX,objects.githubusercontent.com
-DOMAIN-SUFFIX,githubcopilot.com
-DOMAIN-SUFFIX,copilot-proxy.githubusercontent.com
+# C. 开发工具（需代理）
+DOMAIN,github.com
+DOMAIN,github.io
+DOMAIN,githubassets.com
+DOMAIN,githubusercontent.com
+DOMAIN,objects.githubusercontent.com
+DOMAIN,raw.githubusercontent.com
+DOMAIN,avatars.githubusercontent.com
+DOMAIN,codeload.github.com
+DOMAIN,githubcopilot.com
+DOMAIN,copilot-proxy.githubusercontent.com
 
-# D. 核心 Microsoft 服务
-DOMAIN-SUFFIX,azure.com
-DOMAIN-SUFFIX,azureedge.net
-DOMAIN-SUFFIX,azurefd.net
-DOMAIN-SUFFIX,live.com
-DOMAIN-SUFFIX,microsoft.com
-DOMAIN-SUFFIX,microsoftonline.com
-DOMAIN-SUFFIX,microsoftstore.com
-DOMAIN-SUFFIX,msft.net
-DOMAIN-SUFFIX,msftauth.net
-DOMAIN-SUFFIX,msn.com
-DOMAIN-SUFFIX,office.com
-DOMAIN-SUFFIX,office365.com
-DOMAIN-SUFFIX,outlook.com
-DOMAIN-SUFFIX,skype.com
-DOMAIN-SUFFIX,teams.microsoft.com
-DOMAIN-SUFFIX,visualstudio.com
-DOMAIN-SUFFIX,vsassets.io
-DOMAIN-SUFFIX,vscode.dev
-DOMAIN-SUFFIX,windows.com
-DOMAIN-SUFFIX,windowsupdate.com
-DOMAIN-SUFFIX,xbox.com
+# D. Azure / 登录（需代理）
+DOMAIN,azure.com
+DOMAIN,azureedge.net
+DOMAIN,azurefd.net
+DOMAIN,login.microsoftonline.com
+DOMAIN,aadcdn.msftauth.net
+DOMAIN,aadcdn.msauth.net
 
-# ASN 规则
+# E. 其他（需代理）
+DOMAIN,teams.microsoft.com
+DOMAIN,statics.teams.cdn.office.net
+DOMAIN,visualstudio.com
+DOMAIN,vsassets.io
+DOMAIN,vscode.dev
+DOMAIN,xbox.com
+DOMAIN,skype.com
+
+# ASN
 IP-ASN,8075,no-resolve
 IP-ASN,12076,no-resolve
