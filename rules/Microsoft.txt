@@ -5,44 +5,38 @@
 //@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/Microsoft.txt
 
 # A. Copilot（需代理）
-DOMAIN,copilot.microsoft.com
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,githubcopilot.com
 
 # B. 存储与协作（需代理）
-DOMAIN,onedrive.live.com
-DOMAIN,storage.live.com
-DOMAIN,1drv.ms
-DOMAIN,sharepoint.com
-DOMAIN,sharepointonline.com
-DOMAIN,api.onedrive.com
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,1drv.ms
+DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,sharepointonline.com
+DOMAIN-SUFFIX,onedrive.com
 
 # C. 开发工具（需代理）
-DOMAIN,github.com
-DOMAIN,github.io
-DOMAIN,githubassets.com
-DOMAIN,githubusercontent.com
-DOMAIN,objects.githubusercontent.com
-DOMAIN,raw.githubusercontent.com
-DOMAIN,avatars.githubusercontent.com
-DOMAIN,codeload.github.com
-DOMAIN,githubcopilot.com
-DOMAIN,copilot-proxy.githubusercontent.com
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubusercontent.com
 
 # D. Azure / 登录（需代理）
-DOMAIN,azure.com
-DOMAIN,azureedge.net
-DOMAIN,azurefd.net
-DOMAIN,login.microsoftonline.com
-DOMAIN,aadcdn.msftauth.net
-DOMAIN,aadcdn.msauth.net
+DOMAIN-SUFFIX,azure.com
+DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,azurefd.net
+DOMAIN-SUFFIX,microsoftonline.com
+DOMAIN-SUFFIX,msauth.net
+DOMAIN-SUFFIX,msftauth.net
 
 # E. 其他（需代理）
-DOMAIN,teams.microsoft.com
-DOMAIN,statics.teams.cdn.office.net
-DOMAIN,visualstudio.com
-DOMAIN,vsassets.io
-DOMAIN,vscode.dev
-DOMAIN,xbox.com
-DOMAIN,skype.com
+DOMAIN-SUFFIX,teams.microsoft.com
+DOMAIN-SUFFIX,office.net
+DOMAIN-SUFFIX,visualstudio.com
+DOMAIN-SUFFIX,vsassets.io
+DOMAIN-SUFFIX,vscode.dev
+DOMAIN-SUFFIX,xbox.com
+DOMAIN-SUFFIX,skype.com
 
 # ASN
 IP-ASN,8075,no-resolve
