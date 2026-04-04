@@ -143,5 +143,6 @@ DOMAIN-SUFFIX,loli.net
 DOMAIN-SUFFIX,sm.ms
 DOMAIN-SUFFIX,sspai.com
 DOMAIN-SUFFIX,tianyancha.com
+DOMAIN-SUFFIX,com.cn
 
 # GEOIP,CN
