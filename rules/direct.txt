@@ -101,9 +101,6 @@ DOMAIN-KEYWORD,westlawchina
 DOMAIN,app.adjust.com
 DOMAIN,app.appsflyer.com
 DOMAIN,cdn.jsdelivr.net
-DOMAIN,errlog.umeng.com
-DOMAIN,msg.umeng.com
-DOMAIN,msg.umengcloud.com
 DOMAIN-SUFFIX,baomitu.com
 DOMAIN-SUFFIX,bootcss.com
 
