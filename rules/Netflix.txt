@@ -1,7 +1,7 @@
 #!name=Netflix
 #!desc=Netflix 分流规则，基于 blackmatrix7
 #!author=onenora
-//@UpdateTime    2026-03-29 00:00
+//@UpdateTime    2026-04-05 00:00
 //@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/Netflix.txt
 
 # 域名规则
@@ -37,6 +37,7 @@ DOMAIN-SUFFIX,nflxsearch.net
 DOMAIN-SUFFIX,nflxso.net
 DOMAIN-SUFFIX,nflxvideo.net
 DOMAIN-SUFFIX,onetrust.com
+DOMAIN-SUFFIX,us-west-2.amazonaws.com
 DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
 DOMAIN-KEYWORD,dualstack.apiproxy-
 DOMAIN-KEYWORD,dualstack.ichnaea-web-
@@ -48,3 +49,6 @@ IP-ASN,40027,no-resolve
 IP-ASN,55095,no-resolve
 IP-ASN,136292,no-resolve
 IP-ASN,394406,no-resolve
+IP-CIDR6,2607:fb10::/32,no-resolve
+IP-CIDR6,2a00:86c0::/32,no-resolve
+IP-CIDR6,2a03:5640::/32,no-resolve

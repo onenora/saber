@@ -2,7 +2,7 @@
 
 | 文件 | 说明 |
 | --- | --- |
-| [ai.txt](https://raw.githubusercontent.com/onenora/saber/main/rules/ai.txt) | AI 服务 (OpenAI / Gemini / Claude) |
+| [ai.txt](https://raw.githubusercontent.com/onenora/saber/main/rules/ai.txt) | AI / AIGC 服务 |
 | [proxy.txt](https://raw.githubusercontent.com/onenora/saber/main/rules/proxy.txt) | 常用代理域名 |
 | [direct.txt](https://raw.githubusercontent.com/onenora/saber/main/rules/direct.txt) | 国内直连白名单 |
 | [reject.txt](https://raw.githubusercontent.com/onenora/saber/main/rules/reject.txt) | 广告与追踪拦截 |

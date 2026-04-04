@@ -1,7 +1,7 @@
 #!name=DIRECT
 #!desc=China Direct Routing Rules
 #!author=onenora
-//@UpdateTime    2026-03-29 00:00
+//@UpdateTime    2026-04-05 00:00
 //@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/direct.txt
 
 # 1. Local & Private IP (局域网直连，优先级最高，防止路由回环)
@@ -61,6 +61,51 @@ DOMAIN-SUFFIX,xhscdn.com
 DOMAIN-SUFFIX,zhihu.com
 DOMAIN-SUFFIX,zhimg.com
 DOMAIN-SUFFIX,manmanbuy.com
+
+# 4.1 Blackmatrix7 补充
+
+# 4.1.1 Apple 服务补充
+DOMAIN,init.ess.apple.com
+DOMAIN,itunes.apple.com
+DOMAIN,smp-device-content.apple.com
+DOMAIN,time.apple.com
+DOMAIN-SUFFIX,weather-analytics-events.apple.com
+DOMAIN-SUFFIX,weather-data.apple.com
+DOMAIN-SUFFIX,weather-map.apple.com
+DOMAIN-KEYWORD,amp-api.podcasts.apple.com
+DOMAIN-KEYWORD,api-adservices.apple.com
+DOMAIN-KEYWORD,api.smoot.apple.cn
+DOMAIN-KEYWORD,api.smoot.apple.com
+DOMAIN-KEYWORD,buy.itunes.apple.com
+DOMAIN-KEYWORD,ess.apple.com
+DOMAIN-KEYWORD,gsa.apple.com
+DOMAIN-KEYWORD,humb.apple.com
+DOMAIN-KEYWORD,icloud.com
+DOMAIN-KEYWORD,ls.apple.com
+DOMAIN-KEYWORD,push.apple.com
+DOMAIN-KEYWORD,ssl.apple.com
+DOMAIN-KEYWORD,weather-adge.apple.com
+DOMAIN-KEYWORD,weather-edge.apple.com
+
+# 4.1.2 学术 / 出版 / 资源站补充
+DOMAIN-SUFFIX,acm.org
+DOMAIN-KEYWORD,cnki.net
+DOMAIN-KEYWORD,deepdyve
+DOMAIN-KEYWORD,elsevier
+DOMAIN-KEYWORD,sciencedirect
+DOMAIN-KEYWORD,trip.com
+DOMAIN-KEYWORD,wanfangdata
+DOMAIN-KEYWORD,westlawchina
+
+# 4.1.3 SDK / 统计 / 静态资源补充
+DOMAIN,app.adjust.com
+DOMAIN,app.appsflyer.com
+DOMAIN,cdn.jsdelivr.net
+DOMAIN,errlog.umeng.com
+DOMAIN,msg.umeng.com
+DOMAIN,msg.umengcloud.com
+DOMAIN-SUFFIX,baomitu.com
+DOMAIN-SUFFIX,bootcss.com
 
 # 5. Entertainment / Media (视听娱乐与媒体)
 DOMAIN-SUFFIX,biliapi.com

@@ -1,73 +1,78 @@
-#!name=OpenAI
-#!desc=AI 分流
+#!name=AI
+#!desc=AI / AIGC 分流规则
 #!author=onenora
-//@UpdateTime    2026-03-29 00:00
+//@UpdateTime    2026-04-05 00:00
 //@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/ai.txt
 
 # OpenAI / ChatGPT
-DOMAIN,cdn.oaistatic.com
-DOMAIN,chatgpt.livekit.cloud
-DOMAIN,host.livekit.cloud
-DOMAIN,turn.livekit.cloud
+DOMAIN,browser-intake-datadoghq.com
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN,openai-api.arkoselabs.com
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN,static.cloudflareinsights.com
+DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,algolia.net
+DOMAIN-SUFFIX,api.statsig.com
+DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,events.statsigapi.net
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,launchdarkly.com
+DOMAIN-SUFFIX,observeit.net
 DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,openaicom.imgix.net
+DOMAIN-SUFFIX,segment.io
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,sora.com
+DOMAIN-KEYWORD,openai
+IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,50.117.27.0/24,no-resolve
+IP-CIDR,64.23.132.171/32,no-resolve
 IP-CIDR,63.251.124.0/24,no-resolve
 IP-CIDR,69.46.75.0/24,no-resolve
-IP-CIDR,205.164.56.29/24,no-resolve
+IP-CIDR,205.164.56.29/32,no-resolve
+IP-ASN,20473,no-resolve
 
-# Copilot & Github Models
-DOMAIN,api.githubcopilot.com
-DOMAIN,copilot-proxy.githubusercontent.com
-DOMAIN,copilot.microsoft.com
-DOMAIN,models.inference.ai.azure.com
-DOMAIN,sydney.bing.com
-DOMAIN,www.bing.com
-
-# Gemini & Google AI
-DOMAIN,ai.google.dev
-DOMAIN,aida.googleapis.com
-DOMAIN,aisandbox-pa.googleapis.com
-DOMAIN,aistudio.google.com
-DOMAIN-SUFFIX,g.ai
-DOMAIN,alkalicore-pa.clients6.google.com
-DOMAIN,alkalimakersuite-pa.clients6.google.com
-DOMAIN,bard.google.com
-DOMAIN,daily-cloudcode-pa.googleapis.com
-DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
-DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
-DOMAIN,deepmind.com
-DOMAIN,deepmind.google
-DOMAIN,geller-pa.googleapis.com
-DOMAIN,gemini.google
-DOMAIN,gemini.google.com
-DOMAIN,generativeai.google
-DOMAIN,generativelanguage.googleapis.com
-DOMAIN,jules.google
-DOMAIN,jules.google.com
-DOMAIN,labs.google
-DOMAIN,makersuite.google.com
-DOMAIN,notebooklm.google
-DOMAIN,notebooklm.google.com
-DOMAIN,proactivebackend-pa.googleapis.com
-DOMAIN,robinfrontend-pa.googleapis.com
-DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
-DOMAIN-SUFFIX,antigravity-unleash.goog
-DOMAIN-SUFFIX,antigravity.google
-AND,((DOMAIN-KEYWORD,antigravity-auto-updater-),(DOMAIN-SUFFIX,run.app))
-
-# Claude / Anthropic
+# Anthropic / Claude
+DOMAIN,servd-anthropic-website.b-cdn.net
+DOMAIN,cdn.usefathom.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claudeusercontent.com
 IP-CIDR,160.79.104.0/23,no-resolve
 IP-CIDR6,2607:6bc0::/48,no-resolve
+
+# Perplexity
+DOMAIN,pplx-res.cloudinary.com
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,perplexity.com
+DOMAIN-SUFFIX,pplx.ai
+
+# xAI / Grok
+DOMAIN,api.x.ai
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,x.ai
+
+# Groq
+DOMAIN-SUFFIX,groq.com
+
+# Poe
+DOMAIN-SUFFIX,poe.com
 
 # JetBrains AI
 DOMAIN-SUFFIX,grazie.ai
@@ -78,68 +83,58 @@ DOMAIN-SUFFIX,jetbrains.ai
 DOMAIN,imagine.meta.com
 DOMAIN-SUFFIX,meta.ai
 
-# Perplexity
-DOMAIN,pplx-res.cloudinary.com
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,perplexity.com
-DOMAIN-SUFFIX,pplx.ai
-
 # Mistral AI
 DOMAIN,chat.mistral.ai
 DOMAIN,console.mistral.ai
 DOMAIN-SUFFIX,mistral.ai
 
-# Grok AI
-DOMAIN,api.x.ai
-DOMAIN-SUFFIX,grok.com
-DOMAIN-SUFFIX,x.ai
-
 # Trae AI
 DOMAIN,trae-api-sg.mchost.guru
 DOMAIN-SUFFIX,trae.ai
 
-# Poe
-DOMAIN-SUFFIX,poe.com
-
-# Groq
-DOMAIN-SUFFIX,groq.com
-
-# Together
-DOMAIN-SUFFIX,together.ai
-
 # OpenRouter
 DOMAIN-SUFFIX,openrouter.ai
-
-# Vertex AI
-DOMAIN,aiplatform.googleapis.com
-
-# Vercel AI
-DOMAIN,ai-gateway.vercel.sh
-
-# Nvidia
-DOMAIN,integrate.api.nvidia.com
-
-# Hugging Face AI
-DOMAIN,router.huggingface.co
 
 # Cloudflare AI Gateway
 DOMAIN,gateway.ai.cloudflare.com
 
+# Hugging Face AI
+DOMAIN,router.huggingface.co
+
+# Nvidia AI
+DOMAIN,integrate.api.nvidia.com
+
+# Vercel AI
+DOMAIN,ai-gateway.vercel.sh
+
+# Hyperbolic
+DOMAIN,api.hyperbolic.xyz
+DOMAIN-SUFFIX,hyperbolic.ai
+
+# Cerebras
+DOMAIN-SUFFIX,cerebras.ai
+
 # Dify
 DOMAIN-SUFFIX,dify.ai
 
-# Jasper
-DOMAIN-SUFFIX,clipdrop.co
-DOMAIN-SUFFIX,jasper.ai
+# Fireworks
+DOMAIN-SUFFIX,fireworks.ai
+
+# Jina AI
+DOMAIN-SUFFIX,jina.ai
 
 # OpenArt
 DOMAIN-SUFFIX,openart.ai
 
-# Other AI Services
-DOMAIN,api.hyperbolic.xyz
-DOMAIN-SUFFIX,cerebras.ai
-DOMAIN-SUFFIX,fireworks.ai
-DOMAIN-SUFFIX,hyperbolic.ai
-DOMAIN-SUFFIX,jina.ai
+# Together
+DOMAIN-SUFFIX,together.ai
+
+# TokenFlux
 DOMAIN-SUFFIX,tokenflux.ai
+
+# Voyage AI
 DOMAIN-SUFFIX,voyageai.com
+
+# Jasper / Clipdrop
+DOMAIN-SUFFIX,clipdrop.co
+DOMAIN-SUFFIX,jasper.ai

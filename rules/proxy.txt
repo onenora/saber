@@ -1,7 +1,7 @@
 #!name=PROXY♻️
 #!desc=个人杂项代理规则
 #!author=onenora
-//@UpdateTime    2026-03-29 00:00
+//@UpdateTime    2026-04-05 00:00
 //@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/proxy.txt
 
 #> Pornhub
@@ -52,6 +52,24 @@ DOMAIN-SUFFIX,vimeo.com
 DOMAIN-SUFFIX,wikipedia.org
 DOMAIN-SUFFIX,wikimedia.org
 DOMAIN-SUFFIX,wordpress.com
+
+#> Blackmatrix7 补充
+
+#> 流媒体 / 社交平台
+DOMAIN-KEYWORD,abema
+DOMAIN-KEYWORD,appledaily
+DOMAIN-KEYWORD,avtb
+DOMAIN-KEYWORD,beetalk
+DOMAIN-KEYWORD,blogspot
+DOMAIN-KEYWORD,ttvnw
+DOMAIN-KEYWORD,uk-live
+DOMAIN-KEYWORD,youtube
+
+#> 代理工具 / 隐私 / 支付
+DOMAIN-KEYWORD,dlercloud
+DOMAIN-KEYWORD,paypal
+DOMAIN-KEYWORD,porn
+DOMAIN-KEYWORD,sci-hub
 
 #> RSS / 订阅
 DOMAIN-SUFFIX,feedx.net

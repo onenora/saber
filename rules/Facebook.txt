@@ -1,7 +1,7 @@
 #!name=Facebook / Meta
 #!desc=Facebook / Instagram / WhatsApp / Meta 分流规则，基于 blackmatrix7
 #!author=onenora
-//@UpdateTime    2026-03-29 00:00
+//@UpdateTime    2026-04-05 00:00
 //@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/Facebook.txt
 
 # 域名规则
@@ -15,6 +15,11 @@ DOMAIN-SUFFIX,fbinc.com
 DOMAIN-SUFFIX,fbsbx.com
 DOMAIN-SUFFIX,fburl.com
 DOMAIN-SUFFIX,fbworkmail.com
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,facebook.org
+DOMAIN-SUFFIX,facebookmail.com
+DOMAIN-SUFFIX,ig.me
 DOMAIN-SUFFIX,instagram.com
 DOMAIN-SUFFIX,instagram.net
 DOMAIN-SUFFIX,instagr.am
@@ -29,6 +34,7 @@ DOMAIN-SUFFIX,threads.net
 DOMAIN-SUFFIX,whatsapp.biz
 DOMAIN-SUFFIX,whatsapp.com
 DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,wa.me
 DOMAIN-SUFFIX,workplace.com
 DOMAIN-KEYWORD,facebook
 DOMAIN-KEYWORD,fbcdn

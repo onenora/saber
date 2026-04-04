@@ -1,10 +1,15 @@
 #!name=Microsoft
-#!desc=Microsoft 核心服务分流规则
+#!desc=Microsoft 核心 / Copilot 分流规则
 #!author=onenora
-//@UpdateTime    2026-03-29 00:00
+//@UpdateTime    2026-04-05 00:00
 //@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/Microsoft.txt
 
-# A. Copilot（需代理）
+# A. Copilot / Bing / Azure Models（需代理）
+DOMAIN,api.githubcopilot.com
+DOMAIN,copilot.microsoft.com
+DOMAIN,models.inference.ai.azure.com
+DOMAIN,sydney.bing.com
+DOMAIN,www.bing.com
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,githubcopilot.com
 
