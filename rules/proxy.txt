@@ -21,36 +21,39 @@ DOMAIN-SUFFIX,dropbox.com
 DOMAIN-SUFFIX,dropboxstatic.com
 DOMAIN-SUFFIX,dropboxusercontent.com
 
-#> 常用被墙站点
-DOMAIN-SUFFIX,amazon.com
+#> 国际站点 / 搜索与知识
+DOMAIN-SUFFIX,duckduckgo.com
+DOMAIN-SUFFIX,medium.com
+DOMAIN-SUFFIX,nytimes.com
+DOMAIN-SUFFIX,stackoverflow.com
+DOMAIN-SUFFIX,wikipedia.org
+DOMAIN-SUFFIX,wikimedia.org
+
+#> 国际站点 / 开发与工具
 DOMAIN-SUFFIX,angularjs.org
 DOMAIN-SUFFIX,bitbucket.org
+DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,godaddy.com
+DOMAIN-SUFFIX,greasyfork.org
+DOMAIN-SUFFIX,huggingface.co
+DOMAIN-SUFFIX,linode.com
+DOMAIN-SUFFIX,openvpn.net
+DOMAIN-SUFFIX,openwrt.org
+DOMAIN-SUFFIX,squarespace.com
+
+#> 国际站点 / 社交与内容
+DOMAIN-SUFFIX,amazon.com
 DOMAIN-SUFFIX,bloomberg.com
 DOMAIN-SUFFIX,box.net
-DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,dribbble.com
-DOMAIN-SUFFIX,duckduckgo.com
 DOMAIN-SUFFIX,engadget.com
 DOMAIN-SUFFIX,fc2.com
 DOMAIN-SUFFIX,flickr.com
-DOMAIN-SUFFIX,godaddy.com
-DOMAIN-SUFFIX,gravatar.com
-DOMAIN-SUFFIX,greasyfork.org
-DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,imgur.com
-DOMAIN-SUFFIX,linode.com
 DOMAIN-SUFFIX,linux.do
-DOMAIN-SUFFIX,medium.com
 DOMAIN-SUFFIX,mobile01.com
-DOMAIN-SUFFIX,nytimes.com
-DOMAIN-SUFFIX,openvpn.net
-DOMAIN-SUFFIX,openwrt.org
 DOMAIN-SUFFIX,snapchat.com
-DOMAIN-SUFFIX,stackoverflow.com
-DOMAIN-SUFFIX,squarespace.com
 DOMAIN-SUFFIX,vimeo.com
-DOMAIN-SUFFIX,wikipedia.org
-DOMAIN-SUFFIX,wikimedia.org
 DOMAIN-SUFFIX,wordpress.com
 
 #> Blackmatrix7 补充
@@ -65,60 +68,72 @@ DOMAIN-KEYWORD,ttvnw
 DOMAIN-KEYWORD,uk-live
 DOMAIN-KEYWORD,youtube
 
-#> 代理工具 / 隐私 / 支付
+#> 代理工具 / 隐私
 DOMAIN-KEYWORD,dlercloud
+
+#> 支付 / 交易
 DOMAIN-KEYWORD,paypal
+
+#> 成人 / 学术
 DOMAIN-KEYWORD,porn
 DOMAIN-KEYWORD,sci-hub
 
-#> RSS / 订阅
+#> 影视 / Emby
+DOMAIN-SUFFIX,mudvod.tv
+DOMAIN-SUFFIX,poloemby.xyz
+DOMAIN-SUFFIX,emby.vip
+
+#> 订阅 / RSS
 DOMAIN-SUFFIX,feedx.net
 DOMAIN-SUFFIX,rssfeed.today
 DOMAIN-SUFFIX,nicegram.app
-DOMAIN-SUFFIX,mudvod.tv
 DOMAIN-SUFFIX,macbl.com
 DOMAIN-SUFFIX,misakaf.org
-DOMAIN-SUFFIX,poloemby.xyz
-DOMAIN-SUFFIX,emby.vip
 DOMAIN,xn--cnq51x.live
 
-#> 个人自定义
-DOMAIN-SUFFIX,v2ex.com
+#> 开发 / 部署
 DOMAIN-SUFFIX,koyeb.com
 DOMAIN-SUFFIX,koyeb.app
-DOMAIN,bobtranslate.com
 DOMAIN-SUFFIX,vercel.app
 DOMAIN-SUFFIX,gohugo.io
-DOMAIN-SUFFIX,is.gd
-DOMAIN-SUFFIX,lala.im
-DOMAIN-SUFFIX,hostloc.com
-DOMAIN-SUFFIX,iweec.com
-DOMAIN,pincong.rocks
-DOMAIN-SUFFIX,bulianglin.com
-DOMAIN-SUFFIX,ibm.com
-DOMAIN-SUFFIX,plex.tv
-DOMAIN,relay.firefox.com
-DOMAIN-SUFFIX,bugsnag.com
-DOMAIN-SUFFIX,czbooks.net
-DOMAIN-SUFFIX,gitbook.io
-DOMAIN-SUFFIX,69shuba.com
-DOMAIN-SUFFIX,hysteria.network
-DOMAIN-SUFFIX,sagernet.org
-DOMAIN-SUFFIX,nodeseek.com
 DOMAIN-SUFFIX,workers.dev
-DOMAIN-SUFFIX,get.store
-DOMAIN-SUFFIX,imput.net
 DOMAIN,scripting-import.bytevalley.workers.dev
 DOMAIN-SUFFIX,manus.im
 DOMAIN-SUFFIX,metacubex.one
 DOMAIN-SUFFIX,eu.org
 DOMAIN,guide.v2fly.org
-DOMAIN-SUFFIX,egernapp.com
+DOMAIN-SUFFIX,hysteria.network
+DOMAIN-SUFFIX,sagernet.org
 DOMAIN-SUFFIX,v2rayssr.com
-DOMAIN-SUFFIX,static.tw93.fun
-DOMAIN,pythonista.app
+
+#> 社区 / 论坛
+DOMAIN-SUFFIX,v2ex.com
+DOMAIN-SUFFIX,hostloc.com
+DOMAIN-SUFFIX,iweec.com
+DOMAIN,pincong.rocks
+DOMAIN-SUFFIX,bulianglin.com
+DOMAIN-SUFFIX,nodeseek.com
 DOMAIN,ivonblog.com
 DOMAIN-SUFFIX,ttk.tw
+
+#> 工具 / 服务
+DOMAIN,bobtranslate.com
+DOMAIN-SUFFIX,is.gd
+DOMAIN-SUFFIX,lala.im
+DOMAIN-SUFFIX,ibm.com
+DOMAIN-SUFFIX,plex.tv
+DOMAIN,relay.firefox.com
+DOMAIN-SUFFIX,bugsnag.com
+DOMAIN-SUFFIX,get.store
+DOMAIN-SUFFIX,imput.net
+DOMAIN-SUFFIX,egernapp.com
+DOMAIN-SUFFIX,static.tw93.fun
+DOMAIN,pythonista.app
+
+#> 阅读 / 资料
+DOMAIN-SUFFIX,czbooks.net
+DOMAIN-SUFFIX,gitbook.io
+DOMAIN-SUFFIX,69shuba.com
 DOMAIN,singlelogin.me
 
 #> 小说 / 内容站（境外）
