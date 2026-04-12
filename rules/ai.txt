@@ -1,8 +1,12 @@
 #!name=AI
 #!desc=AI / AIGC 分流规则
 #!author=onenora
-//@UpdateTime    2026-04-05 00:00
+//@UpdateTime    2026-04-12 00:00
 //@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/ai.txt
+
+# Augment
+DOMAIN-SUFFIX,augment.com
+DOMAIN-SUFFIX,augmentcode.com
 
 # OpenAI / ChatGPT
 DOMAIN,browser-intake-datadoghq.com
@@ -63,6 +67,12 @@ DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,perplexity.com
 DOMAIN-SUFFIX,pplx.ai
 
+# Siri / Apple Intelligence
+DOMAIN-SUFFIX,cp4.cloudflare.com
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,smoot.apple.com
+
 # xAI / Grok
 DOMAIN,api.x.ai
 DOMAIN-SUFFIX,grok.com
@@ -91,6 +101,7 @@ DOMAIN-SUFFIX,mistral.ai
 # Trae AI
 DOMAIN,trae-api-sg.mchost.guru
 DOMAIN-SUFFIX,trae.ai
+DOMAIN-SUFFIX,traeapi.us
 
 # OpenRouter
 DOMAIN-SUFFIX,openrouter.ai
@@ -114,6 +125,15 @@ DOMAIN-SUFFIX,hyperbolic.ai
 # Cerebras
 DOMAIN-SUFFIX,cerebras.ai
 
+# Chorus
+DOMAIN-SUFFIX,chorus.sh
+
+# Cursor
+DOMAIN-SUFFIX,cursor.sh
+
+# DIA
+DOMAIN-SUFFIX,diabrowser.engineering
+
 # Dify
 DOMAIN-SUFFIX,dify.ai
 
@@ -125,6 +145,11 @@ DOMAIN-SUFFIX,jina.ai
 
 # OpenArt
 DOMAIN-SUFFIX,openart.ai
+
+# Windsurf / Codeium
+DOMAIN-SUFFIX,windsurf.com
+DOMAIN-SUFFIX,codeium.com
+DOMAIN-SUFFIX,codeiumdata.com
 
 # Together
 DOMAIN-SUFFIX,together.ai
@@ -138,3 +163,6 @@ DOMAIN-SUFFIX,voyageai.com
 # Jasper / Clipdrop
 DOMAIN-SUFFIX,clipdrop.co
 DOMAIN-SUFFIX,jasper.ai
+
+# Zed
+DOMAIN-SUFFIX,zed.dev

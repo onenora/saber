@@ -1,7 +1,7 @@
 #!name=Facebook / Meta
 #!desc=Facebook / Instagram / WhatsApp / Meta 分流规则，基于 blackmatrix7
 #!author=onenora
-//@UpdateTime    2026-04-05 00:00
+//@UpdateTime    2026-04-12 00:00
 //@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/Facebook.txt
 
 # 域名规则
@@ -26,7 +26,6 @@ DOMAIN-SUFFIX,instagr.am
 DOMAIN-SUFFIX,m.me
 DOMAIN-SUFFIX,messenger.com
 DOMAIN-SUFFIX,meta.com
-DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,oculus.com
 DOMAIN-SUFFIX,oculuscdn.com
 DOMAIN-SUFFIX,rocksdb.org

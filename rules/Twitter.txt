@@ -1,13 +1,12 @@
 #!name=Twitter (X)
 #!desc=Twitter / X 分流规则
 #!author=onenora
-//@UpdateTime    2026-03-29 00:00
+//@UpdateTime    2026-04-12 00:00
 //@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/Twitter.txt
 
 # 域名规则
 DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,cms-twdigitalassets.com
-DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,t.co

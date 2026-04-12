@@ -1,7 +1,7 @@
 #!name=Google
 #!desc=Google / YouTube / AI 分流规则
 #!author=onenora
-//@UpdateTime    2026-04-05 00:00
+//@UpdateTime    2026-04-12 00:00
 //@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/Google.txt
 
 # 域名规则
@@ -78,7 +78,7 @@ DOMAIN,jules.google
 DOMAIN,jules.google.com
 DOMAIN,labs.google
 DOMAIN,makersuite.google.com
-DOMAIN,notebooklm.google
+DOMAIN-SUFFIX,notebooklm.google
 DOMAIN,notebooklm.google.com
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN,robinfrontend-pa.googleapis.com
