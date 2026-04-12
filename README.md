@@ -14,14 +14,14 @@
 
 ### 📂 目录导航
 
-| 目录                          | 功能描述                                                               |
-| :---------------------------- | :--------------------------------------------------------------------- |
-| [**🚀 configs**](./configs)   | **全量托管**：Surge / QX / Loon / Shadowrocket 核心配置文件。          |
-| [**🛣️ rules**](./rules)       | **分流策略**：精细化分流规则（Ads, Global, China, Service-specific）。 |
-| [**📦 modules**](./modules)   | **模块增强**：Surge & QX 的功能模块。                                  |
-| [**🔌 plugins**](./plugins)   | **专属扩展**：Loon 插件包。                                            |
-| [**📜 scripts**](./scripts)   | **重写脚本**：核心 JS 逻辑，专注 App 纯净体验。                        |
-| [**💻 dotfiles**](./dotfiles) | **运行环境**：nftables配置文件。                                       |
+| 目录                        | 功能描述                                                              |
+| :-------------------------- | :-------------------------------------------------------------------- |
+| [**🚀 configs**](./configs) | **全量托管**：Surge / QX / Loon / Shadowrocket 核心配置文件。         |
+| [**🛣️ rules**](./rules)     | **分流策略**：精细化分流规则（Ads, Global, China, Service-specific）。 |
+| [**📦 modules**](./modules) | **模块增强**：Surge & QX 的功能模块。                                 |
+| [**🔌 plugins**](./plugins) | **专属扩展**：Loon 插件包。                                           |
+| [**📜 scripts**](./scripts) | **重写脚本**：核心 JS 逻辑，专注 App 纯净体验。                       |
+| [**🧩 snippet**](./snippet) | **配置片段**：可复用的规则片段与模块订阅。                             |
 
 ### 🛠️ 核心功能
 
