@@ -1,6 +1,7 @@
 #!name=BanADLite
 #!desc=酷安、起点、微信、知乎、B站、京东去广告
 #!author=onenora
+#!icon=https://ikuns.netlify.app/img/favicon.ico
 
 [URL Rewrite]
 # > 微信公众号文章底部广告

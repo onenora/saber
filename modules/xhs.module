@@ -1,6 +1,7 @@
 #!name=小红书去广告
 #!desc=小红书去广告、图片无水印下载
 #!author=@fmz200@quote @RuCu6
+#!icon=https://ikuns.netlify.app/img/dt/xhs.webp
 
 [Rule]
 DOMAIN,ads-img-qc.xhscdn.com,REJECT
