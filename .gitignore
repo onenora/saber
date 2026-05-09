@@ -1,4 +1,23 @@
+# OS / editor
 .DS_Store
-.vscode
-.claude
+.vscode/
+.idea/
+
+# AI assistant local context
+.claude/
+.codex/
+.cursor/
+.windsurf/
 CLAUDE.md
+GEMINI.md
+AGENTS.md
+docs/
+
+# Local secrets / generated files
+.env
+.env.*
+!.env.example
+*.log
+*.p12
+*.pem
+*.key

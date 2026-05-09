@@ -16,12 +16,19 @@
 
 | 目录                        | 功能描述                                                              |
 | :-------------------------- | :-------------------------------------------------------------------- |
-| [**🚀 configs**](./configs) | **全量托管**：Surge / QX / Loon / Shadowrocket 核心配置文件。         |
+| [**🚀 configs**](./configs) | **客户端配置**：Surge / QX / Loon 核心配置文件。                     |
 | [**🛣️ rules**](./rules)     | **分流策略**：精细化分流规则（Ads, Global, China, Service-specific）。 |
 | [**📦 modules**](./modules) | **模块增强**：Surge & QX 的功能模块。                                 |
 | [**🔌 plugins**](./plugins) | **专属扩展**：Loon 插件包。                                           |
 | [**📜 scripts**](./scripts) | **重写脚本**：核心 JS 逻辑，专注 App 纯净体验。                       |
+| [**🛡️ infra**](./infra)     | **系统配置**：服务器防火墙与系统侧配置。                               |
 | [**🧩 snippet**](./snippet) | **配置片段**：可复用的规则片段与模块订阅。                             |
+
+### 维护文档
+
+- [架构说明](./docs/architecture.md)
+- [功能映射](./docs/feature-matrix.md)
+- [维护约定](./docs/maintenance.md)
 
 ### 🛠️ 核心功能
 
