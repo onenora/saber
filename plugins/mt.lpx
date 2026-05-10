@@ -1,0 +1,17 @@
+#!name=美图
+#!desc=美图系列 VIP
+#!homepage=https://ikuns.netlify.app
+#!author=chxm1023 ikun
+#!tag=解锁
+#!icon=https://ikuns.netlify.app/img/logo.png
+#!date=2026-05-10
+
+[Script]
+# 美图秀秀
+http-response ^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) script-path=https://raw.githubusercontent.com/onenora/saber/main/scripts/mt.js, requires-body=true, timeout=60, tag=美图秀秀
+
+# 美图子应用 (Wink 等)
+http-response ^https:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show) script-path=https://raw.githubusercontent.com/onenora/saber/main/scripts/mt.js, requires-body=true, timeout=60, tag=美图子应用
+
+[MITM]
+hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
