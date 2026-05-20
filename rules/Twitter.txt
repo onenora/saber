@@ -2,7 +2,7 @@
 #!desc=Twitter / X 分流规则
 #!author=onenora
 //@UpdateTime    2026-04-12 00:00
-//@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/Twitter.txt
+//@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/Twitter.txt
 
 # 域名规则
 DOMAIN-SUFFIX,ads-twitter.com

@@ -1,5 +1,5 @@
-// Copyright (c) 2026 [oennora]. SPDX-License-Identifier: Apache-2.0
-// CoolApk 去广告 v1.4.1 | Quantumult X
+// Copyright (c) 2026 onenora. SPDX-License-Identifier: Apache-2.0
+// CoolApk 去广告 | Surge / Loon / Quantumult X
 // ^https:\/\/api\.coolapk\.com\/v6\/main\/(init|indexV8) url script-response-body https://raw.githubusercontent.com/onenora/saber/main/scripts/coolapk.js
 // ^https:\/\/api\.coolapk\.com\/v6\/(page\/)?dataList url script-response-body https://raw.githubusercontent.com/onenora/saber/main/scripts/coolapk.js
 // ^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList) url script-response-body https://raw.githubusercontent.com/onenora/saber/main/scripts/coolapk.js

@@ -1,16 +1,15 @@
-// Copyright (c) 2026 [ikun]. SPDX-License-Identifier: Apache-2.0
+// Copyright (c) 2026 onenora. SPDX-License-Identifier: Apache-2.0
 
 /*
-* 后续接口未修复，仅version 11.1.0 
-* 初始思路 @chxm1023
-# 美图秀秀
-^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) url script-response-body https://raw.githubusercontent.com/onenora/saber/main/scripts/mt.js
-# 美图子应用 (Wink等)
-^https:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show) url script-response-body https://raw.githubusercontent.com/onenora/saber/main/scripts/mt.js
-
-hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
-
-*/
+ * 美图系列 VIP | Surge / Loon / Quantumult X
+ * 原始思路: @chxm1023
+ * 适配版本: 11.1.0
+ *
+ * ^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home) url script-response-body https://raw.githubusercontent.com/onenora/saber/main/scripts/mt.js
+ * ^https:\/\/api-.*\.meitu\.com\/(.+\/user\/vip_info|user\/show) url script-response-body https://raw.githubusercontent.com/onenora/saber/main/scripts/mt.js
+ *
+ * hostname = *.xiuxiu.meitu.com, api.posters.meitu.com, api-*.meitu.com
+ */
 
 // 美图系全家桶 All in One 解锁
 let ikun;

@@ -1,7 +1,7 @@
 #!name=小红书
-#!desc=移除小红书开屏广告,图片无水印下载
+#!desc=移除小红书开屏广告、信息流广告和图片视频水印
 #!homepage=https://ikuns.netlify.app
-#!author=fmz200[https://github.com/fmz200/wool_scripts/tree/main/Loon/plugin/split]
+#!author=fmz200, onenora
 #!tag=去广告
 #!icon=https://ikuns.netlify.app/img/dt/xhs.webp
 #!date=2025-09-23

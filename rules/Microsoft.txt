@@ -2,7 +2,7 @@
 #!desc=Microsoft 核心 / Copilot 分流规则
 #!author=onenora
 //@UpdateTime    2026-04-05 00:00
-//@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/Microsoft.txt
+//@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/Microsoft.txt
 
 # A. Copilot / Bing / Azure Models（需代理）
 DOMAIN,api.githubcopilot.com

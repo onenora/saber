@@ -1,27 +1,27 @@
-#!name=PROXY♻️
+#!name=PROXY
 #!desc=个人杂项代理规则
 #!author=onenora
 //@UpdateTime    2026-04-05 00:00
-//@ScriptURL   https://raw.githubusercontent.com/onenora/saber/main/rules/proxy.txt
+//@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/proxy.txt
 
-#> Pornhub
+# > Pornhub
 DOMAIN-SUFFIX,phncdn.com
 DOMAIN-SUFFIX,pornhub.com
 DOMAIN-SUFFIX,pornhubpremium.com
 
-#> Spotify
+# > Spotify
 DOMAIN-SUFFIX,spotify.com
 
-#> Reddit
+# > Reddit
 DOMAIN-SUFFIX,reddit.com
 DOMAIN-SUFFIX,redditstatic.com
 
-#> Dropbox
+# > Dropbox
 DOMAIN-SUFFIX,dropbox.com
 DOMAIN-SUFFIX,dropboxstatic.com
 DOMAIN-SUFFIX,dropboxusercontent.com
 
-#> 国际站点 / 搜索与知识
+# > 国际站点 / 搜索与知识
 DOMAIN-SUFFIX,duckduckgo.com
 DOMAIN-SUFFIX,medium.com
 DOMAIN-SUFFIX,nytimes.com
@@ -29,7 +29,7 @@ DOMAIN-SUFFIX,stackoverflow.com
 DOMAIN-SUFFIX,wikipedia.org
 DOMAIN-SUFFIX,wikimedia.org
 
-#> 国际站点 / 开发与工具
+# > 国际站点 / 开发与工具
 DOMAIN-SUFFIX,angularjs.org
 DOMAIN-SUFFIX,bitbucket.org
 DOMAIN-SUFFIX,docker.com
@@ -41,7 +41,7 @@ DOMAIN-SUFFIX,openvpn.net
 DOMAIN-SUFFIX,openwrt.org
 DOMAIN-SUFFIX,squarespace.com
 
-#> 国际站点 / 社交与内容
+# > 国际站点 / 社交与内容
 DOMAIN-SUFFIX,amazon.com
 DOMAIN-SUFFIX,bloomberg.com
 DOMAIN-SUFFIX,box.net
@@ -56,9 +56,9 @@ DOMAIN-SUFFIX,snapchat.com
 DOMAIN-SUFFIX,vimeo.com
 DOMAIN-SUFFIX,wordpress.com
 
-#> Blackmatrix7 补充
+# > Blackmatrix7 补充
 
-#> 流媒体 / 社交平台
+# > 流媒体 / 社交平台
 DOMAIN-KEYWORD,abema
 DOMAIN-KEYWORD,appledaily
 DOMAIN-KEYWORD,avtb
@@ -68,22 +68,22 @@ DOMAIN-KEYWORD,ttvnw
 DOMAIN-KEYWORD,uk-live
 DOMAIN-KEYWORD,youtube
 
-#> 代理工具 / 隐私
+# > 代理工具 / 隐私
 DOMAIN-KEYWORD,dlercloud
 
-#> 支付 / 交易
+# > 支付 / 交易
 DOMAIN-KEYWORD,paypal
 
-#> 成人 / 学术
+# > 成人 / 学术
 DOMAIN-KEYWORD,porn
 DOMAIN-KEYWORD,sci-hub
 
-#> 影视 / Emby
+# > 影视 / Emby
 DOMAIN-SUFFIX,mudvod.tv
 DOMAIN-SUFFIX,poloemby.xyz
 DOMAIN-SUFFIX,emby.vip
 
-#> 订阅 / RSS
+# > 订阅 / RSS
 DOMAIN-SUFFIX,feedx.net
 DOMAIN-SUFFIX,rssfeed.today
 DOMAIN-SUFFIX,nicegram.app
@@ -91,7 +91,7 @@ DOMAIN-SUFFIX,macbl.com
 DOMAIN-SUFFIX,misakaf.org
 DOMAIN,xn--cnq51x.live
 
-#> 开发 / 部署
+# > 开发 / 部署
 DOMAIN-SUFFIX,koyeb.com
 DOMAIN-SUFFIX,koyeb.app
 DOMAIN-SUFFIX,vercel.app
@@ -106,7 +106,7 @@ DOMAIN-SUFFIX,hysteria.network
 DOMAIN-SUFFIX,sagernet.org
 DOMAIN-SUFFIX,v2rayssr.com
 
-#> 社区 / 论坛
+# > 社区 / 论坛
 DOMAIN-SUFFIX,v2ex.com
 DOMAIN-SUFFIX,hostloc.com
 DOMAIN-SUFFIX,iweec.com
@@ -116,7 +116,7 @@ DOMAIN-SUFFIX,nodeseek.com
 DOMAIN,ivonblog.com
 DOMAIN-SUFFIX,ttk.tw
 
-#> 工具 / 服务
+# > 工具 / 服务
 DOMAIN,bobtranslate.com
 DOMAIN-SUFFIX,is.gd
 DOMAIN-SUFFIX,lala.im
@@ -130,13 +130,13 @@ DOMAIN-SUFFIX,egernapp.com
 DOMAIN-SUFFIX,static.tw93.fun
 DOMAIN,pythonista.app
 
-#> 阅读 / 资料
+# > 阅读 / 资料
 DOMAIN-SUFFIX,czbooks.net
 DOMAIN-SUFFIX,gitbook.io
 DOMAIN-SUFFIX,69shuba.com
 DOMAIN,singlelogin.me
 
-#> 小说 / 内容站（境外）
+# > 小说 / 内容站（境外）
 DOMAIN-SUFFIX,uukanshu.cc
 DOMAIN-SUFFIX,etflix.lol
 DOMAIN-SUFFIX,asia.nikkei.com
