@@ -1,0 +1,25 @@
+#!name=贴吧
+#!desc=移除贴吧开屏、信息流、帖子详情页和看图模式广告
+#!homepage=https://ikuns.netlify.app
+#!author=app2smile, onenora
+#!tag=去广告
+#!icon=https://ikuns.netlify.app/img/dt/tieba.webp
+#!date=2026-05-20
+
+[Argument]
+per_filter_video_thread = select,"0","1",tag=推荐页不展示视频贴,desc=设置为 1 时推荐页不展示视频贴
+
+[Rule]
+DOMAIN,180.76.76.200,REJECT
+# no-resolve 规则需放在最后
+IP-CIDR,180.76.76.200/32,REJECT,no-resolve
+
+[Script]
+# JSON 接口
+http-response ^https?:\/\/(tiebac|c\.tieba)\.baidu\.com\/(c\/(s\/sync|f\/(ad\/getSplashAd|frs\/(page|threadlist|generalTabList)|pb\/(pic)?page|excellent\/personalized))$|tiebaads\/commonbatch\?) script-path=https://raw.githubusercontent.com/onenora/saber/main/scripts/tieba-json.js, requires-body=true, timeout=10, tag=贴吧 JSON
+
+# Proto 接口
+http-response ^https?:\/\/(tiebac|c\.tieba)\.baidu\.com\/c\/(b\/ad\/adBid|f\/(frs\/(page|threadlist|generalTabList)|ad\/getFeedAd|pb\/page|excellent\/personalized))\?cmd script-path=https://raw.githubusercontent.com/onenora/saber/main/scripts/tieba-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=贴吧 Proto, argument=[{per_filter_video_thread}]
+
+[MITM]
+hostname = tiebac.baidu.com
