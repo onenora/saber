@@ -4,7 +4,7 @@
 #!author=onenora
 #!tag=去广告
 #!icon=https://ikuns.netlify.app/img/logo.png
-#!date=2025-09-18
+#!date=2026-08-02
 
 [MITM]
 hostname = %APPEND% api.coolapk.com, magev6.if.qidian.com, business-cdn.shouji.sogou.com, mp.weixin.qq.com, szextshort.weixin.qq.com, static.zhihu.com, ems.youku.com, optimus-ads.amap.com, api.bilibili.com, app.bilibili.com, api.m.jd.com, bdsp-x.jd.com, dsp-x.jd.com, *.360buyimg.com
@@ -102,6 +102,9 @@ DOMAIN,sugar.zhihu.com, REJECT
 
 # > 酷安
 ^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch reject-200
+
+# > 起点
+^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/young\/getconf$ reject-dict
 
 [Script]
 # > 酷安
