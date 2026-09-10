@@ -1,7 +1,7 @@
 #!name=DIRECT
 #!desc=China Direct Routing Rules
 #!author=onenora
-//@UpdateTime    2026-04-12 00:00
+//@UpdateTime    2026-09-10 00:00
 //@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/direct.txt
 
 # 1. Local & Private IP (局域网直连，优先级最高，防止路由回环)
@@ -14,7 +14,6 @@ IP-CIDR,224.0.0.0/24,no-resolve
 # 2. Anti-Fraud & Government (政务与反诈，必须直连)
 DOMAIN-SUFFIX,gov.cn
 DOMAIN-SUFFIX,12321.cn
-DOMAIN-SUFFIX,miit.gov.cn
 DOMAIN-SUFFIX,ncsc.org.cn
 
 # 3. Apple China Services (Apple 中国区服务)
@@ -62,7 +61,15 @@ DOMAIN-SUFFIX,zhihu.com
 DOMAIN-SUFFIX,zhimg.com
 DOMAIN-SUFFIX,manmanbuy.com
 
-# 4.1 Blackmatrix7 补充
+# 4.1 国内主流 AI 服务（直连）
+DOMAIN-SUFFIX,deepseek.com
+DOMAIN-SUFFIX,kimi.ai
+DOMAIN-SUFFIX,moonshot.cn
+DOMAIN-SUFFIX,zhipuai.cn
+DOMAIN-SUFFIX,minimax.chat
+DOMAIN-SUFFIX,stepfun.com
+
+# 4.2 Blackmatrix7 补充
 
 # 4.1.1 Apple 服务补充
 DOMAIN,init.ess.apple.com

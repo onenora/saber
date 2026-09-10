@@ -1,7 +1,7 @@
 #!name=AI
 #!desc=AI / AIGC 分流规则
 #!author=onenora
-//@UpdateTime    2026-04-12 00:00
+//@UpdateTime    2026-09-10 00:00
 //@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/ai.txt
 
 # Augment
@@ -61,6 +61,23 @@ DOMAIN-SUFFIX,claudeusercontent.com
 IP-CIDR,160.79.104.0/23,no-resolve
 IP-CIDR6,2607:6bc0::/48,no-resolve
 
+# Google Gemini / AI
+DOMAIN,ai.google.dev
+DOMAIN,aistudio.google.com
+DOMAIN,alkalicore-pa.clients6.google.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,bard.google.com
+DOMAIN,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN,gemini.google.com
+DOMAIN-SUFFIX,gemini.google
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN,makersuite.google.com
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN,notebooklm.google.com
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+
 # Perplexity
 DOMAIN,pplx-res.cloudinary.com
 DOMAIN-SUFFIX,perplexity.ai
@@ -74,7 +91,6 @@ DOMAIN-SUFFIX,guzzoni.apple.com
 DOMAIN-SUFFIX,smoot.apple.com
 
 # xAI / Grok
-DOMAIN,api.x.ai
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
 
@@ -94,8 +110,6 @@ DOMAIN,imagine.meta.com
 DOMAIN-SUFFIX,meta.ai
 
 # Mistral AI
-DOMAIN,chat.mistral.ai
-DOMAIN,console.mistral.ai
 DOMAIN-SUFFIX,mistral.ai
 
 # Trae AI
@@ -166,3 +180,31 @@ DOMAIN-SUFFIX,jasper.ai
 
 # Zed
 DOMAIN-SUFFIX,zed.dev
+
+# Manus
+DOMAIN-SUFFIX,manus.im
+
+# Midjourney
+DOMAIN-SUFFIX,midjourney.com
+
+# Cohere
+DOMAIN-SUFFIX,cohere.ai
+DOMAIN-SUFFIX,cohere.com
+
+# Phind
+DOMAIN-SUFFIX,phind.com
+
+# ElevenLabs
+DOMAIN-SUFFIX,elevenlabs.io
+
+# Suno / Udio
+DOMAIN-SUFFIX,suno.ai
+DOMAIN-SUFFIX,suno.com
+DOMAIN-SUFFIX,udio.com
+
+# Ideogram
+DOMAIN-SUFFIX,ideogram.ai
+
+# Replicate
+DOMAIN-SUFFIX,replicate.com
+DOMAIN-SUFFIX,replicate.delivery

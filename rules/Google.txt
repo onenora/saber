@@ -1,11 +1,10 @@
 #!name=Google
 #!desc=Google / YouTube / AI 分流规则
 #!author=onenora
-//@UpdateTime    2026-04-12 00:00
+//@UpdateTime    2026-09-10 00:00
 //@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/Google.txt
 
 # 域名规则
-DOMAIN,voice.telephony.goog
 DOMAIN-SUFFIX,1e100.net
 DOMAIN-SUFFIX,abc.xyz
 DOMAIN-SUFFIX,admob.com

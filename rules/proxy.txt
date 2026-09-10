@@ -1,7 +1,7 @@
 #!name=PROXY
 #!desc=个人杂项代理规则
 #!author=onenora
-//@UpdateTime    2026-04-05 00:00
+//@UpdateTime    2026-09-10 00:00
 //@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/proxy.txt
 
 # > Pornhub
@@ -97,8 +97,6 @@ DOMAIN-SUFFIX,koyeb.app
 DOMAIN-SUFFIX,vercel.app
 DOMAIN-SUFFIX,gohugo.io
 DOMAIN-SUFFIX,workers.dev
-DOMAIN,scripting-import.bytevalley.workers.dev
-DOMAIN-SUFFIX,manus.im
 DOMAIN-SUFFIX,metacubex.one
 DOMAIN-SUFFIX,eu.org
 DOMAIN,guide.v2fly.org
