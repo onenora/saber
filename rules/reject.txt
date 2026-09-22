@@ -1,13 +1,13 @@
 #!name=REJECT
 #!desc=广告与追踪拦截规则
 #!author=onenora
-//@UpdateTime    2026-09-13 00:00
+//@UpdateTime    2026-09-23 00:00
 //@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/reject.txt
 
 # ------------------REJECT🚫------------------
 # > 铁路12306
 DOMAIN,ad.12306.cn
-# > 字节跳动广告平台 (Snssdk)
+# > 字节跳动广告平台 (Snssdk / Pangolin)
 DOMAIN,byteadverts.com
 DOMAIN,lf-ad-ies.bytecdn.cn
 DOMAIN,lf3-ad-ies.bytecdn.cn
@@ -23,7 +23,12 @@ DOMAIN,extlog.snssdk.com
 DOMAIN,mcs.snssdk.com
 DOMAIN,mon.snssdk.com
 DOMAIN,log.toutiao.com
-# > 腾讯广点通 & 微信小程序广告
+DOMAIN,dig.bdurl.net
+DOMAIN,mon.toutiaocloud.com
+DOMAIN,mon.toutiaocloud.net
+DOMAIN,toblog.ctobsnssdk.com
+DOMAIN-SUFFIX,ctobsnssdk.com
+# > 腾讯广点通 & 优量汇 & 微信小程序广告
 DOMAIN,qzs.gdtimg.com
 DOMAIN,pgdt.gtimg.cn
 DOMAIN,pgdt.ugdtimg.com
@@ -34,7 +39,15 @@ DOMAIN,wxsnsdythumb.wxs.qq.com
 DOMAIN,gdt.qq.com
 DOMAIN,l.qq.com
 DOMAIN,ugdtimg.com
-# > 百度 (Baidu)
+DOMAIN,adsmind.ugdtimg.com
+DOMAIN,c2.gdt.qq.com
+DOMAIN,d.gdt.qq.com
+DOMAIN,t.gdt.qq.com
+DOMAIN,tangram.e.qq.com
+DOMAIN,h.trace.qq.com
+DOMAIN,ads.privacy.qq.com
+DOMAIN-SUFFIX,gdtimg.com
+# > 百度联盟 / 百青藤 (Baidu MobAds)
 DOMAIN,afd.baidu.com
 DOMAIN,als.baidu.com
 DOMAIN,mobads.baidu.com
@@ -42,29 +55,80 @@ DOMAIN,nadvideo2.baidu.com
 DOMAIN,nsclick.baidu.com
 DOMAIN,cpro.baidu.com
 DOMAIN,pos.baidu.com
+DOMAIN,bgg.baidu.com
+DOMAIN,click-bes.baidu.com
+DOMAIN,cpro.baidustatic.com
+DOMAIN,eclick.baidu.com
+DOMAIN,mobads-logs.baidu.com
+DOMAIN,mobads-pre-config.cdn.bcebos.com
+DOMAIN-SUFFIX,union.baidu.com
+# > 快手联盟 (Kuaishou Ads)
+DOMAIN,open.e.kuaishou.com
+DOMAIN,adtrack.e.kuaishou.com
+DOMAIN-SUFFIX,adkwai.com
 # > 视频平台补充 (优酷、爱奇艺)
 DOMAIN,ad.mobile.youku.com
 DOMAIN,iyes.youku.com
 DOMAIN,t7z.cupid.iqiyi.com
 DOMAIN,t7z.cupid.ptqy.gitv.tv
 DOMAIN,atm.youku.com
-# > 电商与追踪 (阿里、友盟、极光 精准版)
+DOMAIN,cad.youku.com
+DOMAIN,adx-core.youku.com
+DOMAIN,adx-open-service.youku.com
+# > 电商、统计与聚合广告 SDK (阿里、友盟、极光、个推、倍孜等)
 DOMAIN,et.tanx.com
+DOMAIN,df.tanx.com
+DOMAIN,opehs.tanx.com
+DOMAIN,acs4baichuan.m.taobao.com
+DOMAIN,baichuan-sdk.alicdn.com
 DOMAIN,umengacs.m.taobao.com
 DOMAIN,alog.umeng.com
 DOMAIN,ulogs.umeng.com
 DOMAIN,msg.umeng.com
+DOMAIN,errlog.umeng.com
+DOMAIN-SUFFIX,umengcloud.com
+DOMAIN-SUFFIX,umsns.com
 DOMAIN,stats.jpush.cn
 DOMAIN,report.jpush.cn
 DOMAIN,device.jpush.cn
+DOMAIN-SUFFIX,jpush.cn
+DOMAIN-SUFFIX,jiguang.cn
+DOMAIN,sdk.open.talk.getui.com
+DOMAIN,api.getui.com
+DOMAIN-SUFFIX,getui.com
+DOMAIN-SUFFIX,igexin.com
+DOMAIN-SUFFIX,mob.com
 DOMAIN,ads.internal.unity3d.com
 DOMAIN,ads.prd.ie.internal.unity3d.com
 DOMAIN,unityads.unity3d.com
-DOMAIN,sdk.open.talk.getui.com
-DOMAIN,api.getui.com
-DOMAIN,errlog.umeng.com
-DOMAIN,atrace.chelaile.net.cn
-# > 车来了& 知乎域名拦截
+DOMAIN-SUFFIX,unityads.unitychina.cn
+DOMAIN-SUFFIX,beizi.biz
+DOMAIN-SUFFIX,sigmob.cn
+DOMAIN-SUFFIX,miaozhen.com
+DOMAIN-SUFFIX,tianmu.mobi
+DOMAIN-SUFFIX,tuia.cn
+DOMAIN-SUFFIX,toponad.com
+DOMAIN-SUFFIX,adjust.io
+DOMAIN-SUFFIX,appsflyersdk.com
+# > 车来了 & 知乎 & Apple 追踪
 DOMAIN,ad.chelaile.net.cn
+DOMAIN,atrace.chelaile.net.cn
 DOMAIN,appcloud2.in.zhihu.com
 DOMAIN,sugar.zhihu.com
+DOMAIN,weather-analytics-events.apple.com
+DOMAIN-KEYWORD,api-adservices.apple.com
+# > HTTPDNS 降级拦截 (强制走本地标准 DNS)
+DOMAIN,httpdns.alicdn.com
+DOMAIN,httpdns-api.aliyuncs.com
+DOMAIN,amdc.alipay.com
+DOMAIN,amdc.m.youku.com
+DOMAIN,httpdns.baidu.com
+DOMAIN,httpdns.baidubce.com
+DOMAIN,dns.jd.com
+DOMAIN,dns.weibo.cn
+DOMAIN,httpdns.meituan.com
+DOMAIN,dns.weixin.qq.com
+DOMAIN,dns.weixin.qq.com.cn
+DOMAIN,httpdns.music.163.com
+DOMAIN-KEYWORD,httpdns
+DOMAIN-KEYWORD,httpsdns

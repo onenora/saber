@@ -1,7 +1,7 @@
 #!name=DIRECT
 #!desc=China Direct Routing Rules
 #!author=onenora
-//@UpdateTime    2026-09-10 00:00
+//@UpdateTime    2026-09-23 00:00
 //@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/direct.txt
 
 # 1. Local & Private IP (局域网直连，优先级最高，防止路由回环)
@@ -76,11 +76,9 @@ DOMAIN,init.ess.apple.com
 DOMAIN,itunes.apple.com
 DOMAIN,smp-device-content.apple.com
 DOMAIN,time.apple.com
-DOMAIN-SUFFIX,weather-analytics-events.apple.com
 DOMAIN-SUFFIX,weather-data.apple.com
 DOMAIN-SUFFIX,weather-map.apple.com
 DOMAIN-KEYWORD,amp-api.podcasts.apple.com
-DOMAIN-KEYWORD,api-adservices.apple.com
 DOMAIN-KEYWORD,api.smoot.apple.cn
 DOMAIN-KEYWORD,api.smoot.apple.com
 DOMAIN-KEYWORD,buy.itunes.apple.com
