@@ -101,7 +101,7 @@ DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
-AND,((DOMAIN-KEYWORD,antigravity-auto-updater-),(DOMAIN-SUFFIX,run.app))
+DOMAIN-KEYWORD,antigravity-auto-updater-
 DOMAIN-KEYWORD,google
 
 # YouTube

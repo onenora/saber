@@ -30,11 +30,6 @@ DOMAIN-SUFFIX,tg.dev
 DOMAIN-SUFFIX,tx.me
 DOMAIN-SUFFIX,usercontent.dev
 DOMAIN-KEYWORD,nicegram
-PROCESS-NAME,nekox.messenger
-PROCESS-NAME,org.telegram.messenger
-PROCESS-NAME,telegram-desktop
-PROCESS-NAME,tw.nekomimi.nekogram
-PROCESS-NAME,xyz.nextalone.nagram
 
 # IP-CIDR 规则
 IP-CIDR,109.239.140.0/24,no-resolve
