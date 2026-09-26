@@ -1,7 +1,7 @@
 #!name=Google
 #!desc=Google / YouTube / AI 分流规则
 #!author=onenora
-//@UpdateTime    2026-09-10 00:00
+//@UpdateTime    2026-09-26 00:00
 //@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/Google.txt
 
 # 域名规则
@@ -24,6 +24,8 @@ DOMAIN-SUFFIX,creativelab5.com
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,dialogflow.com
 DOMAIN-SUFFIX,firebaseio.com
+DOMAIN-SUFFIX,g.co
+DOMAIN-SUFFIX,gcr.io
 DOMAIN-SUFFIX,getmdl.io
 DOMAIN-SUFFIX,getoutline.org
 DOMAIN-SUFFIX,ggpht.com
@@ -32,8 +34,10 @@ DOMAIN-SUFFIX,gmodules.com
 DOMAIN-SUFFIX,godoc.org
 DOMAIN-SUFFIX,golang.org
 DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,google-analytics.com
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,googleapis.cn
+DOMAIN-SUFFIX,googletagmanager.com
 DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,gstatic.com
@@ -48,6 +52,7 @@ DOMAIN-SUFFIX,madewithcode.com
 DOMAIN-SUFFIX,material.io
 DOMAIN-SUFFIX,polymer-project.org
 DOMAIN-SUFFIX,recaptcha.net
+DOMAIN-SUFFIX,run.app
 DOMAIN-SUFFIX,shattered.io
 DOMAIN-SUFFIX,synergyse.com
 DOMAIN-SUFFIX,telephony.goog

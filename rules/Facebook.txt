@@ -1,52 +1,162 @@
-#!name=Facebook / Meta
-#!desc=Facebook / Instagram / WhatsApp / Meta 分流规则，基于 blackmatrix7
+#!name=Facebook
+#!desc=Facebook / Instagram / Threads / WhatsApp / Meta 分流规则，基于 blackmatrix7 与 meta-rules-dat
 #!author=onenora
-//@UpdateTime    2026-04-12 00:00
+//@UpdateTime    2026-09-26 00:00
 //@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/Facebook.txt
 
-# 域名规则
-DOMAIN-SUFFIX,cdninstagram.com
+# Meta 核心与生态
+DOMAIN,imagine.meta.com
+DOMAIN-SUFFIX,atmeta.com
+DOMAIN-SUFFIX,llama.com
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,meta.org
+DOMAIN-SUFFIX,metacareers.com
+DOMAIN-SUFFIX,metamail.com
+DOMAIN-SUFFIX,metapay.com
+DOMAIN-SUFFIX,metaquest.com
+DOMAIN-SUFFIX,metaworld.com
+
+# Threads
+DOMAIN-SUFFIX,facebookthreads.net
+DOMAIN-SUFFIX,threads.com
+DOMAIN-SUFFIX,threads.net
+
+# Facebook 核心与服务
+DOMAIN,fbcdn-a.akamaihd.net
+DOMAIN-SUFFIX,crowdtangle.com
+DOMAIN-SUFFIX,facebook.com
+DOMAIN-SUFFIX,facebook.design
+DOMAIN-SUFFIX,facebook.net
+DOMAIN-SUFFIX,facebook.org
+DOMAIN-SUFFIX,facebookblueprint.net
+DOMAIN-SUFFIX,facebookbrand.com
+DOMAIN-SUFFIX,facebooklive.com
+DOMAIN-SUFFIX,facebookmail.com
+DOMAIN-SUFFIX,facebookpay.com
+DOMAIN-SUFFIX,facebooksafety.com
+DOMAIN-SUFFIX,facebookstories.com
+DOMAIN-SUFFIX,facebookwork.com
+DOMAIN-SUFFIX,fb.careers
 DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,fb.gg
 DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,fb.watch
 DOMAIN-SUFFIX,fbaddins.com
 DOMAIN-SUFFIX,fbcdn.com
 DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,fbfeedback.com
+DOMAIN-SUFFIX,fbhome.com
+DOMAIN-SUFFIX,fbidb.io
 DOMAIN-SUFFIX,fbinc.com
+DOMAIN-SUFFIX,fbinnovation.com
+DOMAIN-SUFFIX,fbmarketing.com
+DOMAIN-SUFFIX,fbreg.com
+DOMAIN-SUFFIX,fbrpms.com
 DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,fbsbx.net
+DOMAIN-SUFFIX,fbthirdpartypixel.com
+DOMAIN-SUFFIX,fbthirdpartypixel.net
+DOMAIN-SUFFIX,fbthirdpartypixel.org
 DOMAIN-SUFFIX,fburl.com
+DOMAIN-SUFFIX,fbwat.ch
 DOMAIN-SUFFIX,fbworkmail.com
-DOMAIN-SUFFIX,facebook.com
-DOMAIN-SUFFIX,facebook.net
-DOMAIN-SUFFIX,facebook.org
-DOMAIN-SUFFIX,facebookmail.com
-DOMAIN-SUFFIX,ig.me
-DOMAIN-SUFFIX,instagram.com
-DOMAIN-SUFFIX,instagram.net
-DOMAIN-SUFFIX,instagr.am
-DOMAIN-SUFFIX,m.me
-DOMAIN-SUFFIX,messenger.com
-DOMAIN-SUFFIX,meta.com
-DOMAIN-SUFFIX,oculus.com
-DOMAIN-SUFFIX,oculuscdn.com
-DOMAIN-SUFFIX,rocksdb.org
-DOMAIN-SUFFIX,threads.net
-DOMAIN-SUFFIX,whatsapp.biz
-DOMAIN-SUFFIX,whatsapp.com
-DOMAIN-SUFFIX,whatsapp.net
-DOMAIN-SUFFIX,wa.me
+DOMAIN-SUFFIX,freeb.com
+DOMAIN-SUFFIX,freebasics.com
+DOMAIN-SUFFIX,freebasics.net
+DOMAIN-SUFFIX,friendfeed.com
+DOMAIN-SUFFIX,internet.org
+DOMAIN-SUFFIX,markzuckerberg.com
+DOMAIN-SUFFIX,tfbnw.net
+DOMAIN-SUFFIX,thefacebook.com
+DOMAIN-SUFFIX,thefacebook.net
 DOMAIN-SUFFIX,workplace.com
+DOMAIN-SUFFIX,workplaceusecases.com
+DOMAIN-SUFFIX,zuckerberg.com
+DOMAIN-SUFFIX,zuckerberg.net
 DOMAIN-KEYWORD,facebook
 DOMAIN-KEYWORD,fbcdn
 
+# Instagram
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,ig.me
+DOMAIN-SUFFIX,igcdn.com
+DOMAIN-SUFFIX,igsonar.com
+DOMAIN-SUFFIX,igtv.com
+DOMAIN-SUFFIX,instagram.com
+DOMAIN-SUFFIX,instagram.net
+DOMAIN-SUFFIX,instagr.am
+
+# WhatsApp
+DOMAIN-SUFFIX,wa.me
+DOMAIN-SUFFIX,whatsapp.biz
+DOMAIN-SUFFIX,whatsapp.cc
+DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,whatsapp.org
+DOMAIN-SUFFIX,whatsapp.tv
+DOMAIN-SUFFIX,whatsappbrand.com
+
+# Messenger
+DOMAIN-SUFFIX,fbmessenger.com
+DOMAIN-SUFFIX,m.me
+DOMAIN-SUFFIX,messenger.com
+
+# Oculus / VR
+DOMAIN-SUFFIX,buyoculus.com
+DOMAIN-SUFFIX,ocul.us
+DOMAIN-SUFFIX,oculus.com
+DOMAIN-SUFFIX,oculuscdn.com
+DOMAIN-SUFFIX,oculusconnect.com
+DOMAIN-SUFFIX,oculusforbusiness.com
+DOMAIN-SUFFIX,oculusrift.com
+DOMAIN-SUFFIX,oculusvr.com
+
+# 开发与开源项目
+DOMAIN-SUFFIX,accountkit.com
+DOMAIN-SUFFIX,botorch.org
+DOMAIN-SUFFIX,buck.build
+DOMAIN-SUFFIX,buckbuild.com
+DOMAIN-SUFFIX,fasttext.cc
+DOMAIN-SUFFIX,fbf8.com
+DOMAIN-SUFFIX,flow.dev
+DOMAIN-SUFFIX,flow.org
+DOMAIN-SUFFIX,frescolib.org
+DOMAIN-SUFFIX,hacklang.org
+DOMAIN-SUFFIX,hhvm.com
+DOMAIN-SUFFIX,pytext.org
+DOMAIN-SUFFIX,rocksdb.com
+DOMAIN-SUFFIX,rocksdb.net
+DOMAIN-SUFFIX,rocksdb.org
+
 # IP 规则
+IP-CIDR,31.13.24.0/21,no-resolve
+IP-CIDR,31.13.64.0/18,no-resolve
+IP-CIDR,45.64.40.0/22,no-resolve
+IP-CIDR,66.220.144.0/20,no-resolve
+IP-CIDR,69.63.176.0/20,no-resolve
+IP-CIDR,69.171.224.0/19,no-resolve
+IP-CIDR,74.119.76.0/22,no-resolve
+IP-CIDR,103.4.96.0/22,no-resolve
 IP-CIDR,108.168.176.192/26,no-resolve
 IP-CIDR,108.168.177.0/27,no-resolve
 IP-CIDR,108.168.180.96/27,no-resolve
+IP-CIDR,108.177.8.0/21,no-resolve
+IP-CIDR,119.235.224.0/24,no-resolve
+IP-CIDR,119.235.232.0/24,no-resolve
+IP-CIDR,119.235.236.0/23,no-resolve
 IP-CIDR,129.134.0.0/17,no-resolve
 IP-CIDR,157.240.0.0/17,no-resolve
+IP-CIDR,163.70.128.0/17,no-resolve
 IP-CIDR,169.45.248.118/32,no-resolve
 IP-CIDR,173.252.64.0/18,no-resolve
-IP-CIDR,31.13.64.0/18,no-resolve
+IP-CIDR,179.60.192.0/22,no-resolve
+IP-CIDR,185.60.216.0/22,no-resolve
+IP-CIDR,185.89.216.0/22,no-resolve
+IP-CIDR,199.201.64.0/22,no-resolve
+IP-CIDR,204.15.20.0/22,no-resolve
+IP-CIDR6,2620:0:1c00::/40,no-resolve
+IP-CIDR6,2a03:2880::/32,no-resolve
 
 # ASN 规则
 IP-ASN,32934,no-resolve

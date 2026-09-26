@@ -1,7 +1,7 @@
 #!name=AI
 #!desc=AI / AIGC 分流规则
 #!author=onenora
-//@UpdateTime    2026-09-10 00:00
+//@UpdateTime    2026-09-26 00:00
 //@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/ai.txt
 
 # Augment
@@ -54,6 +54,7 @@ IP-ASN,20473,no-resolve
 # Anthropic / Claude
 DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN,cdn.usefathom.com
+DOMAIN-SUFFIX,anthropic.ai
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
@@ -107,7 +108,13 @@ DOMAIN-SUFFIX,jetbrains.ai
 
 # Meta AI
 DOMAIN,imagine.meta.com
+DOMAIN-SUFFIX,llama.com
 DOMAIN-SUFFIX,meta.ai
+
+# Microsoft Copilot
+DOMAIN,copilot.microsoft.com
+DOMAIN,sydney.bing.com
+DOMAIN-SUFFIX,githubcopilot.com
 
 # Mistral AI
 DOMAIN-SUFFIX,mistral.ai
@@ -125,6 +132,9 @@ DOMAIN,gateway.ai.cloudflare.com
 
 # Hugging Face AI
 DOMAIN,router.huggingface.co
+DOMAIN-SUFFIX,hf.co
+DOMAIN-SUFFIX,hf.space
+DOMAIN-SUFFIX,huggingface.co
 
 # Nvidia AI
 DOMAIN,integrate.api.nvidia.com
@@ -143,7 +153,9 @@ DOMAIN-SUFFIX,cerebras.ai
 DOMAIN-SUFFIX,chorus.sh
 
 # Cursor
+DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursorapi.com
 
 # DIA
 DOMAIN-SUFFIX,diabrowser.engineering
@@ -208,3 +220,66 @@ DOMAIN-SUFFIX,ideogram.ai
 # Replicate
 DOMAIN-SUFFIX,replicate.com
 DOMAIN-SUFFIX,replicate.delivery
+
+# v0 by Vercel
+DOMAIN-SUFFIX,v0.dev
+
+# Lovable
+DOMAIN-SUFFIX,lovable.dev
+
+# Bolt
+DOMAIN-SUFFIX,bolt.new
+
+# Replit
+DOMAIN-SUFFIX,replit.com
+DOMAIN-SUFFIX,replit.dev
+
+# Cognition / Devin
+DOMAIN-SUFFIX,cognition.ai
+DOMAIN-SUFFIX,cognition-labs.com
+DOMAIN-SUFFIX,devin.ai
+
+# Runway
+DOMAIN-SUFFIX,runway.com
+DOMAIN-SUFFIX,runwayml.com
+
+# Luma AI
+DOMAIN-SUFFIX,luma.ai
+DOMAIN-SUFFIX,lumalabs.ai
+
+# Pika
+DOMAIN-SUFFIX,pika.art
+
+# Krea AI
+DOMAIN-SUFFIX,krea.ai
+
+# Civitai
+DOMAIN-SUFFIX,civitai.com
+
+# Character AI
+DOMAIN-SUFFIX,character.ai
+DOMAIN-SUFFIX,characterai.com
+
+# Muse AI
+DOMAIN-SUFFIX,muse.ai
+
+# OpenCode
+DOMAIN-SUFFIX,opencode.ai
+
+# AgentRouter
+DOMAIN-SUFFIX,agentrouter.org
+
+# Gemini CLI
+DOMAIN-SUFFIX,geminicli.com
+
+# ClawHub AI
+DOMAIN-SUFFIX,clawhub.ai
+
+# Aito
+DOMAIN-SUFFIX,aito.do
+
+# Grokipedia
+DOMAIN-SUFFIX,grokipedia.com
+
+# BAI Service
+DOMAIN-SUFFIX,baiservice.com
