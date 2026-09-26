@@ -14,7 +14,7 @@ if (!$response || !$response.body) {
   try {
     obj = JSON.parse($response.body);
   } catch {
-    $done({ body: $response.body });
+    return $done({ body: $response.body });
   }
 
   if (obj) {
