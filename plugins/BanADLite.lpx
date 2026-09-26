@@ -4,7 +4,7 @@
 #!author=onenora
 #!tag=去广告
 #!icon=https://ikuns.netlify.app/img/logo.png
-#!date=2026-09-23
+#!date=2026-09-26
 
 [MITM]
 hostname = %APPEND% api.coolapk.com, magev6.if.qidian.com, business-cdn.shouji.sogou.com, mp.weixin.qq.com, szextshort.weixin.qq.com, static.zhihu.com, ems.youku.com, optimus-ads.amap.com, api.bilibili.com, app.bilibili.com, api.m.jd.com, bdsp-x.jd.com, dsp-x.jd.com, *.360buyimg.com
@@ -122,6 +122,14 @@ DOMAIN,appcloud2.in.zhihu.com, REJECT
 DOMAIN,sugar.zhihu.com, REJECT
 DOMAIN,weather-analytics-events.apple.com, REJECT
 DOMAIN-KEYWORD,api-adservices.apple.com, REJECT
+# > 酷安 (Coolapk 行为分析与追踪)
+DOMAIN-SUFFIX,sensordata.coolapk.com, REJECT
+DOMAIN-SUFFIX,sensordata-usa.coolapk.com, REJECT
+# > 小红书 (Xiaohongshu 广告拦截)
+DOMAIN,ads-img-qc.xhscdn.com, REJECT
+DOMAIN,ads-video-al.xhscdn.com, REJECT
+DOMAIN,ads-video-qc.xhscdn.com, REJECT
+DOMAIN,t-ads.xiaohongshu.com, REJECT
 # > HTTPDNS 降级拦截 (强制走本地标准 DNS)
 DOMAIN,httpdns.alicdn.com, REJECT
 DOMAIN,httpdns-api.aliyuncs.com, REJECT

@@ -104,10 +104,12 @@ DOMAIN-SUFFIX,emby.vip
 
 # > 订阅 / RSS
 DOMAIN-SUFFIX,feedx.net
-DOMAIN-SUFFIX,rssfeed.today
-DOMAIN-SUFFIX,nicegram.app
 DOMAIN-SUFFIX,macbl.com
 DOMAIN-SUFFIX,misakaf.org
+DOMAIN-SUFFIX,nicegram.app
+DOMAIN-SUFFIX,rssfeed.today
+DOMAIN-SUFFIX,sub2api.org
+DOMAIN-SUFFIX,ygpy.net
 DOMAIN,xn--cnq51x.live
 
 # > 开发 / 部署
@@ -183,6 +185,7 @@ DOMAIN,singlelogin.me
 # > 小说 / 内容站（境外）
 DOMAIN-SUFFIX,101kanshu.com
 DOMAIN-SUFFIX,101kks.com
+DOMAIN-SUFFIX,2026copy.com
 DOMAIN-SUFFIX,23uswx.la
 DOMAIN-SUFFIX,69yue.top
 DOMAIN-SUFFIX,884866.xyz
@@ -195,6 +198,9 @@ DOMAIN,embyty.entertang.work
 DOMAIN-SUFFIX,etflix.lol
 DOMAIN,fq-book.nat.netsite.cc
 DOMAIN-SUFFIX,iturrit.com
+DOMAIN-SUFFIX,lyxazy.top
+DOMAIN-SUFFIX,shenmoxs.top
+DOMAIN-SUFFIX,tongrenquan.org
 DOMAIN-SUFFIX,trxs666.com
 DOMAIN-SUFFIX,twkan.com
 DOMAIN-SUFFIX,uukanshu.cc

@@ -12,13 +12,18 @@
  */
 
 // 美图系全家桶 All in One 解锁
-let ikun;
-try {
-  ikun = JSON.parse($response.body);
-} catch {
-  $done({ body: $response.body });
-}
-ikun.data = ikun.data || {};
+if (!$response || !$response.body) {
+  $done({});
+} else {
+  let ikun;
+  try {
+    ikun = JSON.parse($response.body);
+  } catch {
+    $done({ body: $response.body });
+  }
+
+  if (ikun) {
+    ikun.data = ikun.data || {};
 
 // --- 接口路径定义 ---
 // 美图秀秀专属接口
@@ -320,4 +325,6 @@ try {
   deepVip(ikun);
 } catch {}
 
-$done({ body: JSON.stringify(ikun) });
+    $done({ body: JSON.stringify(ikun) });
+  }
+}

@@ -14,21 +14,17 @@ const url = $request.url;
 // 1. 安全放行：防止空响应导致App网络错误
 if (!$response || !$response.body) {
   $done({});
-}
+} else {
+  let body;
+  try {
+    body = JSON.parse($response.body);
+  } catch (e) {
+    console.log(`[起点优化] ❌ JSON解析失败 | 接口: ${url}`);
+    $done({ body: $response.body });
+  }
 
-let body;
-try {
-  body = JSON.parse($response.body);
-} catch (e) {
-  console.log(`[起点优化] ❌ JSON解析失败 | 接口: ${url}`);
-  $done({ body: $response.body });
-}
-
-if (!body || !body.Data) {
-  $done({ body: $response.body });
-}
-
-try {
+  if (body && body.Data) {
+    try {
   // ==================== 1. 开屏拦截 ====================
   if (url.includes('v4/client/getsplashscreen')) {
     let logMsg = [];
@@ -146,4 +142,8 @@ try {
   console.log(`[起点优化] ❌ 脚本执行异常 | 接口: ${url} | 错误: ${e.message}`);
 }
 
-$done({ body: JSON.stringify(body) });
+    $done({ body: JSON.stringify(body) });
+  } else if (body) {
+    $done({ body: $response.body });
+  }
+}

@@ -1,12 +1,150 @@
 #!name=BanADLite
 #!desc=酷安、起点、微信、知乎、Bilibili、京东去广告
 #!author=onenora
-//@UpdateTime    2026-08-02 00:29
+//@UpdateTime    2026-09-26 00:00
 //@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/snippet/BanADLite.snippet
 
 # --- MITM ---
 hostname = mp.weixin.qq.com, szextshort.weixin.qq.com, ems.youku.com, optimus-ads.amap.com, business-cdn.shouji.sogou.com, static.zhihu.com, api.bilibili.com, app.bilibili.com, api.m.jd.com, bdsp-x.jd.com, dsp-x.jd.com, *.360buyimg.com, api.coolapk.com, magev6.if.qidian.com
 
+# --- 分流规则 (Filter / Reject) ---
+# > 铁路12306
+host, ad.12306.cn, reject
+# > 字节跳动广告平台 (Snssdk / Pangolin)
+host, byteadverts.com, reject
+host, lf-ad-ies.bytecdn.cn, reject
+host, lf3-ad-ies.bytecdn.cn, reject
+host, lf6-ad-ies.bytecdn.cn, reject
+host, lf9-ad-ies.bytecdn.cn, reject
+host, bds.snssdk.com, reject
+host, ads.snssdk.com, reject
+host, ad.snssdk.com, reject
+host, ad.toutiao.com, reject
+host, pangolin-sdk-toutiao.com, reject
+host, api-access.pangolin-sdk-toutiao.com, reject
+host, extlog.snssdk.com, reject
+host, mcs.snssdk.com, reject
+host, mon.snssdk.com, reject
+host, log.toutiao.com, reject
+host, dig.bdurl.net, reject
+host, mon.toutiaocloud.com, reject
+host, mon.toutiaocloud.net, reject
+host, toblog.ctobsnssdk.com, reject
+host-suffix, ctobsnssdk.com, reject
+# > 腾讯广点通 & 优量汇 & 微信小程序广告
+host, qzs.gdtimg.com, reject
+host, pgdt.gtimg.cn, reject
+host, pgdt.ugdtimg.com, reject
+host, mi.gdt.qq.com, reject
+host, wxsnsdy.wxs.qq.com, reject
+host, wxsmsdy.video.qq.com, reject
+host, wxsnsdythumb.wxs.qq.com, reject
+host, gdt.qq.com, reject
+host, l.qq.com, reject
+host, ugdtimg.com, reject
+host, adsmind.ugdtimg.com, reject
+host, c2.gdt.qq.com, reject
+host, d.gdt.qq.com, reject
+host, t.gdt.qq.com, reject
+host, tangram.e.qq.com, reject
+host, h.trace.qq.com, reject
+host, ads.privacy.qq.com, reject
+host-suffix, gdtimg.com, reject
+# > 百度联盟 / 百青藤 (Baidu MobAds)
+host, afd.baidu.com, reject
+host, als.baidu.com, reject
+host, mobads.baidu.com, reject
+host, nadvideo2.baidu.com, reject
+host, nsclick.baidu.com, reject
+host, cpro.baidu.com, reject
+host, pos.baidu.com, reject
+host, bgg.baidu.com, reject
+host, click-bes.baidu.com, reject
+host, cpro.baidustatic.com, reject
+host, eclick.baidu.com, reject
+host, mobads-logs.baidu.com, reject
+host, mobads-pre-config.cdn.bcebos.com, reject
+host-suffix, union.baidu.com, reject
+# > 快手联盟 (Kuaishou Ads)
+host, open.e.kuaishou.com, reject
+host, adtrack.e.kuaishou.com, reject
+host-suffix, adkwai.com, reject
+# > 视频平台补充 (优酷、爱奇艺)
+host, ad.mobile.youku.com, reject
+host, iyes.youku.com, reject
+host, t7z.cupid.iqiyi.com, reject
+host, t7z.cupid.ptqy.gitv.tv, reject
+host, atm.youku.com, reject
+host, cad.youku.com, reject
+host, adx-core.youku.com, reject
+host, adx-open-service.youku.com, reject
+# > 电商、统计与聚合广告 SDK (阿里、友盟、极光、个推、倍孜等)
+host, et.tanx.com, reject
+host, df.tanx.com, reject
+host, opehs.tanx.com, reject
+host, acs4baichuan.m.taobao.com, reject
+host, baichuan-sdk.alicdn.com, reject
+host, umengacs.m.taobao.com, reject
+host, alog.umeng.com, reject
+host, ulogs.umeng.com, reject
+host, msg.umeng.com, reject
+host, errlog.umeng.com, reject
+host-suffix, umengcloud.com, reject
+host-suffix, umsns.com, reject
+host, stats.jpush.cn, reject
+host, report.jpush.cn, reject
+host, device.jpush.cn, reject
+host-suffix, jpush.cn, reject
+host-suffix, jiguang.cn, reject
+host, sdk.open.talk.getui.com, reject
+host, api.getui.com, reject
+host-suffix, getui.com, reject
+host-suffix, igexin.com, reject
+host-suffix, mob.com, reject
+host, ads.internal.unity3d.com, reject
+host, ads.prd.ie.internal.unity3d.com, reject
+host, unityads.unity3d.com, reject
+host-suffix, unityads.unitychina.cn, reject
+host-suffix, beizi.biz, reject
+host-suffix, sigmob.cn, reject
+host-suffix, miaozhen.com, reject
+host-suffix, tianmu.mobi, reject
+host-suffix, tuia.cn, reject
+host-suffix, toponad.com, reject
+host-suffix, adjust.io, reject
+host-suffix, appsflyersdk.com, reject
+# > 车来了 & 知乎 & Apple 追踪
+host, ad.chelaile.net.cn, reject
+host, atrace.chelaile.net.cn, reject
+host, appcloud2.in.zhihu.com, reject
+host, sugar.zhihu.com, reject
+host, weather-analytics-events.apple.com, reject
+host-keyword, api-adservices.apple.com, reject
+# > 酷安 (Coolapk 行为分析与追踪)
+host-suffix, sensordata.coolapk.com, reject
+host-suffix, sensordata-usa.coolapk.com, reject
+# > 小红书 (Xiaohongshu 广告拦截)
+host, ads-img-qc.xhscdn.com, reject
+host, ads-video-al.xhscdn.com, reject
+host, ads-video-qc.xhscdn.com, reject
+host, t-ads.xiaohongshu.com, reject
+# > HTTPDNS 降级拦截 (强制走本地标准 DNS)
+host, httpdns.alicdn.com, reject
+host, httpdns-api.aliyuncs.com, reject
+host, amdc.alipay.com, reject
+host, amdc.m.youku.com, reject
+host, httpdns.baidu.com, reject
+host, httpdns.baidubce.com, reject
+host, dns.jd.com, reject
+host, dns.weibo.cn, reject
+host, httpdns.meituan.com, reject
+host, dns.weixin.qq.com, reject
+host, dns.weixin.qq.com.cn, reject
+host, httpdns.music.163.com, reject
+host-keyword, httpdns, reject
+host-keyword, httpsdns, reject
+
+# --- 重写规则 (Rewrite) ---
 # > 微信公众号文章底部广告
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/ad_complaint url reject
 ^https?:\/\/szextshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\/ url reject-img

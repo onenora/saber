@@ -14,8 +14,15 @@ const url = $request.url;
 let rsp_body = $response.body;
 if (!rsp_body) {
   $done({});
-}
-let obj = JSON.parse(rsp_body);
+} else {
+  let obj;
+  try {
+    obj = JSON.parse(rsp_body);
+  } catch {
+    $done({ body: rsp_body });
+  }
+
+  if (obj) {
 
 if (url.includes('/search/banner_list')) {
   obj.data = {};
@@ -118,30 +125,31 @@ if (url.includes('/note/live_photo/save')) {
   if (rsp == null || rsp.length === 0) {
     console.log('缓存无内容，返回原body');
     $done({ body: rsp_body });
-  }
-  const cache_body = JSON.parse(rsp);
-  let new_data = [];
-  for (const images of cache_body) {
-    if (images.live_photo_file_id) {
-      const item = {
-        file_id: images.live_photo_file_id,
-        video_id: images.live_photo.media.video_id,
-        url: images.live_photo.media.stream.h265[0].master_url,
-      };
-      new_data.push(item);
-    }
-  }
-  if (obj.data.datas) {
-    replaceUrlContent(obj.data.datas, new_data);
   } else {
-    obj = {
-      code: 0,
-      success: true,
-      msg: '成功',
-      data: { datas: new_data },
-    };
+    const cache_body = JSON.parse(rsp);
+    let new_data = [];
+    for (const images of cache_body) {
+      if (images.live_photo_file_id) {
+        const item = {
+          file_id: images.live_photo_file_id,
+          video_id: images.live_photo.media.video_id,
+          url: images.live_photo.media.stream.h265[0].master_url,
+        };
+        new_data.push(item);
+      }
+    }
+    if (obj.data.datas) {
+      replaceUrlContent(obj.data.datas, new_data);
+    } else {
+      obj = {
+        code: 0,
+        success: true,
+        msg: '成功',
+        data: { datas: new_data },
+      };
+    }
+    console.log('新body：' + JSON.stringify(obj));
   }
-  console.log('新body：' + JSON.stringify(obj));
 }
 
 if (url.includes('/note/widgets')) {
@@ -411,7 +419,9 @@ if (url.includes('/api/sns/v1/interaction/comment/video/download?')) {
   }
 }
 
-$done({ body: JSON.stringify(obj) });
+    $done({ body: JSON.stringify(obj) });
+  }
+}
 
 // 小红书画质增强：加载2K分辨率的图片
 function imageEnhance(jsonStr) {

@@ -1,7 +1,7 @@
 #!name=REJECT
 #!desc=广告与追踪拦截规则
 #!author=onenora
-//@UpdateTime    2026-09-23 00:00
+//@UpdateTime    2026-09-26 00:00
 //@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/reject.txt
 
 # ------------------REJECT🚫------------------
@@ -117,6 +117,14 @@ DOMAIN,appcloud2.in.zhihu.com
 DOMAIN,sugar.zhihu.com
 DOMAIN,weather-analytics-events.apple.com
 DOMAIN-KEYWORD,api-adservices.apple.com
+# > 酷安 (Coolapk 行为分析与追踪)
+DOMAIN-SUFFIX,sensordata.coolapk.com
+DOMAIN-SUFFIX,sensordata-usa.coolapk.com
+# > 小红书 (Xiaohongshu 广告拦截)
+DOMAIN,ads-img-qc.xhscdn.com
+DOMAIN,ads-video-al.xhscdn.com
+DOMAIN,ads-video-qc.xhscdn.com
+DOMAIN,t-ads.xiaohongshu.com
 # > HTTPDNS 降级拦截 (强制走本地标准 DNS)
 DOMAIN,httpdns.alicdn.com
 DOMAIN,httpdns-api.aliyuncs.com
