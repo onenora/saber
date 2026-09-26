@@ -126,6 +126,10 @@ DOMAIN,ads-video-al.xhscdn.com
 DOMAIN,ads-video-qc.xhscdn.com
 DOMAIN,t-ads.xiaohongshu.com
 # > HTTPDNS 降级拦截 (强制走本地标准 DNS)
+DOMAIN,aedns.weixin.qq.com
+DOMAIN,dns.iqiyi.com
+DOMAIN,doh.iqiyi.com
+DOMAIN,dotserver.douyucdn.cn
 DOMAIN,httpdns.alicdn.com
 DOMAIN,httpdns-api.aliyuncs.com
 DOMAIN,amdc.alipay.com
@@ -138,5 +142,6 @@ DOMAIN,httpdns.meituan.com
 DOMAIN,dns.weixin.qq.com
 DOMAIN,dns.weixin.qq.com.cn
 DOMAIN,httpdns.music.163.com
+DOMAIN,ucdc.upaas.quark.cn
 DOMAIN-KEYWORD,httpdns
 DOMAIN-KEYWORD,httpsdns
