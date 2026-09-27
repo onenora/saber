@@ -1,12 +1,15 @@
-#!name=BanADLite
-#!desc=酷安、起点、微信、知乎、Bilibili、京东去广告
-#!homepage=https://ikuns.netlify.app
-#!author=onenora
-#!tag=去广告
-#!icon=https://ikuns.netlify.app/img/logo.png
-#!date=2026-09-26
+#!name = BanADLite
+#!desc = 酷安、起点、微信、知乎、Bilibili、京东去广告
+#!author = onenora
+#!homepage = https://ikuns.netlify.app
+#!icon = https://ikuns.netlify.app/img/logo.png
+#!system = iOS,iPadOS,tvOS,macOS
+#!system_version = 15
+#!loon_version = 3.5.1(983)
+#!tag = 去广告
+#!date = 2026-09-27 00:00:00
 
-[MITM]
+[Mitm]
 hostname = %APPEND% api.coolapk.com, magev6.if.qidian.com, business-cdn.shouji.sogou.com, mp.weixin.qq.com, szextshort.weixin.qq.com, api.zhihu.com, static.zhihu.com, ems.youku.com, optimus-ads.amap.com, api.bilibili.com, app.bilibili.com, api.m.jd.com, bdsp-x.jd.com, dsp-x.jd.com, *.360buyimg.com
 
 [Rule]
@@ -153,45 +156,46 @@ DOMAIN-KEYWORD,httpsdns, REJECT
 
 [Rewrite]
 # > 微信公众号文章底部广告 & 推广
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/ad_complaint reject
-^https?:\/\/szextshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\/ reject-img
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/ad_video reject
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/advertisement_report reject
-^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport) reject-img
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement|getappmsgad) reject-200
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|masonryfeed|relatedarticle)\? reject-dict
-^https?:\/\/mp\.weixin\.qq\.com\/mp\/relatedsearchword reject-200
+request if ${url} ~= /^https?:\/\/mp\.weixin\.qq\.com\/mp\/ad_complaint/ then reject
+request if ${url} ~= /^https?:\/\/szextshort\.weixin\.qq\.com\/cgi-bin\/mmoc-bin\/ad\// then reject_img(200)
+request if ${url} ~= /^https?:\/\/mp\.weixin\.qq\.com\/mp\/ad_video/ then reject
+request if ${url} ~= /^https?:\/\/mp\.weixin\.qq\.com\/mp\/advertisement_report/ then reject
+request if ${url} ~= /^https?:\/\/mp\.weixin\.qq\.com\/(s|mp)\/(ad_|advertisement|getappmsgad|report|appmsgreport|appmsgpicreport)/ then reject_img(200)
+request if ${url} ~= /^https?:\/\/mp\.weixin\.qq\.com\/mp\/(ad_|advertisement|getappmsgad)/ then reject(200)
+request if ${url} ~= /^https?:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|masonryfeed|relatedarticle)\?/ then reject_dict(200)
+request if ${url} ~= /^https?:\/\/mp\.weixin\.qq\.com\/mp\/relatedsearchword/ then reject(200)
 
 # > 高德、优酷、搜狗、知乎
-^http:\/\/ems\.youku\.com\/imp\? reject
-^http:\/\/optimus-ads\.amap\.com\/uploadimg\/.+ reject
-^https?:\/\/business-cdn\.shouji\.sogou\.com\/wapdl\/hole\/.+?\.jpg reject-200
-^https?:\/\/static\.zhihu\.com\/[^\/]+\/(main|column)\.signflow\.[^.]+\.js reject
-^https?:\/\/api\.zhihu\.com\/commercial_api\/ reject-dict
-^https?:\/\/api\.zhihu\.com\/search\/preset_words\? reject-dict
-^https?:\/\/api\.zhihu\.com\/content-distribution-core\/bubble\/common\/show$ reject-dict
+request if ${url} ~= /^http:\/\/ems\.youku\.com\/imp\?/ then reject
+request if ${url} ~= /^http:\/\/optimus-ads\.amap\.com\/uploadimg\/.+/ then reject
+request if ${url} ~= /^https?:\/\/business-cdn\.shouji\.sogou\.com\/wapdl\/hole\/.+?\.jpg/ then reject(200)
+request if ${url} ~= /^https?:\/\/static\.zhihu\.com\/[^\/]+\/(main|column)\.signflow\.[^.]+\.js/ then reject
+request if ${url} ~= /^https?:\/\/api\.zhihu\.com\/commercial_api\// then reject_dict(200)
+request if ${url} ~= /^https?:\/\/api\.zhihu\.com\/search\/preset_words\?/ then reject_dict(200)
+request if ${url} ~= /^https?:\/\/api\.zhihu\.com\/content-distribution-core\/bubble\/common\/show$/ then reject_dict(200)
 
 # > Bilibili
-^https:\/\/api\.bilibili\.com\/pgc\/season\/player\/cards reject-dict
-^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\? reject-dict
-^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/show reject-dict
+request if ${url} ~= /^https:\/\/api\.bilibili\.com\/pgc\/season\/player\/cards/ then reject_dict(200)
+request if ${url} ~= /^https?:\/\/api\.bilibili\.com\/pgc\/season\/app\/related\/recommend\?/ then reject_dict(200)
+request if ${url} ~= /^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/show/ then reject_dict(200)
 
 # > 京东 JD
-^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(start|queryMaterialAdverts) reject
-^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=searchBoxWord reject-dict
-^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\/ reject
-^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\/ reject
+request if ${url} ~= /^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(start|queryMaterialAdverts)/ then reject
+request if ${url} ~= /^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=searchBoxWord/ then reject_dict(200)
+request if ${url} ~= /^https?:\/\/(bdsp-x|dsp-x)\.jd\.com\/adx\// then reject
+request if ${url} ~= /^https?:\/\/img\d+\.360buyimg\.com\/jddjadvertise\// then reject
 
 # > 酷安
-^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch reject-200
+request if ${url} ~= /^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch/ then reject(200)
 
 # > 起点
-^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/young\/getconf$ reject-dict
+request if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/v1\/young\/getconf$/ then reject_dict(200)
 
 [Script]
 # > 酷安
-http-response ^https:\/\/api\.coolapk\.com\/v6\/main\/(init|indexV8) script-path=https://raw.githubusercontent.com/onenora/saber/main/scripts/coolapk.js, requires-body=true, timeout=60, tag=酷安
-http-response ^https:\/\/api\.coolapk\.com\/v6\/(page\/)?dataList script-path=https://raw.githubusercontent.com/onenora/saber/main/scripts/coolapk.js, requires-body=true, timeout=60, tag=酷安
-http-response ^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList) script-path=https://raw.githubusercontent.com/onenora/saber/main/scripts/coolapk.js, requires-body=true, timeout=60, tag=酷安
+response if ${url} ~= /^https:\/\/api\.coolapk\.com\/v6\/main\/(init|indexV8)/ then script("https://raw.githubusercontent.com/onenora/saber/main/scripts/coolapk.js") with tag="酷安-首页初始化", requires_body=true, timeout=60
+response if ${url} ~= /^https:\/\/api\.coolapk\.com\/v6\/(page\/)?dataList/ then script("https://raw.githubusercontent.com/onenora/saber/main/scripts/coolapk.js") with tag="酷安-信息流", requires_body=true, timeout=60
+response if ${url} ~= /^https:\/\/api\.coolapk\.com\/v6\/feed\/(detail|replyList)/ then script("https://raw.githubusercontent.com/onenora/saber/main/scripts/coolapk.js") with tag="酷安-详情评论", requires_body=true, timeout=60
+
 # > 起点
-http-response ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v[23]\/deeplink\/geturl|v1\/(client\/getconf|bookshelf\/getHoverAdv|adv\/getadvlistbatch)) script-path=https://raw.githubusercontent.com/onenora/saber/main/scripts/qd.js, requires-body=true, timeout=60, tag=起点
+response if ${url} ~= /^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v[23]\/deeplink\/geturl|v1\/(client\/getconf|bookshelf\/getHoverAdv|adv\/getadvlistbatch))/ then script("https://raw.githubusercontent.com/onenora/saber/main/scripts/qd.js") with tag="起点-去广告", requires_body=true, timeout=60
