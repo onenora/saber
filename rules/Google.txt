@@ -70,6 +70,7 @@ DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 
 # AI / Gemini / NotebookLM
 DOMAIN,ai.google.dev
+DOMAIN-SUFFIX,ai.dev
 DOMAIN,aida.googleapis.com
 DOMAIN,aisandbox-pa.googleapis.com
 DOMAIN,aistudio.google.com
