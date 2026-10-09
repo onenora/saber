@@ -1,7 +1,7 @@
 #!name=Twitter (X)
 #!desc=Twitter / X 分流规则
 #!author=onenora
-//@UpdateTime    2026-04-12 00:00
+//@UpdateTime    2026-09-26 00:00
 //@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/Twitter.txt
 
 # 域名规则
@@ -31,6 +31,14 @@ DOMAIN-SUFFIX,twvid.com
 DOMAIN-SUFFIX,vine.co
 DOMAIN-SUFFIX,x.com
 DOMAIN-KEYWORD,twitter
+
+# X Money / Payments
+DOMAIN,money.x.com
+DOMAIN,payments.x.com
+DOMAIN,money-support.x.com
+DOMAIN-SUFFIX,x.money
+DOMAIN-SUFFIX,xmoney.com
+DOMAIN-SUFFIX,xpayments.com
 
 # IP 规则
 IP-CIDR,192.133.76.0/22,no-resolve
