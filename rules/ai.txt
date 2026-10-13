@@ -296,3 +296,6 @@ DOMAIN-SUFFIX,grokipedia.com
 
 # BAI Service
 DOMAIN-SUFFIX,baiservice.com
+
+# Magpie
+DOMAIN-SUFFIX,usemagpie.ai

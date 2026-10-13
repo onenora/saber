@@ -11,6 +11,7 @@ DOMAIN-SUFFIX,admob.com
 DOMAIN-SUFFIX,ampproject.org
 DOMAIN-SUFFIX,android.com
 DOMAIN-SUFFIX,androidify.com
+DOMAIN-SUFFIX,app-analytics-services.com
 DOMAIN-SUFFIX,appspot.com
 DOMAIN-SUFFIX,autodraw.com
 DOMAIN-SUFFIX,blogger.com
