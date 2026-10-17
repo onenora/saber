@@ -1,8 +1,7 @@
 #!name=Telegram
 #!desc=Telegram 分流规则
 #!author=onenora
-//@UpdateTime    2026-04-05 00:00
-//@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/telegram.list
+#!date=2026-04-05 00:00
 
 # 域名规则
 DOMAIN,api.imem.app

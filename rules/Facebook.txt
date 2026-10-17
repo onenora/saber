@@ -1,8 +1,7 @@
 #!name=Facebook
 #!desc=Facebook / Instagram / Threads / WhatsApp / Meta 分流规则，基于 blackmatrix7 与 meta-rules-dat
 #!author=onenora
-//@UpdateTime    2026-09-26 00:00
-//@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/Facebook.txt
+#!date=2026-09-26 00:00
 
 # Meta 核心与生态
 DOMAIN,imagine.meta.com

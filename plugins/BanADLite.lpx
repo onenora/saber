@@ -3,8 +3,6 @@
 #!author = onenora
 #!homepage = https://ikuns.netlify.app
 #!icon = https://ikuns.netlify.app/img/logo.png
-#!system = iOS,iPadOS,tvOS,macOS
-#!system_version = 15
 #!loon_version = 3.5.1(983)
 #!tag = 去广告
 #!date = 2026-09-27 00:00:00

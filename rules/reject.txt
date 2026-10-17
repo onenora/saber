@@ -1,8 +1,7 @@
 #!name=REJECT
 #!desc=广告与追踪拦截规则
 #!author=onenora
-//@UpdateTime    2026-09-26 00:00
-//@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/reject.txt
+#!date=2026-09-26 00:00
 
 # ------------------REJECT🚫------------------
 # > 铁路12306

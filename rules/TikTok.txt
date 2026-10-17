@@ -1,8 +1,7 @@
 #!name=TikTok
 #!desc=TikTok 分流规则
 #!author=onenora
-//@UpdateTime    2026-04-18 00:00
-//@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/TikTok.txt
+#!date=2026-04-18 00:00
 
 DOMAIN,lf16-effectcdn.byteeffecttos-g.com
 DOMAIN,lf16-pkgcdn.pitaya-clientai.com

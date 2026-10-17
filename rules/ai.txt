@@ -1,15 +1,15 @@
 #!name=AI
 #!desc=AI / AIGC 分流规则
 #!author=onenora
-//@UpdateTime    2026-09-26 00:00
-//@ScriptURL    https://raw.githubusercontent.com/onenora/saber/main/rules/ai.txt
+#!date=2026-10-17 00:00
 
 # Augment
 DOMAIN-SUFFIX,augment.com
 DOMAIN-SUFFIX,augmentcode.com
 
-# OpenAI / ChatGPT
+# OpenAI / ChatGPT / Codex
 DOMAIN,browser-intake-datadoghq.com
+DOMAIN,cdn.plaid.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,host.livekit.cloud
