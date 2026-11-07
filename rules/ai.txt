@@ -1,14 +1,13 @@
 #!name=AI
 #!desc=AI / AIGC 分流规则
 #!author=onenora
-#!date=2026-10-17 00:00
+#!date=2026-11-07 00:00
 
 # Augment
 DOMAIN-SUFFIX,augment.com
 DOMAIN-SUFFIX,augmentcode.com
 
 # OpenAI / ChatGPT / Codex
-DOMAIN,browser-intake-datadoghq.com
 DOMAIN,cdn.plaid.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN,chat.openai.com.cdn.cloudflare.net
@@ -29,7 +28,6 @@ DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaistatsig.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,client-api.arkoselabs.com
-DOMAIN-SUFFIX,events.statsigapi.net
 DOMAIN-SUFFIX,featuregates.org
 DOMAIN-SUFFIX,identrust.com
 DOMAIN-SUFFIX,intercom.io
@@ -43,7 +41,6 @@ DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,sora.com
-DOMAIN-KEYWORD,openai
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,50.117.27.0/24,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
@@ -54,9 +51,7 @@ IP-ASN,20473,no-resolve
 
 # Anthropic / Claude
 DOMAIN,anthropic-com.ghost.io
-DOMAIN,anthropic.auth0.com
 DOMAIN,anthropic.com.cdn.cloudflare.net
-DOMAIN,browser-intake-us5-datadoghq.com
 DOMAIN,cdn.usefathom.com
 DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN-SUFFIX,anthropic.ai
@@ -69,29 +64,52 @@ DOMAIN-SUFFIX,claudemcpcontent.com
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,modelcontextprotocol.io
 DOMAIN-SUFFIX,statsigapi.net
-DOMAIN-KEYWORD,datadog
-DOMAIN-KEYWORD,sift
+DOMAIN-SUFFIX,browser-intake-datadoghq.com
+DOMAIN-SUFFIX,browser-intake-us5-datadoghq.com
+DOMAIN-SUFFIX,datadoghq.com
+DOMAIN-SUFFIX,sift.com
+DOMAIN-SUFFIX,siftscience.com
 IP-CIDR,160.79.104.0/21,no-resolve
 IP-CIDR6,2607:6bc0::/32,no-resolve
 IP-ASN,399358,no-resolve
 
 # Google Gemini / AI
-DOMAIN,ai.google.dev
 DOMAIN-SUFFIX,ai.dev
-DOMAIN,aistudio.google.com
-DOMAIN,alkalicore-pa.clients6.google.com
-DOMAIN,alkalimakersuite-pa.clients6.google.com
-DOMAIN,bard.google.com
-DOMAIN,deepmind.com
+DOMAIN-SUFFIX,ai.google.dev
+DOMAIN-SUFFIX,aida.googleapis.com
+DOMAIN-SUFFIX,aisandbox-pa.googleapis.com
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,alkalicore-pa.clients6.google.com
+DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com
+DOMAIN-SUFFIX,antigravity.google
+DOMAIN-SUFFIX,antigravity-unleash.goog
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+DOMAIN-SUFFIX,colab.google
+DOMAIN-SUFFIX,colab.research.google.com
+DOMAIN-SUFFIX,daily-cloudcode-pa.googleapis.com
+DOMAIN-SUFFIX,daily-cloudcode-pa.sandbox.googleapis.com
+DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
-DOMAIN,gemini.google.com
+DOMAIN-SUFFIX,developerprofiles-pa.googleapis.com
+DOMAIN-SUFFIX,g.ai
+DOMAIN-SUFFIX,geller-pa.googleapis.com
 DOMAIN-SUFFIX,gemini.google
+DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN,makersuite.google.com
+DOMAIN-SUFFIX,idx.dev
+DOMAIN-SUFFIX,jules.google
+DOMAIN-SUFFIX,jules.google.com
+DOMAIN-SUFFIX,labs.google
+DOMAIN-SUFFIX,makersuite.google.com
 DOMAIN-SUFFIX,notebooklm.google
-DOMAIN,notebooklm.google.com
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-SUFFIX,opal.google
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
+DOMAIN-SUFFIX,stitch.withgoogle.com
+DOMAIN-SUFFIX,webchannel-alkalimakersuite-pa.clients6.google.com
 
 # Perplexity
 DOMAIN,pplx-res.cloudinary.com
@@ -145,7 +163,6 @@ DOMAIN-SUFFIX,openrouter.ai
 DOMAIN,gateway.ai.cloudflare.com
 
 # Hugging Face AI
-DOMAIN,router.huggingface.co
 DOMAIN-SUFFIX,hf.co
 DOMAIN-SUFFIX,hf.space
 DOMAIN-SUFFIX,huggingface.co
@@ -300,3 +317,28 @@ DOMAIN-SUFFIX,baiservice.com
 
 # Magpie
 DOMAIN-SUFFIX,usemagpie.ai
+
+# Kiro
+DOMAIN-SUFFIX,kiro.dev
+
+# Amp / Sourcegraph
+DOMAIN-SUFFIX,ampcode.com
+DOMAIN-SUFFIX,sourcegraph.com
+
+# Factory
+DOMAIN-SUFFIX,factory.ai
+
+# Warp
+DOMAIN-SUFFIX,warp.dev
+
+# Genspark
+DOMAIN-SUFFIX,genspark.ai
+
+# Coze
+DOMAIN-SUFFIX,coze.com
+
+# LangChain / LangSmith
+DOMAIN-SUFFIX,langchain.com
+
+# CrewAI
+DOMAIN-SUFFIX,crewai.com

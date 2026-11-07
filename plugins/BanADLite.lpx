@@ -5,7 +5,7 @@
 #!icon = https://ikuns.netlify.app/img/logo.png
 #!loon_version = 3.5.1(983)
 #!tag = 去广告
-#!date = 2026-09-27 00:00:00
+#!date = 2026-11-07 00:00:00
 
 [Mitm]
 hostname = %APPEND% api.coolapk.com, magev6.if.qidian.com, business-cdn.shouji.sogou.com, mp.weixin.qq.com, szextshort.weixin.qq.com, api.zhihu.com, static.zhihu.com, ems.youku.com, optimus-ads.amap.com, api.bilibili.com, app.bilibili.com, api.m.jd.com, bdsp-x.jd.com, dsp-x.jd.com, *.360buyimg.com
@@ -32,10 +32,8 @@ DOMAIN,log.toutiao.com, REJECT
 DOMAIN,dig.bdurl.net, REJECT
 DOMAIN,mon.toutiaocloud.com, REJECT
 DOMAIN,mon.toutiaocloud.net, REJECT
-DOMAIN,toblog.ctobsnssdk.com, REJECT
 DOMAIN-SUFFIX,ctobsnssdk.com, REJECT
 # > 腾讯广点通 & 优量汇 & 微信小程序广告
-DOMAIN,qzs.gdtimg.com, REJECT
 DOMAIN,pgdt.gtimg.cn, REJECT
 DOMAIN,pgdt.ugdtimg.com, REJECT
 DOMAIN,mi.gdt.qq.com, REJECT
@@ -94,13 +92,8 @@ DOMAIN,msg.umeng.com, REJECT
 DOMAIN,errlog.umeng.com, REJECT
 DOMAIN-SUFFIX,umengcloud.com, REJECT
 DOMAIN-SUFFIX,umsns.com, REJECT
-DOMAIN,stats.jpush.cn, REJECT
-DOMAIN,report.jpush.cn, REJECT
-DOMAIN,device.jpush.cn, REJECT
 DOMAIN-SUFFIX,jpush.cn, REJECT
 DOMAIN-SUFFIX,jiguang.cn, REJECT
-DOMAIN,sdk.open.talk.getui.com, REJECT
-DOMAIN,api.getui.com, REJECT
 DOMAIN-SUFFIX,getui.com, REJECT
 DOMAIN-SUFFIX,igexin.com, REJECT
 DOMAIN-SUFFIX,mob.com, REJECT
@@ -122,7 +115,7 @@ DOMAIN,atrace.chelaile.net.cn, REJECT
 DOMAIN,appcloud2.in.zhihu.com, REJECT
 DOMAIN,sugar.zhihu.com, REJECT
 DOMAIN,weather-analytics-events.apple.com, REJECT
-DOMAIN-KEYWORD,api-adservices.apple.com, REJECT
+DOMAIN-SUFFIX,api-adservices.apple.com, REJECT
 # > 酷安 (Coolapk 行为分析与追踪)
 DOMAIN-SUFFIX,sensordata.coolapk.com, REJECT
 DOMAIN-SUFFIX,sensordata-usa.coolapk.com, REJECT

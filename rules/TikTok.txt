@@ -1,12 +1,13 @@
 #!name=TikTok
 #!desc=TikTok 分流规则
 #!author=onenora
-#!date=2026-04-18 00:00
+#!date=2026-11-07 00:00
 
 DOMAIN,lf16-effectcdn.byteeffecttos-g.com
 DOMAIN,lf16-pkgcdn.pitaya-clientai.com
 DOMAIN,p16-tiktokcdn-com.akamaized.net
 DOMAIN-SUFFIX,bytedapm.com
+DOMAIN-SUFFIX,bytefcdn-oversea.com
 DOMAIN-SUFFIX,bytegecko-i18n.com
 DOMAIN-SUFFIX,byteintlapi.com
 DOMAIN-SUFFIX,byteoversea.com
@@ -18,6 +19,7 @@ DOMAIN-SUFFIX,musical.ly
 DOMAIN-SUFFIX,sgpstatp.com
 DOMAIN-SUFFIX,tik-tokapi.com
 DOMAIN-SUFFIX,tiktok.com
+DOMAIN-SUFFIX,tiktokcdn-eu.com
 DOMAIN-SUFFIX,tiktokcdn-us.com
 DOMAIN-SUFFIX,tiktokcdn.com
 DOMAIN-SUFFIX,tiktokd.net
@@ -26,6 +28,4 @@ DOMAIN-SUFFIX,tiktokmusic.app
 DOMAIN-SUFFIX,tiktokv.com
 DOMAIN-SUFFIX,tiktokv.us
 DOMAIN-SUFFIX,ttwebview.com
-DOMAIN-KEYWORD,musical.ly
-DOMAIN-KEYWORD,tiktok
 USER-AGENT,TikTok*

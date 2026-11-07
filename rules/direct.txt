@@ -1,7 +1,7 @@
 #!name=DIRECT
 #!desc=China Direct Routing Rules
 #!author=onenora
-#!date=2026-09-23 00:00
+#!date=2026-11-07 00:00
 
 # 1. Local & Private IP (局域网直连，优先级最高，防止路由回环)
 IP-CIDR,127.0.0.0/8,no-resolve
@@ -16,7 +16,6 @@ DOMAIN-SUFFIX,12321.cn
 DOMAIN-SUFFIX,ncsc.org.cn
 
 # 3. Apple China Services (Apple 中国区服务)
-DOMAIN-SUFFIX,apple.com.cn
 DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,mzstatic.com
 
@@ -62,8 +61,10 @@ DOMAIN-SUFFIX,manmanbuy.com
 
 # 4.1 国内主流 AI 服务（直连）
 DOMAIN-SUFFIX,deepseek.com
+DOMAIN-SUFFIX,doubao.com
 DOMAIN-SUFFIX,kimi.ai
 DOMAIN-SUFFIX,moonshot.cn
+DOMAIN-SUFFIX,qianwen.com
 DOMAIN-SUFFIX,zhipuai.cn
 DOMAIN-SUFFIX,minimax.chat
 DOMAIN-SUFFIX,stepfun.com
@@ -71,35 +72,31 @@ DOMAIN-SUFFIX,stepfun.com
 # 4.2 Blackmatrix7 补充
 
 # 4.1.1 Apple 服务补充
-DOMAIN,init.ess.apple.com
 DOMAIN,itunes.apple.com
 DOMAIN,smp-device-content.apple.com
 DOMAIN,time.apple.com
+DOMAIN-SUFFIX,amp-api.podcasts.apple.com
+DOMAIN-SUFFIX,api.smoot.apple.cn
+DOMAIN-SUFFIX,buy.itunes.apple.com
+DOMAIN-SUFFIX,ess.apple.com
+DOMAIN-SUFFIX,gsa.apple.com
+DOMAIN-SUFFIX,humb.apple.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,push.apple.com
+DOMAIN-SUFFIX,ssl.apple.com
 DOMAIN-SUFFIX,weather-data.apple.com
+DOMAIN-SUFFIX,weather-edge.apple.com
 DOMAIN-SUFFIX,weather-map.apple.com
-DOMAIN-KEYWORD,amp-api.podcasts.apple.com
-DOMAIN-KEYWORD,api.smoot.apple.cn
-DOMAIN-KEYWORD,api.smoot.apple.com
-DOMAIN-KEYWORD,buy.itunes.apple.com
-DOMAIN-KEYWORD,ess.apple.com
-DOMAIN-KEYWORD,gsa.apple.com
-DOMAIN-KEYWORD,humb.apple.com
-DOMAIN-KEYWORD,icloud.com
-DOMAIN-KEYWORD,ls.apple.com
-DOMAIN-KEYWORD,push.apple.com
-DOMAIN-KEYWORD,ssl.apple.com
-DOMAIN-KEYWORD,weather-adge.apple.com
-DOMAIN-KEYWORD,weather-edge.apple.com
 
 # 4.1.2 学术 / 出版 / 资源站补充
 DOMAIN-SUFFIX,acm.org
-DOMAIN-KEYWORD,cnki.net
-DOMAIN-KEYWORD,deepdyve
-DOMAIN-KEYWORD,elsevier
-DOMAIN-KEYWORD,sciencedirect
-DOMAIN-KEYWORD,trip.com
-DOMAIN-KEYWORD,wanfangdata
-DOMAIN-KEYWORD,westlawchina
+DOMAIN-SUFFIX,cnki.net
+DOMAIN-SUFFIX,deepdyve.com
+DOMAIN-SUFFIX,elsevier.com
+DOMAIN-SUFFIX,sciencedirect.com
+DOMAIN-SUFFIX,trip.com
+DOMAIN-SUFFIX,wanfangdata.com
+DOMAIN-SUFFIX,westlawchina.com
 
 # 4.1.3 静态资源补充
 DOMAIN,cdn.jsdelivr.net

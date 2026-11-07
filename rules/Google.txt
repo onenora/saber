@@ -1,12 +1,13 @@
 #!name=Google
 #!desc=Google / YouTube / AI 分流规则
 #!author=onenora
-#!date=2026-09-26 00:00
+#!date=2026-11-07 00:00
 
 # 域名规则
 DOMAIN-SUFFIX,1e100.net
 DOMAIN-SUFFIX,abc.xyz
 DOMAIN-SUFFIX,admob.com
+DOMAIN-SUFFIX,ai.dev
 DOMAIN-SUFFIX,ampproject.org
 DOMAIN-SUFFIX,android.com
 DOMAIN-SUFFIX,androidify.com
@@ -23,7 +24,9 @@ DOMAIN-SUFFIX,chromium.org
 DOMAIN-SUFFIX,creativelab5.com
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,dialogflow.com
+DOMAIN-SUFFIX,firebaseapp.com
 DOMAIN-SUFFIX,firebaseio.com
+DOMAIN-SUFFIX,g.ai
 DOMAIN-SUFFIX,g.co
 DOMAIN-SUFFIX,gcr.io
 DOMAIN-SUFFIX,getmdl.io
@@ -33,13 +36,19 @@ DOMAIN-SUFFIX,gmail.com
 DOMAIN-SUFFIX,gmodules.com
 DOMAIN-SUFFIX,godoc.org
 DOMAIN-SUFFIX,golang.org
+DOMAIN-SUFFIX,goog
+DOMAIN-SUFFIX,google
 DOMAIN-SUFFIX,google.com
 DOMAIN-SUFFIX,google-analytics.com
-DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,googleapis.cn
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,googleblog.com
+DOMAIN-SUFFIX,googlesource.com
+DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,googletagmanager.com
 DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,gstatic.cn
 DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,gv.com
 DOMAIN-SUFFIX,gvt0.com
@@ -47,6 +56,7 @@ DOMAIN-SUFFIX,gvt1.com
 DOMAIN-SUFFIX,gvt2.com
 DOMAIN-SUFFIX,gvt3.com
 DOMAIN-SUFFIX,gwtproject.org
+DOMAIN-SUFFIX,idx.dev
 DOMAIN-SUFFIX,itasoftware.com
 DOMAIN-SUFFIX,madewithcode.com
 DOMAIN-SUFFIX,material.io
@@ -55,7 +65,6 @@ DOMAIN-SUFFIX,recaptcha.net
 DOMAIN-SUFFIX,run.app
 DOMAIN-SUFFIX,shattered.io
 DOMAIN-SUFFIX,synergyse.com
-DOMAIN-SUFFIX,telephony.goog
 DOMAIN-SUFFIX,tensorflow.org
 DOMAIN-SUFFIX,tfhub.dev
 DOMAIN-SUFFIX,tiltbrush.com
@@ -65,45 +74,9 @@ DOMAIN-SUFFIX,webmproject.org
 DOMAIN-SUFFIX,webrtc.org
 DOMAIN-SUFFIX,whatbrowser.org
 DOMAIN-SUFFIX,widevine.com
+DOMAIN-SUFFIX,withgoogle.com
 DOMAIN-SUFFIX,x.company
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-
-# AI / Gemini / NotebookLM
-DOMAIN,ai.google.dev
-DOMAIN-SUFFIX,ai.dev
-DOMAIN,aida.googleapis.com
-DOMAIN,aisandbox-pa.googleapis.com
-DOMAIN,aistudio.google.com
-DOMAIN,antigravity.google
-DOMAIN,antigravity-unleash.goog
-DOMAIN,alkalicore-pa.clients6.google.com
-DOMAIN,daily-cloudcode-pa.googleapis.com
-DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
-DOMAIN,jules.google
-DOMAIN,jules.google.com
-DOMAIN,labs.google
-DOMAIN,makersuite.google.com
-DOMAIN-SUFFIX,notebooklm.google
-DOMAIN,notebooklm.google.com
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-DOMAIN,robinfrontend-pa.googleapis.com
-DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,apis.google.com
-DOMAIN-SUFFIX,deepmind.google
-DOMAIN-SUFFIX,g.ai
-DOMAIN-SUFFIX,geller-pa.googleapis.com
-DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,gemini.google
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,webchannel-alkalimakersuite-pa.clients6.google.com
-DOMAIN,alkalimakersuite-pa.clients6.google.com
-DOMAIN-KEYWORD,colab
-DOMAIN-KEYWORD,developerprofiles
-DOMAIN-KEYWORD,generativelanguage
-DOMAIN-KEYWORD,antigravity-auto-updater-
-DOMAIN-KEYWORD,google
 
 # YouTube
 DOMAIN-SUFFIX,withyoutube.com

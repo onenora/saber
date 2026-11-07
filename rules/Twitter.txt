@@ -1,7 +1,7 @@
 #!name=Twitter (X)
 #!desc=Twitter / X 分流规则
 #!author=onenora
-#!date=2026-09-26 00:00
+#!date=2026-11-07 00:00
 
 # 域名规则
 DOMAIN-SUFFIX,ads-twitter.com
@@ -29,12 +29,8 @@ DOMAIN-SUFFIX,twttr.net
 DOMAIN-SUFFIX,twvid.com
 DOMAIN-SUFFIX,vine.co
 DOMAIN-SUFFIX,x.com
-DOMAIN-KEYWORD,twitter
 
 # X Money / Payments
-DOMAIN,money.x.com
-DOMAIN,payments.x.com
-DOMAIN,money-support.x.com
 DOMAIN-SUFFIX,x.money
 DOMAIN-SUFFIX,xmoney.com
 DOMAIN-SUFFIX,xpayments.com

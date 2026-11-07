@@ -1,13 +1,10 @@
 #!name=Facebook
 #!desc=Facebook / Instagram / Threads / WhatsApp / Meta 分流规则，基于 blackmatrix7 与 meta-rules-dat
 #!author=onenora
-#!date=2026-09-26 00:00
+#!date=2026-11-07 00:00
 
 # Meta 核心与生态
-DOMAIN,imagine.meta.com
 DOMAIN-SUFFIX,atmeta.com
-DOMAIN-SUFFIX,llama.com
-DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,meta.com
 DOMAIN-SUFFIX,meta.org
 DOMAIN-SUFFIX,metacareers.com
@@ -73,8 +70,6 @@ DOMAIN-SUFFIX,workplace.com
 DOMAIN-SUFFIX,workplaceusecases.com
 DOMAIN-SUFFIX,zuckerberg.com
 DOMAIN-SUFFIX,zuckerberg.net
-DOMAIN-KEYWORD,facebook
-DOMAIN-KEYWORD,fbcdn
 
 # Instagram
 DOMAIN-SUFFIX,cdninstagram.com

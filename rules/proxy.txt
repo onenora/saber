@@ -1,7 +1,7 @@
 #!name=PROXY
 #!desc=个人杂项代理规则
 #!author=onenora
-#!date=2026-09-26 00:00
+#!date=2026-11-07 00:00
 
 # > Pornhub
 DOMAIN-SUFFIX,phncdn.com
@@ -37,12 +37,10 @@ DOMAIN-SUFFIX,crates.io
 DOMAIN-SUFFIX,debian.org
 DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,docker.io
-DOMAIN-SUFFIX,hub.docker.com
 DOMAIN-SUFFIX,eclipsecontent.org
 DOMAIN-SUFFIX,evermeet.cx
 DOMAIN-SUFFIX,godaddy.com
 DOMAIN-SUFFIX,greasyfork.org
-DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,jdx.dev
 DOMAIN-SUFFIX,linode.com
 DOMAIN-SUFFIX,npmjs.org
@@ -77,24 +75,27 @@ DOMAIN-SUFFIX,wordpress.com
 # > Blackmatrix7 补充
 
 # > 流媒体 / 社交平台
-DOMAIN-KEYWORD,abema
-DOMAIN-KEYWORD,appledaily
-DOMAIN-KEYWORD,avtb
-DOMAIN-KEYWORD,beetalk
-DOMAIN-KEYWORD,blogspot
-DOMAIN-KEYWORD,ttvnw
-DOMAIN-KEYWORD,uk-live
-DOMAIN-KEYWORD,youtube
+DOMAIN-SUFFIX,abema.io
+DOMAIN-SUFFIX,abema.tv
+DOMAIN-SUFFIX,appledaily.com
+DOMAIN-SUFFIX,appledaily.com.tw
+DOMAIN-SUFFIX,avtb.com
+DOMAIN-SUFFIX,beetalkmobile.com
+DOMAIN-SUFFIX,blogspot.com
+DOMAIN-SUFFIX,ttvnw.net
+DOMAIN-SUFFIX,twitch.tv
 
 # > 代理工具 / 隐私
-DOMAIN-KEYWORD,dlercloud
+DOMAIN-SUFFIX,dler.cloud
 
 # > 支付 / 交易
-DOMAIN-KEYWORD,paypal
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
 
-# > 成人 / 学术
-DOMAIN-KEYWORD,porn
-DOMAIN-KEYWORD,sci-hub
+# > 学术
+DOMAIN-SUFFIX,sci-hub.ru
+DOMAIN-SUFFIX,sci-hub.se
+DOMAIN-SUFFIX,sci-hub.st
 
 # > 影视 / Emby
 DOMAIN-SUFFIX,mudvod.tv
@@ -105,7 +106,6 @@ DOMAIN-SUFFIX,emby.vip
 DOMAIN-SUFFIX,feedx.net
 DOMAIN-SUFFIX,macbl.com
 DOMAIN-SUFFIX,misakaf.org
-DOMAIN-SUFFIX,nicegram.app
 DOMAIN-SUFFIX,rssfeed.today
 DOMAIN-SUFFIX,sub2api.org
 DOMAIN-SUFFIX,ygpy.net
@@ -145,7 +145,6 @@ DOMAIN-SUFFIX,ttk.tw
 # > 工具 / 服务
 DOMAIN,bobtranslate.com
 DOMAIN-SUFFIX,bugsnag.com
-DOMAIN-SUFFIX,dl.nssurge.com
 DOMAIN-SUFFIX,egernapp.com
 DOMAIN-SUFFIX,get.store
 DOMAIN-SUFFIX,getpocket.com

@@ -1,7 +1,7 @@
 #!name=Netflix
 #!desc=Netflix 分流规则，基于 blackmatrix7
 #!author=onenora
-#!date=2026-09-10 00:00
+#!date=2026-11-07 00:00
 
 # 域名规则
 DOMAIN,e13252.dscg.akamaiedge.net
@@ -39,7 +39,6 @@ DOMAIN-SUFFIX,us-west-2.amazonaws.com
 DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
 DOMAIN-KEYWORD,dualstack.apiproxy-
 DOMAIN-KEYWORD,dualstack.ichnaea-web-
-DOMAIN-KEYWORD,netflixdnstest
 
 # ASN 规则
 IP-ASN,2906,no-resolve

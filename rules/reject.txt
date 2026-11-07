@@ -1,7 +1,7 @@
 #!name=REJECT
 #!desc=广告与追踪拦截规则
 #!author=onenora
-#!date=2026-09-26 00:00
+#!date=2026-11-07 00:00
 
 # ------------------REJECT🚫------------------
 # > 铁路12306
@@ -25,10 +25,8 @@ DOMAIN,log.toutiao.com
 DOMAIN,dig.bdurl.net
 DOMAIN,mon.toutiaocloud.com
 DOMAIN,mon.toutiaocloud.net
-DOMAIN,toblog.ctobsnssdk.com
 DOMAIN-SUFFIX,ctobsnssdk.com
 # > 腾讯广点通 & 优量汇 & 微信小程序广告
-DOMAIN,qzs.gdtimg.com
 DOMAIN,pgdt.gtimg.cn
 DOMAIN,pgdt.ugdtimg.com
 DOMAIN,mi.gdt.qq.com
@@ -87,13 +85,8 @@ DOMAIN,msg.umeng.com
 DOMAIN,errlog.umeng.com
 DOMAIN-SUFFIX,umengcloud.com
 DOMAIN-SUFFIX,umsns.com
-DOMAIN,stats.jpush.cn
-DOMAIN,report.jpush.cn
-DOMAIN,device.jpush.cn
 DOMAIN-SUFFIX,jpush.cn
 DOMAIN-SUFFIX,jiguang.cn
-DOMAIN,sdk.open.talk.getui.com
-DOMAIN,api.getui.com
 DOMAIN-SUFFIX,getui.com
 DOMAIN-SUFFIX,igexin.com
 DOMAIN-SUFFIX,mob.com
@@ -115,7 +108,7 @@ DOMAIN,atrace.chelaile.net.cn
 DOMAIN,appcloud2.in.zhihu.com
 DOMAIN,sugar.zhihu.com
 DOMAIN,weather-analytics-events.apple.com
-DOMAIN-KEYWORD,api-adservices.apple.com
+DOMAIN-SUFFIX,api-adservices.apple.com
 # > 酷安 (Coolapk 行为分析与追踪)
 DOMAIN-SUFFIX,sensordata.coolapk.com
 DOMAIN-SUFFIX,sensordata-usa.coolapk.com
