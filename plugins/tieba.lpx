@@ -5,7 +5,7 @@
 #!icon = https://ikuns.netlify.app/img/dt/tieba.webp
 #!loon_version = 3.5.1(983)
 #!tag = 去广告
-#!date = 2026-09-27 00:00:00
+#!date = 2026-11-07 00:00:00
 
 [Argument]
 per_filter_video_thread = select,"0","1",tag=推荐页不展示视频帖,desc=设置为 1 时推荐页不展示视频帖
@@ -16,10 +16,10 @@ IP-CIDR, 180.76.76.200/32, REJECT, no-resolve
 
 [Script]
 # JSON 接口
-response if ${url} ~= /^https?:\/\/(tiebac|c\.tieba)\.baidu\.com\/(c\/(s\/sync|f\/(ad\/getSplashAd|frs\/(page|threadlist|generalTabList)|pb\/(pic)?page|excellent\/personalized))$|tiebaads\/commonbatch\?)/ then script("https://raw.githubusercontent.com/onenora/saber/main/scripts/tieba-json.js") with tag="贴吧-JSON", requires_body=true, timeout=10
+response if ${url} ~= /^https?:\/\/(tiebac|c\.tieba)\.baidu\.com\/(c\/(s\/sync|f\/(ad\/getSplashAd|frs\/(page|threadlist|generalTabList)|pb\/(pic)?page|excellent\/personalized))$|tiebaads\/commonbatch\?)/ then script("https://raw.githubusercontent.com/onenora/saber/main/scripts/tieba.js") with tag="贴吧-JSON", requires_body=true, timeout=10
 
 # Proto 接口
-response if ${url} ~= /^https?:\/\/(tiebac|c\.tieba)\.baidu\.com\/c\/(b\/ad\/adBid|f\/(frs\/(page|threadlist|generalTabList)|ad\/getFeedAd|pb\/page|excellent\/personalized))\?cmd/ then script("https://raw.githubusercontent.com/onenora/saber/main/scripts/tieba-proto.js", {${per_filter_video_thread}}) with tag="贴吧-Proto", requires_body=true, binary_body_mode=true, timeout=10
+response if ${url} ~= /^https?:\/\/(tiebac|c\.tieba)\.baidu\.com\/c\/(b\/ad\/adBid|f\/(frs\/(page|threadlist|generalTabList)|ad\/getFeedAd|pb\/page|excellent\/personalized))\?cmd/ then script("https://raw.githubusercontent.com/onenora/saber/main/scripts/tieba.js", {${per_filter_video_thread}}) with tag="贴吧-Proto", requires_body=true, binary_body_mode=true, timeout=10
 
 [Mitm]
 hostname = tiebac.baidu.com
