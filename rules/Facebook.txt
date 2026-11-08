@@ -1,9 +1,10 @@
 #!name=Facebook
 #!desc=Facebook / Instagram / Threads / WhatsApp / Meta 分流规则，基于 blackmatrix7 与 meta-rules-dat
 #!author=onenora
-#!date=2026-11-07 00:00
+#!date=2026-11-08 00:00
 
 # Meta 核心与生态
+DOMAIN-SUFFIX,aboutfacebook.com
 DOMAIN-SUFFIX,atmeta.com
 DOMAIN-SUFFIX,meta.com
 DOMAIN-SUFFIX,meta.org
@@ -21,6 +22,7 @@ DOMAIN-SUFFIX,threads.net
 # Facebook 核心与服务
 DOMAIN,fbcdn-a.akamaihd.net
 DOMAIN-SUFFIX,crowdtangle.com
+DOMAIN-SUFFIX,f8.com
 DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,facebook.design
 DOMAIN-SUFFIX,facebook.net
@@ -30,6 +32,7 @@ DOMAIN-SUFFIX,facebookbrand.com
 DOMAIN-SUFFIX,facebooklive.com
 DOMAIN-SUFFIX,facebookmail.com
 DOMAIN-SUFFIX,facebookpay.com
+DOMAIN-SUFFIX,facebookportal.com
 DOMAIN-SUFFIX,facebooksafety.com
 DOMAIN-SUFFIX,facebookstories.com
 DOMAIN-SUFFIX,facebookwork.com
@@ -77,6 +80,7 @@ DOMAIN-SUFFIX,ig.me
 DOMAIN-SUFFIX,igcdn.com
 DOMAIN-SUFFIX,igsonar.com
 DOMAIN-SUFFIX,igtv.com
+DOMAIN-SUFFIX,instagram-engineering.com
 DOMAIN-SUFFIX,instagram.com
 DOMAIN-SUFFIX,instagram.net
 DOMAIN-SUFFIX,instagr.am
@@ -95,6 +99,7 @@ DOMAIN-SUFFIX,whatsappbrand.com
 DOMAIN-SUFFIX,fbmessenger.com
 DOMAIN-SUFFIX,m.me
 DOMAIN-SUFFIX,messenger.com
+DOMAIN-SUFFIX,messengerdevelopers.com
 
 # Oculus / VR
 DOMAIN-SUFFIX,buyoculus.com
@@ -119,6 +124,7 @@ DOMAIN-SUFFIX,frescolib.org
 DOMAIN-SUFFIX,hacklang.org
 DOMAIN-SUFFIX,hhvm.com
 DOMAIN-SUFFIX,pytext.org
+DOMAIN-SUFFIX,reactjs.org
 DOMAIN-SUFFIX,rocksdb.com
 DOMAIN-SUFFIX,rocksdb.net
 DOMAIN-SUFFIX,rocksdb.org

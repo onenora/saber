@@ -1,7 +1,7 @@
 #!name=PROXY
 #!desc=个人杂项代理规则
 #!author=onenora
-#!date=2026-11-07 00:00
+#!date=2026-11-08 00:00
 
 # > Pornhub
 DOMAIN-SUFFIX,phncdn.com
@@ -9,26 +9,59 @@ DOMAIN-SUFFIX,pornhub.com
 DOMAIN-SUFFIX,pornhubpremium.com
 
 # > Spotify
+DOMAIN-SUFFIX,audio-ak-spotify-com.akamaized.net
+DOMAIN-SUFFIX,pscdn.co
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,spoti.fi
 DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spotifycdn.com
+DOMAIN-SUFFIX,spotifycdn.net
 
 # > Reddit
+DOMAIN-SUFFIX,redd.it
 DOMAIN-SUFFIX,reddit.com
+DOMAIN-SUFFIX,redditmail.com
+DOMAIN-SUFFIX,redditmedia.com
 DOMAIN-SUFFIX,redditstatic.com
 
+# > Discord
+DOMAIN-SUFFIX,dis.gd
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discord.gg
+DOMAIN-SUFFIX,discord.media
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
+DOMAIN-SUFFIX,discordcdn.com
+
 # > Dropbox
+DOMAIN-SUFFIX,db.tt
+DOMAIN-SUFFIX,dropbox-dns.com
 DOMAIN-SUFFIX,dropbox.com
+DOMAIN-SUFFIX,dropboxapi.com
 DOMAIN-SUFFIX,dropboxstatic.com
 DOMAIN-SUFFIX,dropboxusercontent.com
 
 # > 国际站点 / 搜索与知识
+DOMAIN-SUFFIX,askubuntu.com
 DOMAIN-SUFFIX,duckduckgo.com
+DOMAIN-SUFFIX,mediawiki.org
 DOMAIN-SUFFIX,medium.com
 DOMAIN-SUFFIX,nytimes.com
+DOMAIN-SUFFIX,serverfault.com
+DOMAIN-SUFFIX,sstatic.net
+DOMAIN-SUFFIX,stackexchange.com
 DOMAIN-SUFFIX,stackoverflow.com
-DOMAIN-SUFFIX,wikipedia.org
+DOMAIN-SUFFIX,superuser.com
+DOMAIN-SUFFIX,wikidata.org
 DOMAIN-SUFFIX,wikimedia.org
+DOMAIN-SUFFIX,wikipedia.org
+DOMAIN-SUFFIX,wikisource.org
+DOMAIN-SUFFIX,wiktionary.org
 
 # > 国际站点 / 开发与工具
+DOMAIN,d1q6f0aelx0por.cloudfront.net
+DOMAIN,d2wy8f7a9ursnm.cloudfront.net
+DOMAIN,d36jcksde1wxzq.cloudfront.net
 DOMAIN-SUFFIX,angularjs.org
 DOMAIN-SUFFIX,apache.org
 DOMAIN-SUFFIX,bitbucket.org
@@ -37,6 +70,7 @@ DOMAIN-SUFFIX,crates.io
 DOMAIN-SUFFIX,debian.org
 DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,docker.io
+DOMAIN-SUFFIX,dockerhub.com
 DOMAIN-SUFFIX,eclipsecontent.org
 DOMAIN-SUFFIX,evermeet.cx
 DOMAIN-SUFFIX,godaddy.com
@@ -81,15 +115,20 @@ DOMAIN-SUFFIX,appledaily.com
 DOMAIN-SUFFIX,appledaily.com.tw
 DOMAIN-SUFFIX,avtb.com
 DOMAIN-SUFFIX,beetalkmobile.com
-DOMAIN-SUFFIX,blogspot.com
+DOMAIN-SUFFIX,ext-twitch.tv
+DOMAIN-SUFFIX,jtvnw.net
+DOMAIN-SUFFIX,live-video.net
 DOMAIN-SUFFIX,ttvnw.net
 DOMAIN-SUFFIX,twitch.tv
+DOMAIN-SUFFIX,twitchcdn.net
 
 # > 代理工具 / 隐私
 DOMAIN-SUFFIX,dler.cloud
 
 # > 支付 / 交易
+DOMAIN-SUFFIX,braintreegateway.com
 DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypal.me
 DOMAIN-SUFFIX,paypalobjects.com
 
 # > 学术
@@ -112,16 +151,21 @@ DOMAIN-SUFFIX,ygpy.net
 DOMAIN,xn--cnq51x.live
 
 # > 开发 / 部署
-DOMAIN-SUFFIX,app.netlify.com
 DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,desec.io
 DOMAIN-SUFFIX,freedomain.one
 DOMAIN-SUFFIX,koyeb.com
 DOMAIN-SUFFIX,koyeb.app
 DOMAIN-SUFFIX,netlify.app
+DOMAIN-SUFFIX,netlify.com
+DOMAIN-SUFFIX,nextjs.org
 DOMAIN-SUFFIX,nic.ua
+DOMAIN-SUFFIX,now.sh
+DOMAIN-SUFFIX,turborepo.org
 DOMAIN-SUFFIX,us.kg
 DOMAIN-SUFFIX,vercel.app
+DOMAIN-SUFFIX,vercel.com
+DOMAIN-SUFFIX,vercel.sh
 DOMAIN-SUFFIX,gohugo.io
 DOMAIN-SUFFIX,workers.dev
 DOMAIN-SUFFIX,x10hosting.com
@@ -152,7 +196,6 @@ DOMAIN-SUFFIX,gravatar.com
 DOMAIN-SUFFIX,ibm.com
 DOMAIN-SUFFIX,imazing.com
 DOMAIN-SUFFIX,imput.net
-DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,is.gd
 DOMAIN-SUFFIX,lala.im
 DOMAIN-SUFFIX,mole.fit
@@ -161,9 +204,7 @@ DOMAIN-SUFFIX,nssurge.com
 DOMAIN-SUFFIX,plex.tv
 DOMAIN-SUFFIX,pythonista.app
 DOMAIN,relay.firefox.com
-DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,static.tw93.fun
-DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,stripe.network
 
 # > Notion

@@ -1,20 +1,30 @@
 #!name=Microsoft
 #!desc=Microsoft 核心 / Copilot 分流规则
 #!author=onenora
-#!date=2026-09-26 00:00
+#!date=2026-11-08 00:00
 
-# A. Copilot / Bing / Azure Models（需代理）
-DOMAIN,sydney.bing.com
-DOMAIN,www.bing.com
-DOMAIN-SUFFIX,microsoft.com
+# A. Copilot / Bing / Portal（需代理）
+DOMAIN-SUFFIX,aka.ms
+DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,microsoft.com
+DOMAIN-SUFFIX,msn.com
 
 # B. 存储与协作（需代理）
-DOMAIN-SUFFIX,live.com
 DOMAIN-SUFFIX,1drv.ms
+DOMAIN-SUFFIX,gfx.ms
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,live.net
+DOMAIN-SUFFIX,office.com
+DOMAIN-SUFFIX,office.net
+DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,onenote.com
+DOMAIN-SUFFIX,onenote.net
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,sfx.ms
 DOMAIN-SUFFIX,sharepoint.com
 DOMAIN-SUFFIX,sharepointonline.com
-DOMAIN-SUFFIX,onedrive.com
 
 # C. 开发工具（需代理）
 DOMAIN-SUFFIX,ghcr.io
@@ -22,22 +32,31 @@ DOMAIN-SUFFIX,github.com
 DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,githubassets.com
 DOMAIN-SUFFIX,githubusercontent.com
-
-# D. Azure / 登录（需代理）
-DOMAIN-SUFFIX,azure.com
-DOMAIN-SUFFIX,azureedge.net
-DOMAIN-SUFFIX,azurefd.net
-DOMAIN-SUFFIX,microsoftonline.com
-DOMAIN-SUFFIX,msauth.net
-DOMAIN-SUFFIX,msftauth.net
-
-# E. 其他（需代理）
-DOMAIN-SUFFIX,office.net
 DOMAIN-SUFFIX,visualstudio.com
 DOMAIN-SUFFIX,vsassets.io
 DOMAIN-SUFFIX,vscode.dev
-DOMAIN-SUFFIX,xbox.com
+
+# D. Azure / 登录（需代理）
+DOMAIN-SUFFIX,azure.com
+DOMAIN-SUFFIX,azure.net
+DOMAIN-SUFFIX,azureedge.net
+DOMAIN-SUFFIX,azurefd.net
+DOMAIN-SUFFIX,azurerms.com
+DOMAIN-SUFFIX,microsoftonline.com
+DOMAIN-SUFFIX,msauth.net
+DOMAIN-SUFFIX,msft.net
+DOMAIN-SUFFIX,msftauth.net
+DOMAIN-SUFFIX,msftidentity.com
+DOMAIN-SUFFIX,msidentity.com
+
+# E. 系统与娱乐（需代理）
+DOMAIN-SUFFIX,msedge.net
 DOMAIN-SUFFIX,skype.com
+DOMAIN-SUFFIX,windows.com
+DOMAIN-SUFFIX,windows.net
+DOMAIN-SUFFIX,xbox.com
+DOMAIN-SUFFIX,xboxlive.com
+DOMAIN-SUFFIX,xboxservices.com
 
 # ASN
 IP-ASN,8075,no-resolve
